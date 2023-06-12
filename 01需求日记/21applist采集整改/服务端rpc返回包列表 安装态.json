@@ -1,0 +1,95 @@
+{
+  "app_info": [
+    {
+      "package_name": "com.xingin.xhs",
+      "name": "",
+      "version_name": "",
+      "version_code": 0,
+      "system": false,
+      "running": false,
+      "first_installation_timestamp": "0"
+    },
+    {
+      "package_name": "com.sankuai.meituan",
+      "name": "",
+      "version_name": "",
+      "version_code": 0,
+      "system": false,
+      "running": false,
+      "first_installation_timestamp": "0"
+    },
+    {
+      "package_name": "com.eg.android.AlipayGphone",
+      "name": "",
+      "version_name": "",
+      "version_code": 0,
+      "system": false,
+      "running": false,
+      "first_installation_timestamp": "0"
+    },
+    {
+      "package_name": "com.zhaopin.social",
+      "name": "",
+      "version_name": "",
+      "version_code": 0,
+      "system": false,
+      "running": false,
+      "first_installation_timestamp": "0"
+    },
+    {
+      "package_name": "com.sdu.didi.psnger",
+      "name": "",
+      "version_name": "",
+      "version_code": 0,
+      "system": false,
+      "running": false,
+      "first_installation_timestamp": "0"
+    },
+    {
+      "package_name": "com.xunmeng.pinduoduo",
+      "name": "",
+      "version_name": "",
+      "version_code": 0,
+      "system": false,
+      "running": false,
+      "first_installation_timestamp": "0"
+    },
+    {
+      "package_name": "com.ss.android.auto",
+      "name": "",
+      "version_name": "",
+      "version_code": 0,
+      "system": false,
+      "running": false,
+      "first_installation_timestamp": "0"
+    },
+    {
+      "package_name": "com.netease.cloudmusic",
+      "name": "",
+      "version_name": "",
+      "version_code": 0,
+      "system": false,
+      "running": false,
+      "first_installation_timestamp": "0"
+    },
+    {
+      "package_name": "com.jingdong.app.mall",
+      "name": "",
+      "version_name": "",
+      "version_code": 0,
+      "system": false,
+      "running": false,
+      "first_installation_timestamp": "0"
+    },
+    {
+      "package_name": "com.baidu.searchbox",
+      "name": "",
+      "version_name": "",
+      "version_code": 0,
+      "system": false,
+      "running": false,
+      "first_installation_timestamp": "0"
+    }
+  ],
+  "collect_time": "1708944179723"
+}

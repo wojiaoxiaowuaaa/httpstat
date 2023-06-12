@@ -1,0 +1,206 @@
+{
+    "disableVideoWarmup": false,
+    "disableImageWarmup": false,
+    "disableZipWarmup": false,
+    "delayDurationInSeconds": 5,
+    "minWarmupDiskSize": 100,
+    "warmupZips": {
+        "mode": "moderate",
+        "zips": [
+            {
+                "urls": [
+                    {
+                        "cdn": "kcdn-w1.staging.kuaishou.com",
+                        "url": "https://kcdn-w1.staging.kuaishou.com/kos/nlav10395/nebula/widget/2022MidAutumn/float_animation_202209091244.zip"
+                    },
+                    {
+                        "cdn": "kcdn.staging.kuaishou.com",
+                        "url": "https://kcdn.staging.kuaishou.com/kos/nlav10395/nebula/widget/2022MidAutumn/float_animation_202209091244.zip"
+                    }
+                ],
+                "resourceKey": "",
+                "smallCache": false,
+                "allFileMd5": "",
+                "supportDownloadSegment": false,
+                "downloadSize": 0,
+                "op": "start",
+                "emergent": false,
+                "resourceId": "KUAISHOU:13:1960308653",
+                "checksum": "f9b4bcafd11804e6dec0166439f10a1f",
+                "id": 20,
+                "updateTime": 1663758918185
+            },
+            {
+                "urls": [
+                    {
+                        "cdn": "kcdn-w1.staging.kuaishou.com",
+                        "url": "https://kcdn-w1.staging.kuaishou.com/kos/nlav100043/CNY24/redbluebattletest/cny24_red_blue_battle_wamup_common_resources.zip"
+                    },
+                    {
+                        "cdn": "kcdn.staging.kuaishou.com",
+                        "url": "https://kcdn.staging.kuaishou.com/kos/nlav100043/CNY24/redbluebattletest/cny24_red_blue_battle_wamup_common_resources.zip"
+                    }
+                ],
+                "resourceKey": "",
+                "smallCache": true,
+                "allFileMd5": "63d564f5a72ab363fde14d957dd8bc5f",
+                "supportDownloadSegment": false,
+                "downloadSize": 0,
+                "op": "start",
+                "emergent": true,
+                "resourceId": "KUAISHOU:57:461776940",
+                "checksum": "0ec4590d3ce36751c91f131544e27bf2",
+                "id": 680,
+                "updateTime": 1700288354964
+            }
+        ]
+    },
+    "unModifyResourceIds": [
+        "KUAISHOU:44:747681774",
+        "KUAISHOU:66:508915366",
+        "KUAISHOU:67:-1692849792",
+        "KUAISHOU:67:-902907067",
+        "KUAISHOU:67:-1730256360",
+        "KUAISHOU:67:-1797113545",
+        "KUAISHOU:67:-1632512106",
+        "KUAISHOU:67:2087443225",
+        "KUAISHOU:67:1899706451",
+        "KUAISHOU:67:-1614732009",
+        "KUAISHOU:46:-515127145",
+        "KUAISHOU:68:622927911",
+        "KUAISHOU:68:1607543930",
+        "KUAISHOU:68:791963639",
+        "KUAISHOU:47:987851224",
+        "KUAISHOU:69:-467919340",
+        "KUAISHOU:69:-1244005426",
+        "KUAISHOU:69:1611573988",
+        "KUAISHOU:71:200785604",
+        "KUAISHOU:73:-488517002",
+        "KUAISHOU:55:1007112434",
+        "KUAISHOU:55:-647810059",
+        "KUAISHOU:55:-2008106777",
+        "KUAISHOU:13:450326039",
+        "KUAISHOU:13:-499827459",
+        "KUAISHOU:13:-1577009866",
+        "KUAISHOU:58:-1116747141",
+        "KUAISHOU:58:-2008658936",
+        "KUAISHOU:39:943863816",
+        "KUAISHOU:39:-1185361323",
+        "KUAISHOU:39:-1335647020",
+        "KUAISHOU:60:595652283",
+        "KUAISHOU:60:-1009827654",
+        "KUAISHOU:60:1129602536",
+        "KUAISHOU:61:-161855392",
+        "KUAISHOU:40:1558012049",
+        "KUAISHOU:41:-503913487"
+    ],
+    "disableResourceWarmup": false,
+    "warmupImages": {
+        "mode": "aggressive",
+        "images": [
+            {
+                "urls": [
+                    {
+                        "cdn": "kcdn.staging.kuaishou.com",
+                        "url": "https://kcdn.staging.kuaishou.com/kos/nlav100043/fansgroup/AlibabaPuHuiTi_1115_v1.ttf"
+                    },
+                    {
+                        "cdn": "kcdn-w1.staging.kuaishou.com",
+                        "url": "https://kcdn-w1.staging.kuaishou.com/kos/nlav100043/fansgroup/AlibabaPuHuiTi_1115_v1.ttf"
+                    }
+                ],
+                "resourceKey": "krn_AlibabaPuHuiTi2_font",
+                "smallCache": true,
+                "allFileMd5": "",
+                "supportDownloadSegment": false,
+                "downloadSize": 0,
+                "op": "start",
+                "emergent": false,
+                "resourceId": "KUAISHOU:47:-1174938545",
+                "checksum": "75ef398d7339b0298e2d47b180116431",
+                "id": 469,
+                "updateTime": 1700039062635
+            },
+            {
+                "urls": [
+                    {
+                        "cdn": "kcdn.staging.kuaishou.com",
+                        "url": "https://kcdn.staging.kuaishou.com/kos/nlav12359/erciyuan/huyao/susu_main.ff80129cbc2eb7a5.png"
+                    },
+                    {
+                        "cdn": "kcdn-w1.staging.kuaishou.com",
+                        "url": "https://kcdn-w1.staging.kuaishou.com/kos/nlav12359/erciyuan/huyao/susu_main.ff80129cbc2eb7a5.png"
+                    }
+                ],
+                "resourceKey": "",
+                "smallCache": false,
+                "allFileMd5": "",
+                "supportDownloadSegment": false,
+                "downloadSize": 0,
+                "op": "start",
+                "emergent": false,
+                "resourceId": "KUAISHOU:13:-1577894430",
+                "checksum": "de839d4bff80129cbc2eb7a57576f04b",
+                "id": 16,
+                "updateTime": 1663758961592
+            },
+            {
+                "urls": [
+                    {
+                        "cdn": "kcdn-w1.staging.kuaishou.com",
+                        "url": "https://kcdn-w1.staging.kuaishou.com/kos/nlav100043/fansgroup/font/Gilroyfans.ttf"
+                    },
+                    {
+                        "cdn": "kcdn.staging.kuaishou.com",
+                        "url": "https://kcdn.staging.kuaishou.com/kos/nlav100043/fansgroup/font/Gilroyfans.ttf"
+                    }
+                ],
+                "resourceKey": "krn_Gilroyfans_font",
+                "smallCache": true,
+                "allFileMd5": "",
+                "supportDownloadSegment": true,
+                "downloadSize": 100,
+                "op": "start",
+                "emergent": false,
+                "resourceId": "KUAISHOU:41:574117643",
+                "checksum": "a8ad600dd69259a4bd7f994c252f42d2",
+                "id": 421,
+                "updateTime": 1687182114848
+            }
+        ]
+    },
+    "result": 1,
+    "laneId": "STAGING.resource_warmup",
+    "warmupVideos": {
+        "mode": "moderate",
+        "connectTimeoutMs": 5000,
+        "videos": [
+            {
+                "urls": [
+                    {
+                        "cdn": "kcdn.staging.kuaishou.com",
+                        "url": "https://kcdn.staging.kuaishou.com/kos/nlav100220/platformActivityResource/C1980C7037DEE74348F30AAFCE50E460.mp4"
+                    },
+                    {
+                        "cdn": "kcdn-w1.staging.kuaishou.com",
+                        "url": "https://kcdn-w1.staging.kuaishou.com/kos/nlav100220/platformActivityResource/C1980C7037DEE74348F30AAFCE50E460.mp4"
+                    }
+                ],
+                "resourceKey": "",
+                "smallCache": true,
+                "allFileMd5": "",
+                "supportDownloadSegment": true,
+                "downloadSize": 99,
+                "op": "start",
+                "emergent": false,
+                "resourceId": "KUAISHOU:13:-489651184",
+                "checksum": "c1980c7037dee74348f30aafce50e460",
+                "id": 656,
+                "updateTime": 0
+            }
+        ],
+        "maxSpeed": 52428800,
+        "wifiOnly": false
+    },
+    "cleanResourceWarmup": false
+}

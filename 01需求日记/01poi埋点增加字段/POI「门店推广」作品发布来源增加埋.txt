@@ -1,0 +1,80 @@
+POI「门店推广」作品发布来源增加埋点
+
+https://team.corp.kuaishou.com/task/T4464099
+https://team.corp.kuaishou.com/task/T4399873
+
+https://docs.corp.kuaishou.com/d/home/fcAD-zHH24Et2IFoV_J8R2VlC
+
+主要是测试埋点是否正确---埋点: photo_meta的字段check_type
+
+更新已发布的作品,带poi信息不会重复发送photo_meta埋点.
+
+case追加: 老版本app - 存草稿 - 升级app - 从草稿恢复 ---带poi发布
+
+ios分支：platform/liuxuan10/poi_T4464099
+安卓分支：platform/zdh/storepromotion_poi_logger
+staging门店推广账号:
+13126581341
+ll123456
+2182065303
+环境 STAGING.feature_return_check_type
+
+新增两个枚举类型:
+PostrecoShop = 5, 标记发布页门店推广/本地生活 推荐POI
+ShoppromotionSearch = 6, 标记门店推广搜索页结果 POI
+
+结论：所在位置（普通账号场景）没有traceContext，type为0； 在门店推广页面，如果没有traceContext，沿用目前逻辑，checkType=4 （因为存在服务端下发了traceContext，但是RN页面回滚了，导致没给客户端容器页发traceContext，这部分还是保留现有逻辑4）
+
+
+非小店-位置列表   "check_type":"LISTRECO"  --  2
+非小店--发布页推荐   "check_type":"POSTRECO"  -- 1
+非小店--位置列表搜索   "check_type":"LISTSEARCH"   --  3
+
+小店账号--发布页推荐---"check_type":"POSTRECOSHOP"  -- 5
+小店账号--位置列表  ---  "check_type":"LISTRECO" --   2
+小店账号--门店列表  ---   "check_type":"SHOPPROMOTION",  -- 4
+小店账号 -- 门店列表搜索  ---   "check_type":"SHOPPROMOTIONSEARCH",  6--必须是新版的RN老版RN发的是SHOPPROMOTION
+
+
+BUGlist:
+1. 只有门店推广的发布页推荐上报的埋点check_type是int类型为5其他的场景都是str类型.(抓包平台问题他们做了转换)--NO
+2. 门店推广页面搜索上报的埋点的check_type是SHOPPROMOTION,预期是6  ShoppromotionSearch .(这个必须得是新版的的RN才会发)--NO
+1. 双端,新版KDS,version=125,小店账号门店推广页面,搜索任意位置后选中poi发布作品,上报埋点中"check_type":"SHOPPROMOTION"预期是6  SHOPPROMOTIONSEARCH. --- NO
+2. 服务端不再下发"traceContext": "{\"sourceType\":5}"而是改为下发"checkType": 5  -- NO
+iOS-BUGlist: -- NO
+1. iOS小店账号,服务端下发数据缺失了checkType字段,上报的埋点数据poi部分无check_typ
+   发布页推荐上报的埋点poi部分为:
+		poi":{
+		"identity":"2162200587060510399"
+		"name":"北京市海淀区西二旗小学"
+		"extra_info":"{"localLife":"{\"localLifePromotionId\":-1}"}"
+		}
+	位置列表上报的埋点poi部分为:
+		"poi":{
+		"identity":"3002745839566856731"
+		"name":"小米移动互联网产业园"
+		}
+Android-BUGlist:
+1. 小店账号,门店推广页面(新版RN  version23)搜索任意poi位置,上报的埋点中"check_type":"SHOPPROMOTION"4
+   (iOS端上报的埋点中是 "check_type":"SHOPPROMOTIONSEARCH"6)
+
+  /** 发布页推荐 */
+  KSUPOI_CheckType_Postreco = 1,
+
+  /** 位置列表页推荐 */
+  KSUPOI_CheckType_Listreco = 2,  LISTRECO
+
+  /** 位置列表搜索结果 */
+  KSUPOI_CheckType_Listsearch = 3,
+
+  /** 门店推广列表页 */
+  KSUPOI_CheckType_Shoppromotion = 4,
+  
+  /** 发布页门店推广推荐 */
+  KSUPOI_CheckType_PostrecoShop = 5,POSTRECOSHOP
+  
+  /** 本地生活搜索结果 */
+  KSUPOI_CheckType_ShoppromotionSearch = 6   SHOPPROMOTIONSEARCH
+
+
+

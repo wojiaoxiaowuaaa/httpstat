@@ -1,0 +1,32 @@
+{
+	"result": 1,
+	"locations": [{
+		"id": 3004230127124916810,
+		"title": "哈哈哈麻辣烫(房山印象城店)",
+		"address": "北京市房山区北京房山印象城F4",
+		"category": null,
+		"city": "北京市",
+		"latitude": 39.753538,
+		"longitude": 116.210615,
+		"coverUrls": [],
+		"distance": 34406.0,
+		"linkUrl": null,
+		"extParams": null,
+		"checkType": 3
+	}, {
+		"id": 3002959008041866662,
+		"title": "哈哈哈小院",
+		"address": "北京市密云区太师屯镇落洼村25号",
+		"category": null,
+		"city": "北京市",
+		"latitude": 40.631153,
+		"longitude": 117.254364,
+		"coverUrls": [],
+		"distance": 101997.0,
+		"linkUrl": null,
+		"extParams": null,
+		"checkType": 3
+	}],
+	"requestId": "ELmAgICQ3pS7ChjjBCCh4ZSi6DEo0tPu9Qw=",
+	"pcursor": "no_more"
+}

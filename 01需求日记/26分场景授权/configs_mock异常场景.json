@@ -1,0 +1,169 @@
+{
+    "config": {
+        "kpn": "KUAISHOU",
+        "appVersion": "9.10.20",
+        "configVersion": 7014,
+        "createTime": 1709092299018,
+        "configs": [{
+            "permission": "location",
+            "frequency": {
+                "unit": "hour",
+                "value": 20
+            },
+            "cooldownTime": 172800,
+            "privacyGroups": [{
+                "groupName": "basics",
+                "bizList": ["default", "moment", "social", "app_selection", "consumer", "creator", "ecology_tuna", "growth", "guru_comment", "health", "ks_mp_platform", "live_author", "live_square", "live_companion_h5", "pay_tuanyou", "socialShake", "search", "live_audience", "ks_ad", "ks_ad_h5", "ks_ad_car", "app_universal", "fin_loan", "im_group_face2face"],
+                "title": "作品浏览",
+                "content": "允许后，可以在精选、同城、发现、关注等场景给您推荐附近的作品和服务"
+            }, {
+                "groupName": null,
+                "bizList": [],
+                "title": "内容发布",
+                "content": "允许后，帮助您在发布作品时展示位置，发现更好生活"
+            }, {
+                "groupName": "local",
+                "bizList": ["campus_introduce", "kzg_recruit", "locallife", "promotion", "yiche", "real_estate", "ex_jingdong_health", "service_activity"],
+                "title": "周边生活",
+                "content": "允许后，可以在团购优惠、门店导航为您推荐附近的门店和服务"
+            }, {
+                "groupName": "ecommerce",
+                "bizList": ["KSMerchantLocationPermissionServiceForUserShoppingAddress", "merchant_address_location", "jimu"],
+                "title": "电商购物",
+                "content": "允许后，可以在购物、下单填写收获地址时为您提供更好的位置服务"
+            }],
+            "bizList": ["default", "post_dynamic_avatar", "live_author", "live_square", "social", "moment", "socialShake", "merchant_address_location", "KSMerchantLocationPermissionServiceForUserShoppingAddress", "promotion", "app_selection", "live_audience", "service_activity", "jimu", "ks_mp_platform", "locallife", "ks_ad", "creator", "consumer", "guru_comment", "kzg_recruit", "health", "real_estate", "ex_jingdong_health", "pay_tuanyou", "growth", "search", "promotion", "ecology_tuna", "campus_introduce", "ks_ad_h5", "live_companion_h5", "yiche", "app_universal", "im_group_face2face", "contentCreation", "ks_ad_car", "fin_loan"],
+            "whitelistScenes": [{
+                "biz": "default",
+                "scenes": ["nearby", "KSLoalRoamingPanel", "KSLocalPhotoMap", "post_poi_picker", "post_poi_picker_krn", "post_magicface", "poi", "tuna_location_picker", "tuna_poi_preview", "location_upload", "yoda_request_location", "locallife_location", "food_list", "cny_locallife", "top_gps_card", "product_details"]
+            }, {
+                "biz": "live_square",
+                "scenes": ["live_square"]
+            }, {
+                "biz": "social",
+                "scenes": ["socialNearbyPeople", "socialNearbyPeopleAlert"]
+            }, {
+                "biz": "moment",
+                "scenes": ["moment_nearby"]
+            }, {
+                "biz": "socialShake",
+                "scenes": ["socialShake", "socialShakeAlert"]
+            }, {
+                "biz": "KSMerchantLocationPermissionServiceForUserShoppingAddress",
+                "scenes": ["KSMerchantLocationPermissionServiceForUserShoppingAddress"]
+            }, {
+                "biz": "merchant_address_location",
+                "scenes": ["merchant_address_location", "address_fill_new"]
+            }, {
+                "biz": "app_selection",
+                "scenes": ["selection_slide_location"]
+            }, {
+                "biz": "promotion",
+                "scenes": ["razor_promotion", "campus_activity", "kindle"]
+            }, {
+                "biz": "live_audience",
+                "scenes": ["live_audience"]
+            }, {
+                "biz": "locallife",
+                "scenes": ["poi", "merchant_enter", "select_city", "post_select_city", "merchant_yellow_cart", "click_shop", "click_poi", "top_gps_card", "ganbijia_list", "new_user_zone", "locallife_location", "big_promotion", "order_details", "purchase_success", "applicable_store", "Free_meal"]
+            }, {
+                "biz": "creator",
+                "scenes": ["talent_sale"]
+            }, {
+                "biz": "consumer",
+                "scenes": ["app_weather_h5"]
+            }, {
+                "biz": "guru_comment",
+                "scenes": ["user_location"]
+            }, {
+                "biz": "kzg_recruit",
+                "scenes": ["kzg_recruit_questionnaire", "kzg_recruit_manage", "kzg_recruit_recume_edit"]
+            }, {
+                "biz": "health",
+                "scenes": ["health_register"]
+            }, {
+                "biz": "pay_tuanyou",
+                "scenes": ["get_position"]
+            }, {
+                "biz": "promotion",
+                "scenes": ["razor_promotion", "campus_activity", "kindle"]
+            }, {
+                "biz": "ecology_tuna",
+                "scenes": ["clue_city"]
+            }, {
+                "biz": "ks_ad_h5",
+                "scenes": ["ks_ad_h5"]
+            }, {
+                "biz": "live_companion_h5",
+                "scenes": ["live_companion_h5"]
+            }, {
+                "biz": "yiche",
+                "scenes": ["yiche_nearby_4s"]
+            }, {
+                "biz": "search",
+                "scenes": ["search_goods_filter_v2"]
+            }, {
+                "biz": "app_universal",
+                "scenes": ["client_customize", "client_customize_card", "client_system_dialog"]
+            }, {
+                "biz": "im_group_face2face",
+                "scenes": ["im_group_face2face_dialog", "im_group_face2face_update"]
+            }, {
+                "biz": "contentCreation",
+                "scenes": ["post_poi_picker", "post_poi_picker_krn", "post_magicface"]
+            }],
+            "enableUidIteration": false,
+            "appList": [],
+            "extra": {},
+            "lightMode": false,
+            "privilegedCases": [{
+                "biz": "default",
+                "scenes": ["location_upload"]
+            }],
+            "enablePrivacyGroup": false
+        }, {
+            "permission": "appList",
+            "frequency": {
+                "unit": "day",
+                "value": 1
+            },
+            "cooldownTime": 86400,
+            "privacyGroups": [],
+            "bizList": ["default", "user_growth", "testBiz"],
+            "whitelistScenes": [{
+                "biz": "default",
+                "scenes": ["default"]
+            }, {
+                "biz": "testBiz",
+                "scenes": ["testSecne"]
+            }, {
+                "biz": "user_growth",
+                "scenes": ["spaceclean"]
+            }],
+            "enableUidIteration": true,
+            "appList": [],
+            "extra": {},
+            "lightMode": false,
+            "privilegedCases": [],
+            "enablePrivacyGroup": false
+        }, {
+            "permission": "photo",
+            "frequency": {
+                "unit": "hour",
+                "value": 20
+            },
+            "cooldownTime": 172800,
+            "privacyGroups": [],
+            "bizList": ["post_asset_picker", "post_camera_album", "post_edit_cut_reorder", "post_edit_music_import_voice", "post_edit_image_reorder", "post_custom_cover_album", "post_aicut_album", "post_image_publish_append", "post_main_icon_long_click", "post_entrence_bubble", "post_ks_import_album", "post_ktv_add_image", "post_magicface_album", "post_story_editor", "post_image_template_plc", "im_latest_photo_album", "post_editor", "post_share_saveAlbum", "post_js_record_and_update", "post_camera_burst", "post_camera_popup", "post_smart_album", "post_ai_cut", "post_album_tool", "post_album", "post_image_crop", "post_album_banner", "post_predict", "post_thirdparty_share", "social_moment_album", "feed_comment_emotion", "search_scan", "feed_util_save", "feed_comment_emotion", "feed_screenshot_share", "feed_landscape_screenshot_share", "live_js_screen_shot", "game_image_browser", "live_prepare_album", "social_im_album", "social_emotion_album", "platform_bioauth_album", "merchant_latest_photo_album", "post_asset_picker", "feed_screen_shot_share", "feed_comment_emotion_save", "social_im_quick_image", "social_im_debug", "feed_my_qr_code", "feed_image_download", "feed_photo_download", "game_photo_browser", "merchant_save_idcard", "feed_kuaishou_forward", "feed_watermark", "commercial_showcase", "post_selectMixMediasAndUpload", "post_music_template", "post_memory_album", "post_double_shoot", "feed_comment_picture", "feed_comment_picture_select", "feed_eve_media_analyse", "ksmp_live_card_cover_crop_album", "post_yoda_bridge", "post_nebula_relay", "feed_comment_screen_shot_pic", "locallife_freshman_photo_album", "ks_recruit", "search_chat", "ks_sec_mobile"],
+            "whitelistScenes": [],
+            "enableUidIteration": false,
+            "appList": [],
+            "extra": {},
+            "lightMode": false,
+            "privilegedCases": [],
+            "enablePrivacyGroup": false
+        }],
+        "extra": {},
+        "env": "online"
+    }
+}

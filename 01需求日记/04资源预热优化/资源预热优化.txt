@@ -1,0 +1,58 @@
+资源预热优化+视频分片下载优化:
+https://team.corp.kuaishou.com/task/T4482674
+
+https://docs.corp.kuaishou.com/d/home/fcACPH-Ynvs0E-xV7s_aEvtkJ
+
+https://docs.corp.kuaishou.com/d/home/fcAAu38T5B2PUMg_6x3fnwlOu#section=h.9zkuu5m9t0zl
+
+https://kswitch.corp.kuaishou.com/#/flag/targeting?project=kuaishou&environment=production&key=enableWarmupBandwidthOpt
+
+https://kswitch.corp.kuaishou.com/#/flag/targeting?project=ztResourceWarmup&environment=staging&key=enableIncrementUpdate
+
+https://kswitch.corp.kuaishou.com/#/flag/variations?project=kuaishou&environment=production&key=enableWarmupQPSOpt
+
+接口:
+/warmup/list
+
+紧急&非紧急资源的:
+高优下载  (mode == aggresive || emergent = true)
+emergent是活动和资源维度的
+
+目标:
+客户端在请求预热配置时，携带所有已下载的资源标识，Server根据平台上所需预热的全部资源，过滤掉已下载部分后返回给客户端，
+客户端本地Merge后再执行后续下载逻辑。
+
+客户端收到的配置与本地存储的配置merge后存储 按照配置下载.三个阶段：接口请求阶段、数据准备阶段、响应处理阶段
+
+新增入参: 
+downloadedResources (包含端上已下载的资源ID和更新时间)
+服务返回新增字段:
+unModifyResourceIds
+updateTime
+
+返回的变更字段:
+    仅包含资源配置有更新/客户端未下载的资源配置.  未传downloadedResources，不会下发unModifyResourceIds，符合预期
+客户端开关：
+    控制请求时是否汇总并携带已下载资源字段downloadedResources
+    客户端响应处理由接口返回的unModifyResourceIds字段决定是否需要执行增量逻辑，不受开关控制
+
+服务端开关：控制是否根据downloadedResources字段执行增量处理逻辑
+    新增的updateTime字段常态下发，不受开关控制
+
+视频切片:
+https://docs.corp.kuaishou.com/d/home/fcACPH-Ynvs0E-xV7s_aEvtkJ
+"supportDownloadSegment": true,  
+"downloadSize": 100,			
+
+视频切片资源配置地址:
+https://keep-staging.staging.kuaishou.com/#/keep-build/warmup/board?pid=1&acitvityName=cdn%E6%B4%BB%E5%8A%A8%E6%B5%8B%E8%AF%95&activityId=13
+
+ios第一次入参:
+{"KUAISHOU:44:747681774":1687782253408,"KUAISHOU:66:17082734":1700551384153,"KUAISHOU:13:-1577009866":0}
+
+"resourceId": "KUAISHOU:78:2129611203",
+"checksum": "7a1af11faaa90b55eb52c2590256c849",
+"id": 706,
+"updateTime": 0
+新增资源下发updateTime为0
+

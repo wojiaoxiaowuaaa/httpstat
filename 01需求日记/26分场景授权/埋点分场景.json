@@ -1,0 +1,165 @@
+{
+    "client_timestamp": "1709714272263",
+    "client_increment_id": "84870",
+    "server_hostname": "",
+    "server_timestamp": "1709714272397",
+    "common_package": {
+        "identity_package": {
+            "device_id": "ANDROID_9dcd5704839b0881",
+            "user_id": "2260817340",
+            "iu_id": "",
+            "s_user_id": "",
+            "user_flag": "",
+            "global_id": "DFP0B58279959035CD6CC2B442575A5E37490321BCA7A53810CC0659B072382F",
+            "random_device_id": "ANDROID_90f4ea9f99fa3bc0",
+            "device_id_tag": "0",
+            "old_device_id": "ANDROID_1ed14bb8dbcb0a54",
+            "p_user_id": "qgYL2KMB99b_HS3tLzpaJswmRrrZ4fQ91ac4ffb739e4c53",
+            "is_login_user": 0,
+            "cloud_device_id_tag": "2",
+            "ab_mapping_device_id": "",
+            "ab_mapping_user_id": "0",
+            "ab_mapping_ids": "CkoKEnVpZF9kaWRfbWFwcGluZ192NBI0ChhBTkRST0lEXzg1OWQzOTYxN2MwNzgzZTcSGEFORFJPSURfODU5ZDM5NjE3YzA3ODNlNw=="
+        },
+        "app_package": {
+            "product": "KUAISHOU",
+            "platform": "ANDROID_PHONE",
+            "language": "zh",
+            "channel": "TEST",
+            "version_name": "12.1.20.99999",
+            "version_code": 99999,
+            "package_name": "com.smile.gifmaker",
+            "hotfix_patch_version": "",
+            "build_type": "HUIDU",
+            "container": "",
+            "new_oc": "TEST",
+            "abi": "ARM64",
+            "robust_info": "",
+            "android_os": "ANDROID_DEFAULT"
+        },
+        "device_package": {
+            "os_version": "34",
+            "model": "OnePlus(PHP110)",
+            "ua": ""
+        },
+        "network_package": {
+            "type": "WIFI",
+            "isp": "46015",
+            "ip": "",
+            "dns_servers": "",
+            "ipv6": ""
+        },
+        "location_package": {
+            "unnormalized": "",
+            "country": "",
+            "province": "",
+            "city": "",
+            "county": "",
+            "street": "",
+            "latitude": 40.04881,
+            "longitude": 116.316323,
+            "vague": 0
+        },
+        "experiment": [
+
+        ],
+        "time_package": {
+            "sync_status": "SYNCHROIZED",
+            "client_time_diff": "0",
+            "time_zone": "GMT+08:00 Asia/Shanghai",
+            "client_time_difference": "-66"
+        },
+        "additional_seq_id_package": {
+            "channel": "NORMAL",
+            "channel_seq_id": "83269",
+            "custom_type": "showEvent",
+            "custom_seq_id": "7960"
+        },
+        "style_type": "{\"browseType\":\"bottom\",\"darkMode\":false,\"children_mode\":false,\"grant_browse_type\":\"AUTHORIZED\",\"top_tab_id\":[12,2,3,4,0],\"bottom_tab_id\":[1,5,6,7],\"launch_source\":1,\"bottom_navigation\":false,\"is_app_prelaunch\":false,\"is_app_prelaunching\":true}",
+        "service_name": "",
+        "sub_biz": "",
+        "need_encrypt": false,
+        "global_attr": "{\"activityTag\":\"\",\"network_ip\":\"103.102.203.213\",\"is_background\":0,\"process_name\":\"com.smile.gifmaker\"}",
+        "h5_extra_attr": "",
+        "api_app_status": 0,
+        "server_process_info": {
+
+        }
+    },
+    "event_package": {
+        "show_event": {
+            "action": "UNKNOWN1",
+            "url_package": {
+                "category": "APP",
+                "page": "UNKNOWN2",
+                "sub_pages": "",
+                "params": "{\"h5_page\":\"POI_FOODS_CHANNEL\",\"pageType\":\"NATIVE\",\"bundleVersion\":1669,\"container\":\"REACT_NATIVE\"}",
+                "identity": "4c383c90-4bb1-4506-9ba0-5492214e8eba",
+                "page_seq": 11,
+                "entry_page_id": "4c383c90-4bb1-4506-9ba0-5492214e8eba",
+                "entry_page_source": "NEARBY",
+                "exp_tag_list": {
+                    "exp_tag_trans": [
+
+                    ]
+                },
+                "page_type": "NATIVE",
+                "page2": "POI_FOODS_CHANNEL",
+                "top_page": "NEARBY",
+                "user_route_trace": "[{\"page_code\":\"NEARBY\",\"element_action\":\"TOP_FUNC_ENT_BTN\",\"is_nearby\":\"1\",\"city_name\":\"同城\",\"urt_id\":145}]",
+                "co_page": false
+            },
+            "refer_url_package": {
+                "category": "HOME",
+                "page": "NEARBY",
+                "sub_pages": "",
+                "params": "is_nearby=1&tab_city_name=同城&tab_pos=TOP&interface=realtime&launchMode=1&nearby_page_type=TAB&nearby_session_id=9a637de0-92ed-4607-b422-d77004a289ca1709714269800&nearby_visited_source=10&list_type=DOUBLE&tab_id=nearby&entry_src=hot_channel_tab&tab_name=同城&entry_gesture=click&tab_visited_source=INITIATIVE&client_visited_timestamp=1709714269805&tab_visited_gesture=CLICK&server_visited_timestamp=1709714269739&android_visited_reason=KCubeFakeViewPager",
+                "identity": "719035d2-5d18-4e84-b066-b5fb74a7ef8d",
+                "page_seq": 10,
+                "entry_page_id": "a38deefe-2128-4462-aa38-1ca2f09606ae",
+                "entry_page_source": "MENU",
+                "page_type": "NATIVE",
+                "page2": "NEARBY",
+                "top_page": "NEARBY",
+                "user_route_trace": "",
+                "co_page": false
+            },
+            "type": "UNKNOWN2",
+            "status": "UNKNOWN3",
+            "time_cost": "0",
+            "stay_length": "0",
+            "element_package": {
+                "type": "UNKNOWN1",
+                "index": 0,
+                "name": "",
+                "value": 0,
+                "status": "UNKNOWN2",
+                "action": "UNKNOWN2",
+                "params": "{\"biz_code\":\"default\",\"pop_session_id\":\"a66bbbe2-1dda-46ab-b276-baea7b66d5c3.1709714272236\",\"popup_type\":\"BUSINESS\",\"group_type\":-1,\"statKey\":\"food_list\",\"scene\":\"food_list\"}",
+                "action2": "LOCALTION_PERMISSION_POPUP"
+            },
+            "refer_element_package": {
+                "type": "UNKNOWN1",
+                "index": 0,
+                "name": "",
+                "value": 0,
+                "status": "UNKNOWN2",
+                "action": "UNKNOWN2",
+                "params": "{\"btn_pos\":\"3\",\"btn_style\":\"5\",\"btn_type\":\"20\",\"is_up_new\":false}",
+                "action2": "TOP_FUNC_ENT_BTN"
+            },
+            "show_type": "UNKNOWN4",
+            "sub_action": "UNKNOWN5",
+            "page_show_seq": 0,
+            "content_wrapper": "",
+            "internal_stid_container_json": "",
+            "inter_st_ex_params": ""
+        }
+    },
+    "explore_locale": "",
+    "session_id": "d9b5f8eb-9d1a-41da-bde2-e4292a4bc113",
+    "event_id": "1729eb0c-93a4-426e-b6ec-c7e0a2110b6d",
+    "front_session_id": "",
+    "process_name": "",
+    "relation_log_id": ""
+}

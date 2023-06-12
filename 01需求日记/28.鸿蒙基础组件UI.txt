@@ -1,0 +1,44 @@
+https://team.corp.kuaishou.com/task/T5333222
+
+dialog文档
+https://docs.corp.kuaishou.com/d/home/fcACcjb_t7POWQk47S8DIbQlP#section=h.g8cv3hsrdkfx
+
+toast文档
+https://docs.corp.kuaishou.com/d/home/fcABWL4nrpb2iZ6oUtXPRyDPj#section=h.fosr0cioip1c
+
+测试白皮书
+https://docs.corp.kuaishou.com/d/home/fcAA28N-5Jrsx_u0Okq7b-hkS#section=h.pop9bpvn2h6o
+
+自定义按钮:
+KSButtonOptions
+title   style   onClick
+
+
+1. 创建option
+option: KSDialogOptions = {
+  message: '告知当前状态，信息和解决方法如果文字换行的情况',
+  okButton: {
+    title: '确定',
+    style:KSDialogButtonStyle.Guide,
+    onClick: () => {
+      if (option.dialogID) {
+        KSCustomDialogOption.close(option.dialogID)
+      }
+    }
+  },
+}
+2. 调用API创建弹窗
+DialogBuilderFactory.showSimpleDialog(this.option, this)
+
+
+1. 深色模式横向分割线不展示(线上Android横竖分割线都很明显)
+2. 深色模式下红色button是否需要深色展示?(button+列表选中)
+3. 超链接异常提示弹窗是否需要适配深色模式(当前未适配)
+4. 列表选项热区过小必须点击左侧远点才能选中
+5. 单选否支持再次点击取消选中.(目前不支持)(多选列表可以点击取消选中)
+6. textArr列表字段包含多个元素时(测试配置了18个),列表dialog面积会增大,可以上下滑动查看列表选项,但列表适配异常,末尾几项无法选中.(BUG)
+
+7. Toast类型 超过15个字符的部分也有展示未做截断.(失败Toast提示最长展示7个字符截断正常)(BUG)
+8. Toast类型 失败提示图片加载异常(灰白类型图片展示不明显)
+
+

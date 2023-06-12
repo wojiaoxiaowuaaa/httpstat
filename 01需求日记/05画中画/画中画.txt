@@ -1,0 +1,84 @@
+接入管控开关
+https://kswitch.corp.kuaishou.com/#/flag/targeting?project=kuaishou&environment=production&key=mainPiPControlAccessConfig
+
+优先级设置开关
+https://kswitch.corp.kuaishou.com/#/flag/targeting?project=kuaishou&environment=production&key=mainPiPDispatchConfig
+
+埋点:
+https://rubas.corp.kuaishou.com/amis/debug_system
+
+https://team.corp.kuaishou.com/task/T4480934
+
+Android
+https://docs.corp.kuaishou.com/d/home/fcACA-fxoX9aouL9SIFMXeI4z#section=h.fi49dhz5lxuu
+
+iOS
+https://docs.corp.kuaishou.com/d/home/fcADZQwv8rRoLhZQ7Vg5BagN0#section=h.nfai2ngss1b4
+
+
+iOS线上包性能报告:
+https://kperf.corp.kuaishou.com/manage/report?id=110443
+iOS需求包性能数据:(中间冷启了一次)
+https://kperf.corp.kuaishou.com/manage/report?id=110553
+
+业务回测:
+https://docs.corp.kuaishou.com/d/home/fcABRw-8DKafGF6TyyKSiWhG8
+
+
+对比线上差异点:
+1. Android端中视频(动漫),全屏,不开启悬浮窗权限,切后台-->切前台(每次切换都弹频率较高),弹窗提示开启悬浮窗权限.
+2. Android设备长按app图标在设置里关闭画中画,精选等业务切后台不会开启站外画中画(已开启控制面板里的小窗播放功能.)
+3. iOS的增长的站外PIP加载不出   有断续的音频    其他业务加载单独的小窗正常
+
+4. iOS端站内小窗,直播和中视频是共存的(线上包是抢占逻辑),开关配置的优先级这俩业务都是100.
+   &优先级中视频>直播时,站内仍然是直播与中视频小窗共存未按照预期执行抢占.
+   (Android端这俩业务站内小窗是抢占逻辑   优先级均为100)
+
+5.iOS直播的站内小窗,点击返回直播间时,有稳定复现的黑屏.(长时间小窗有不稳定复现的OOM)
+
+6.优先级中视频 > 精选,打开中视频后台播放，回到精选， 关闭中视频系统播放窗,触发精选的恢复.未上报ks_pip_task_submit_result_resume埋点
+
+7.画中画,Android端设置优先级中视频>精选,中视频开启站内小窗,切换到精选,切后台,站外小窗播放中视频内容.切前台,关闭中视频站内小窗(手动释放PIP源),切后台,精选的PIP小窗未触发.(必须要杀进程冷启一次才能正常触发精选的站外PIP).(其他业业务抢占是失败后,也会导致对应的小窗无法开启的现象,比如增长小组件,辛苦一并排查)
+  iOS端优先级中视频>直播.直播站内小窗尝试抢占中视频小窗失败后,也是无法再开启直播的站内小窗.(手动关闭中视频的站内pip小窗,直播间内点击小窗无法开启.必须杀进程.才能再次开启直播站内小窗)
+
+10. 画中画, iOS端设置优先级相同时,中视频站内&站外小窗开启,切换到精选频道或者进入直播间时,PIP小窗会被自动关闭.
+
+11. Android全屏模式下未触发小窗(待确认)
+
+12. 画中画,android端,优先级中视频>直播, 先开启站内中视频小窗,切直播,点击直播间内小窗button,退出直播间后手动关闭中视频小窗.直播间小窗未展示画面只有直播间音频.埋点ks_pip_task_submit_result_resume未上报.
+
+13. 画中画iOS端,开始中视频站内小窗,切换到精选或者直播间,在精选频道上下滑(或者在直播内流滑动)总是会自动返回到中视频的详情页.
+
+开关:
+mainPiPDispatchConfig
+48898
+mainPiPControlAccessConfig
+2260817340
+
+
+Android性能报告:
+https://kperf.corp.kuaishou.com/manage/report?id=108815
+
+版本回测包数据:
+https://kperf.corp.kuaishou.com/manage/report?id=109865
+
+需求包:
+https://kperf.corp.kuaishou.com/manage/report?id=109874
+
+
+埋点-该功能在开发包（debug）和灰度包（huidu）中同时有效。自Android 11.3.30起此功能默认关闭，可通过执行命令行开启：
+adb shell setprop log.tag.rubas.rdb.enable D
+关闭：
+adb shell setprop log.tag.rubas.rdb.enable [空格]
+冷启动后生效
+
+
+{
+  "priority": {
+    "WIDGET_GUIDE": 100,
+    "GR": 100,
+    "CORONA": 200,
+    "LIVE": 100,
+    "SOCIAL_RTC": 100
+  }
+}

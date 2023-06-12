@@ -1,0 +1,35 @@
+https://team.corp.kuaishou.com/task/T5760874
+
+https://kdev.corp.kuaishou.com/web/test-mgr/testdesign?GID=KHZT&caseShowModel=moduleTree&mindMode=&moduleId=2153222&newMindShow=hide&view=caseView
+
+一、位置整改，分场景授权没有任何开关打开时，不允许调用
+
+1、TelephonyManager#getAllCellInfo
+
+2、TelephonyManager#getCellLocation
+
+3、WifiManager#getScanResults
+
+日志关键字：
+PrivacyChecker
+
+二、未同意隐私协议时不允许读取
+
+1、Camera#getNumberOfCameras
+
+2、SensorManager#getSensorList
+
+3、SensorManager#getDefaultSensor
+
+4、TelephonyManager#getSimState
+
+
+
+主站分支：platform/privacykit/426
+摇一摇-架构tab最下面，也弹toast了，如果toast可以区分，那就不需要看日志了
+分场景授权开关:
+全部关闭(basics状态false)获取到的toast提示:    0,    null,   	0
+开启任意一个(basics状态true)获取到的toast提示:  75,  [...],      1
+全部开启(basics状态false)获取到的toast提示:     75,  [...],       1
+
+demo  apk  见群聊

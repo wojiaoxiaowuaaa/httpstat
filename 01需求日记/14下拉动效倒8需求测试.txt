@@ -1,0 +1,19 @@
+
+https://docs.corp.kuaishou.com/d/home/fcAB4MU8fB8MRgup6FsfkRm8c
+
+旧样式
+https://kperf.corp.kuaishou.com/manage/report?id=120617
+
+新动效分支:
+merchant/ydg/feature_pull_lottie
+
+
+
+
+补充case:
+2. 下拉动效资源切换,下拉刷新时不同类型资源的切换展示如GIF/静态图片文案等,切换展示正常;(配置不同的json展示不同的下拉效果.)
+3. 下拉刷新请求的动效资源失效时的展示,(展示兜底默认的动效无CRASH&&OOM);(无稳定性问题即可)
+4. 下拉刷新请求的动效资源不存在时的展示,(展示兜底默认的动效无CRASH&&OOM);(无稳定性问题即可)
+5. 下拉动效设置不同的宽高尺寸展示,设置为0或者负数时的展示;(无稳定性问题即可)
+6. 设置不同颜色动效下拉展示;(无稳定性问题  展示正常即可)
+7.从动画降级到倒8(模拟降级  功能正常 无稳定性问题)

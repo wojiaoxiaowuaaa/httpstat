@@ -1,0 +1,64 @@
+
+https://team.corp.kuaishou.com/task/T5417928
+https://team.corp.kuaishou.com/task/T5417931
+
+https://docs.corp.kuaishou.com/d/home/fcACPGGn7UEWHeMBOpRJP-IMz
+
+
+iOSBUG修复:
+https://docs.corp.kuaishou.com/d/home/fcAC9r190eI1jlXnury6n1wGW
+
+
+https://docs.corp.kuaishou.com/k/home/VBuoiYHrYHuk/fcAAdK7N4EjSqGZZbaLzPgPhw
+
+1. nearby返回的额result为str类型“1”或者true的时候上报的埋点按照正常请求成功的逻辑去上报--符合预期(研发)
+2. 双端端进入位置列表页时总是会同时请求两次/nearbyv4b并且pcursor均是1$开头(其中一次后面带经纬度信息)--符合预期(研发)
+
+
+问题列表:
+1. android端nearby正常下发POI数据时,上报的show_event中没有task_id实际上报的是"params": "{\"request_id\":\"ELyAgIDAgZaaChiUBCCZ2d6d6DEo3dqYtgM=\",\"page\":\"1\",\"address\":\"北京市东城区\"}"
+iOS上报的埋点中有该字段"params": "{\"page\":1,\"task_id\":\"3D0C555D-13EE-4ABD-8829-3E9048313502\",\"request_id\":\"ELmAgICwgtGIChiEBCCtuuud6DEo0PL-mgs=\",\"address\":\"北京市东城区\"}"  --- pass
+
+
+2. android 端nearby下发的	"resuqlt": 不等于1,请求失败.上报的show_event埋点中缺失了request_id字段及report_type字段  -- pass
+
+
+3. android 端nearby下发的locations为[]上报的show_event埋点中report_type字段值是fail request预期是empty request.并且缺失了request_id字段.  -- pass
+
+
+
+4. adnroid端位置列表页,搜索任意关键词如麦当劳在suggest出来的POI中选中任意一个上报的click_event埋点中缺失了query_word字段.
+   曝光埋点show_event埋点中同样缺失了这个字段.辛苦一并排查.  
+
+
+5. 搜索特殊关键字构造服务端返回的位置是空的场景(因为没有这个关键词相关的地点如搜索ASDFGH）nearvby返回"locations": null, 上报的show_event埋点中缺失了request_id&&report_type等字段.  ---无需关注
+
+
+6. Android位置列表页及位置列表点击事件上报的埋点中包含query_word字段  字段值为空(未发生搜索   iOS上报的埋点中不包含该字段)
+
+
+
+
+结论：针对searchV4返回为空的场景    如下图（搜索不存在的POI）不在本次验收的范围， 不关注show_event等相关埋点的上报    默认保持线上的逻辑    （实际测试双端略有差异）@周丹红(Dana) @王岩松  cc  @孟红梅 @周学运
+
+
+结论:  android端上报的曝光及点击事件的埋点中本次关注的字段都上报了完全相同的两次.(周知到群里了 确认无响应)
+
+
+
+
+
+iOS正常下发的上报曝光埋点
+"params":"{"page":1,"task_id":"DDBD3D6C-1928-4039-8671-9F1598B1EC8A","request_id":"ELyAgIDguZiZChiuBCCLv9mh6DEolN_Q3wg=","address":"北京市东城区"}"
+
+iOS失败的请求(result != 1)上报的曝光埋点
+"params":"{"request_id":"74FBE1A7-2AF0-4EB0-BC46-46A19FAC519F","report_type":"fail request"}"
+
+
+iOS搜索曝光埋点
+{"page":1,"task_id":"DDBD3D6C-1928-4039-8671-9F1598B1EC8A","query_word":"麦当劳","request_id":"ELiAgICQu5W7ChjsBCDj7oSi6DEo36mOnAM=","address":"北京市海淀区农大南路88号万霖大厦1层"}
+
+
+
+Android搜索后点击(BUG版)
+{"request_id":"ELiAgICAl62zChjOBCC8yqfL6DEo4v6pxAs=","page":"1","address":"北京市海淀区上地十街辉煌大厦6号楼1层","task_id":"580b7277-c537-42d0-b7b9-8fba3e0e54d9"}

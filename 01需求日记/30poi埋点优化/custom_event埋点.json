@@ -1,0 +1,105 @@
+{
+    "client_timestamp": "1711435582992",
+    "client_increment_id": "123416",
+    "server_hostname": "",
+    "server_timestamp": "1711435583172",
+    "common_package": {
+        "identity_package": {
+            "device_id": "ANDROID_522f38501c76ffdd",
+            "user_id": "2260817340",
+            "iu_id": "",
+            "s_user_id": "",
+            "user_flag": "",
+            "global_id": "DFP8987E7CD80A6F483190D76FC234C2E76161B441121715463727DD5B4CC5A2",
+            "random_device_id": "ANDROID_cf22e361c3bd37a2",
+            "device_id_tag": "0",
+            "old_device_id": "ANDROID_522f38501c76ffdd",
+            "p_user_id": "",
+            "is_login_user": 0,
+            "cloud_device_id_tag": "7",
+            "ab_mapping_device_id": "",
+            "ab_mapping_user_id": "0",
+            "ab_mapping_ids": "CkoKEnVpZF9kaWRfbWFwcGluZ192NBI0ChhBTkRST0lEXzg1OWQzOTYxN2MwNzgzZTcSGEFORFJPSURfODU5ZDM5NjE3YzA3ODNlNw=="
+        },
+        "app_package": {
+            "product": "KUAISHOU",
+            "platform": "ANDROID_PHONE",
+            "language": "zh",
+            "channel": "TEST",
+            "version_name": "12.2.40.99999",
+            "version_code": 99999,
+            "package_name": "com.smile.gifmaker",
+            "hotfix_patch_version": "",
+            "build_type": "HUIDU",
+            "container": "",
+            "new_oc": "TEST",
+            "abi": "ARM64",
+            "robust_info": "",
+            "android_os": "ANDROID_DEFAULT",
+            "original_platform": "UNKNOWN2"
+        },
+        "device_package": {
+            "os_version": "33",
+            "model": "Xiaomi(M2102J2SC)",
+            "ua": ""
+        },
+        "network_package": {
+            "type": "WIFI",
+            "isp": "",
+            "ip": "",
+            "dns_servers": "",
+            "ipv6": ""
+        },
+        "location_package": {
+            "unnormalized": "中国|北京市|NULL|海淀区|西二旗南路辅路|29号",
+            "country": "中国",
+            "province": "北京市",
+            "city": "NULL",
+            "county": "海淀区",
+            "street": "西二旗南路辅路",
+            "latitude": 40.049064,
+            "longitude": 116.316525,
+            "vague": 0
+        },
+        "experiment": [
+
+        ],
+        "time_package": {
+            "sync_status": "SYNCHROIZED",
+            "client_time_diff": "0",
+            "time_zone": "GMT+08:00 Asia/Shanghai",
+            "client_time_difference": "109"
+        },
+        "additional_seq_id_package": {
+            // 接口请求的频率
+            "channel": "NORMAL",
+            "channel_seq_id": "120160",
+            "custom_type": "customEvent",
+            "custom_seq_id": "31169"
+        },
+        "style_type": "{\"browseType\":\"bottom\",\"darkMode\":false,\"children_mode\":false,\"grant_browse_type\":\"AUTHORIZED\",\"top_tab_id\":[12,2,3,4,0],\"bottom_tab_id\":[1,5,6,7],\"launch_source\":1,\"bottom_navigation\":false,\"is_app_prelaunch\":false,\"is_app_prelaunching\":true}",
+        "service_name": "",
+        "sub_biz": "",
+        "need_encrypt": false,
+        "global_attr": "{\"network_ip\":\"103.102.203.195\",\"is_background\":0}",
+        "h5_extra_attr": "",
+        "api_app_status": 0,
+        "server_process_info": {
+
+        }
+    },
+    "event_package": {
+        "custom_event": {
+            "key": "NETWORK_DIAGNOSIS_RESULT_AUTO",
+            "value": "[{\"typeCode\":\"0005\",\"displayCode\":\"1\",\"extraInfo\":\"**1711435282989 ~ 1711435582989**时间内：**请求数**为513次, **失败请求数**为0次\"}]",
+            "biz": "ARCH_BASE",
+            "page": "NEARBY"
+        }
+    },
+    "explore_locale": "",
+    "session_id": "fd932895-c685-435d-a071-f93a66e19f68",
+    "event_id": "0e994cc9-d0d9-4cc3-bdee-c3d206010d93",
+    "front_session_id": "",
+    "process_name": "",
+    "relation_log_id": ""
+}

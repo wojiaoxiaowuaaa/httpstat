@@ -1,0 +1,12 @@
+https://team.corp.kuaishou.com/task/B1827893
+
+https://docs.corp.kuaishou.com/d/home/fcACyzrBUOayQ3sGJ-2zMhnYH
+
+
+资源预热接入带宽管控
+https://kswitch.corp.kuaishou.com/#/flag/targeting?key=resourceWarmupAccessCdnBandwidthControl&project=ztResourceWarmup&environment=production
+
+
+资源预热增加文件后缀名清单
+https://kswitch.corp.kuaishou.com/#/flag/targeting?key=warmupAvailableExtTypeList&project=kuaishou&environment=production
+

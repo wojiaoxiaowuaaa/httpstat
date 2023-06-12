@@ -1,0 +1,32 @@
+https://team.corp.kuaishou.com/task/T5587975
+
+
+https://docs.corp.kuaishou.com/d/home/fcAC0JW8CbqRs9q6ZVV5oztnZ
+
+https://kdev.corp.kuaishou.com/web/test-mgr/testdesign?GID=KHZT&caseShowModel=moduleTree&caseId=&moduleId=2114296&view=caseView&mindMode=&newMindShow=hide
+
+同步一下：arrowHeight 最小是 8 和 arrowWidth 最小是 16，设置0或者负数不起作用，不显示箭头只有属性enableArrow控制
+可以设置比8和16小，我试了下都设置成1，箭头变得很小，但我设置成0，箭头就变成默认的16和8了(岩松)
+
+
+demo中的测试现象:
+1. 短文本长期展示不消失(无操作时)(10个汉字 换行展示)
+2. 切后台/点击任意非气泡区域/锁屏 气泡消失;
+
+2. 长文本短暂展示几秒后自动消失(20个字符)
+
+3. 列表气泡点击有选中的阴影提示,气泡不消失
+4. 列表气泡点击气泡区域关闭气泡
+5. 展示列表气泡时其他区域蒙层遮挡不展示(设置的蒙层打开)
+7. 列表气泡箭头有遮挡(BUG?)
+
+6. demo配置的箭头均为居中
+
+
+question:
+先创建子窗口,再点击展示气泡?(真实的产品交互是?)(跳转新页面气泡展示?)
+
+PO场景验收TODO :
+1. 列表气泡箭头有遮挡,确认是否是气泡比例引入的BUG
+2. 确认产品交互层面，气泡与子窗口的交互是半屏还是跳转新页面。
+3. 气泡比例较大时 有分割效果  不协调  且与小比例气泡效果不一致

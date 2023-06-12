@@ -1,0 +1,72 @@
+https://team.corp.kuaishou.com/task/T5345433
+
+技术方案：
+https://docs.corp.kuaishou.com/d/home/fcABpK5qsZUZGBPgSMwqRNRbr#section=h.mgaq8ybvx3xu
+
+服务端测试文档：
+https://docs.corp.kuaishou.com/d/home/fcAA-MOW39cmpc3-Gc0WBkmuU
+
+location_signal_data.arrivalInfo.aoiArrivalInfo    aoi到达信号
+
+
+
+
+客户端SDK设计：
+客户端对上游消费方提供 location_signabasicInfo内容，明确业务方biz方便后续按照biz做权限管控；客户端信任服务端接口最新拉取的结果，通过端到端解密，全量覆盖数据。l_data.arrivalInfo、 location_signal_data.
+
+
+1. aoi发生变化（从无到有，从A到B）
+请求逻辑：
+1. 询问时，根据sign判断是否发生变化，有变化则下发请求命令=true
+2. 请求时，读出缓存，判断时间是否有效（15min以内）
+
+
+*询问接口接口路径：/rest/zt/frigate/col/loc/query
+入参---新增字段klzs: 透传字符串有就传没有就不传（从这个拉取接口/rest/zt/frigate/col/signal的resp.klzs）
+响应---新增字段klz: 位置信号有更新。true需要请求。
+读取位置信号变更标记klzs,对比和客户端携带的是否相等，否，则更新询问接口response中新增的字段klz为true。然后再回请求后续的拉取接口。（测试时如何模拟这种变更是使用工具变更设备的地理位置还是mock数据）
+
+*拉取接口接口路径：/rest/zt/frigate/col/loc/signal
+响应demo：
+{
+    "result": 1,
+    "data": "xQ1w7dQIki66rKOQ9w9227a4KpF6UNOey33d_RU2AcAENyathkcyw0FTl4epmhHYOvEyYP0RXjb4jQM_CcGiwSgt85zGaW3SkO-EYfO8dXNIcnqHQNPgplSh0JPQTUyDmfksI-yaVqupdhTNp5VbAOuqg6lMl_m6Au4kN0xjG4PM6tx86FkwSbct6IROen_fjSX9dSt0H5kl42G03k1Aw4kKuM6zSJ_ImdTInSiq9uzSghUrkmN5TpTAkA-OJj6radIJPqZIN9LpMMcYeSVBLQ6GwzZL4f20oFrT1g",
+    "klzs": "1710164605735"
+}
+
+
+服务端提供的测试数据：个人DID不一定有信号数据  得使用服务端执指定的DID测试。
+测试数据，response
+1. 位置数据为空
+{"result":1,"data":"","klzs":"0"}
+
+2. pb结构中仅有部分位置数据, 仅有aoiArrivalInfo
+{"result":1,"data":"O18a3sfJK28Bi-4eO7pv6TFqXh_WEeZGyFF28b0FkisMHfvR2S7rcyAXleQtT_PgYyVlj9qFo39Eeenhv1tHydeCHeF9HXfsgk3raRi9sOaHXauUUKqQiNF6eld7kD8Oh6pao37z3HoVFGfXb3qEwnwmKQOpwd0YjlMvaedE2NgvLc1MeW3mTlMihqzoBHCE","klzs":"1710318894756"}
+
+3. pb结构中仅有部分位置数据, 仅有poiArrivalInfo
+{"result":1,"data":"_rlig2g24lp4ihBesTllR1dea9ywRNxI5RS-nzsWknLGbansrQ4JDwZfgH5xaUpFNUde7eHcidvylgFIsqXU9PVVdr9SFKy1TZBf-oEaOQqVwhZeFhw","klzs":"1710327773067"}
+
+4.所有位置数据均有
+{"result":1,"data":"HnhruJGyfrTEVzq3Tb0I7fu3bTUZaMkDzLVzSiyjEhgmaKnRQ7hf0878ROaiEc0G0lQStSbI5DxxkmsrJq9NuPM7-iHGMcYzYRY68CKNBZtF9JE9CW1Xt7JLa1A4gpLgEaR-1BIi5L6yWkyRvPsh-M2EscVh-VOF3SVaWk8wHGAGsKSYdGJ9NjMhMF-uCx6a7tXGqkIB74PURUAhtCSjlrRM5xLM9e1Pt_WYw6eHu6grFS_jUvp4SFLjw28v5Q","klzs":"1710332555566"}
+
+---
+
+双端验收完毕  以下结论有异议辛苦及时同步：
+1. klzs字段客户端不做磁盘缓存  冷启询问接口该字段值固定为空
+
+2. 测试阶段，拉取接口staging环境服务端自然下发测试的数据如下,非线上真实场景数据下发(客户端mock数据测试)
+{
+    "result": 1,
+    "data": "",
+    "klzs": "0"
+}
+
+3.拉取接口返回非str(异常类型)的数值时 客户端只保证不崩  双端入参实际不一致iOS为空Android会带上非str的值(Android对齐iOS传空)
+
+4. 拉取接口返回的klzs为null的，ios的询问接口公参中有该字段,值为空str.Android的公参里没有klzs透传字段。整体去掉了(android对齐iOS带上透传字段  值为空字符串''）
+
+
+5. 拉取接口返回的result字段值非1时，(双端表现一致)客户端询问接口公参透传klzs的值为空;
+
+
+

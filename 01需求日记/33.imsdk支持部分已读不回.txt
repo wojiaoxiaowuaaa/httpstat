@@ -1,0 +1,37 @@
+iOS
+https://team.corp.kuaishou.com/task/T5497941
+
+android
+https://team.corp.kuaishou.com/task/T5514532
+
+业务PRD
+https://docs.corp.kuaishou.com/d/home/fcADJOvb1cxaKANIKPpXygXFG
+
+测试前需要找业务QA同学帮加实验
+
+测试用例:
+ks://router_result_event
+
+
+待确认问题:
+1. 前台静置一段时间,新消息会自动将对话拉到聊天框的底部,并清除本次新增的新消息提示.直接展示新消息.
+2. 撤回后消息统计数据数据减少.(全部撤回后不展示本次新增的未读消息提示,滑动到底部能看到xxx撤回了一条消息的提示信息.)
+3. 视频&语音通话接通(或者未接通)均被被纳入了未读消息统计中,新消息统计数字会增加.
+
+
+SDK侧基本测完了  这些测试结果辛苦帮忙确认下是否符合业务产品预期.
+有需要配合修改的辛苦及时沟通.@甄法启
+
+业务IM需求:
+1. imSDK支持已读不回,接收到大量新消息，新消息还没有来得及曝光，所以会有提示，符合现行的业务逻辑.(闪烁体验不佳后续业务自行提需求优化)
+
+快链合法化
+1. 快链合法化.release包正常千一采样.(跟dev分支无关,是按构建宏判断的，if DEBUG else 这种)
+2.必现CRASH的快链数据,业务的崩溃.对应日志I|M:gifApp|T:KwaiRouterKSLTRegisted|D:[KwaiRouter] [Root] add global interceptor(<KSRouterURICheckInterceptor: 0x283cab980>).
+3.上报452埋点的快链存在over_encode符合预期.(解码2次后得到的原始数据https://static.yximgs.com/kos/nlav10577/coinProgress/publishedToastIconUrl2.png&magicFaceId=893621&magicName=xx&magicDownloadSliderStyle=2)
+4. 不合法的快链无法跳转正常上报400.众测的快链为over_encoedb类型并非不合法.
+
+
+
+kwai://post?activity={"activityId":1304}&disableShowBanner=true&publishedToastText=作品发布成功
+奖励1分钟内到账&publishedToastIconUrl=https%3A%2F%2Fstatic.yximgs.com%2Fkos%2Fnlav10577%2FcoinProgress%2FpublishedToastIconUrl2.png%26magicFaceId%3D893621%26magicName%3Dxx%26magicDownloadSliderStyle%3D2

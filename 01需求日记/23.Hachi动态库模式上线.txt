@@ -1,0 +1,21 @@
+https://team.corp.kuaishou.com/task/T4912300
+
+https://docs.corp.kuaishou.com/d/home/fcADGHICifwxpx-uY_z5xYIgB
+
+https://docs.corp.kuaishou.com/d/home/fcAAPU1FD9GYqKaQCpwFqGG68
+
+
+开关
+https://kswitch.corp.kuaishou.com/#/flag/targeting?project=kuaishou&environment=production&key=enableSplitDylibMode
+
+
+Hachi 引擎新增动态库模式测试
+1. 先测试原有.o静态库模式 
+	a. beta release包都可 iOS TF包插件版本回测Case
+2. 修改开关添加白名单切换至动态库模式 https://kswitch.corp.kuaishou.com/#/flag/targeting?project=kuaishou&environment=production&key=enableSplitDylibMode
+3. 重启两次APP确保拉到新开关配置测试动态库模式
+	a. beta release包都可 iOS TF包插件版本回测Case
+
+
+开关
+enableSplitDylibMode     56928

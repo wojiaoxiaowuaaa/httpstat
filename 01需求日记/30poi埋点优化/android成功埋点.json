@@ -1,0 +1,206 @@
+{
+    "client_timestamp": "1711606836240",
+    "client_increment_id": "21122",
+    "server_hostname": "",
+    "server_timestamp": "1711606836727",
+    "common_package": {
+        "identity_package": {
+            "device_id": "ANDROID_9dcd5704839b0881",
+            "user_id": "2260817340",
+            "iu_id": "",
+            "s_user_id": "",
+            "user_flag": "",
+            "global_id": "DFP0396CE03463DB6BDAE7D1FD3E560CA7036637E4D851702F64022581658B0E",
+            "random_device_id": "ANDROID_4e3b80cdcb848778",
+            "device_id_tag": "0",
+            "old_device_id": "ANDROID_1ed14bb8dbcb0a54",
+            "p_user_id": "qgYL2KMB99b_HS3tLzpaJ8QnR7jc5fUb0b9a7f31dae8157",
+            "is_login_user": 0,
+            "cloud_device_id_tag": "2",
+            "ab_mapping_device_id": "",
+            "ab_mapping_user_id": "0",
+            "ab_mapping_ids": "CkoKEnVpZF9kaWRfbWFwcGluZ192NBI0ChhBTkRST0lEXzg1OWQzOTYxN2MwNzgzZTcSGEFORFJPSURfODU5ZDM5NjE3YzA3ODNlNw=="
+        },
+        "app_package": {
+            "product": "KUAISHOU",
+            "platform": "ANDROID_PHONE",
+            "language": "zh",
+            "channel": "TEST",
+            "version_name": "12.2.40.99999",
+            "version_code": 99999,
+            "package_name": "com.smile.gifmaker",
+            "hotfix_patch_version": "",
+            "build_type": "HUIDU",
+            "container": "",
+            "new_oc": "TEST",
+            "abi": "ARM64",
+            "robust_info": "",
+            "android_os": "ANDROID_DEFAULT",
+            "original_platform": "UNKNOWN2"
+        },
+        "device_package": {
+            "os_version": "34",
+            "model": "OnePlus(PHP110)",
+            "ua": ""
+        },
+        "network_package": {
+            "type": "WIFI",
+            "isp": "46015",
+            "ip": "",
+            "dns_servers": "",
+            "ipv6": ""
+        },
+        "location_package": {
+            "unnormalized": "中国|北京市|NULL|海淀区|西二旗南路辅路|29号",
+            "country": "中国",
+            "province": "北京市",
+            "city": "NULL",
+            "county": "海淀区",
+            "street": "西二旗南路辅路",
+            "latitude": 40.049041,
+            "longitude": 116.316562,
+            "vague": 0
+        },
+        "experiment": [
+
+        ],
+        "time_package": {
+            "sync_status": "SYNCHROIZED",
+            "client_time_diff": "0",
+            "time_zone": "GMT+08:00 Asia/Shanghai",
+            "client_time_difference": "278"
+        },
+        "additional_seq_id_package": {
+            "channel": "NORMAL",
+            "channel_seq_id": "20873",
+            "custom_type": "showEvent",
+            "custom_seq_id": "790"
+        },
+        "style_type": "{"browseType":"bottom","darkMode":false,"children_mode":false,"grant_browse_type":"AUTHORIZED","top_tab_id":[12,2,3,4,0],"bottom_tab_id":[1,5,6,7],"launch_source":1,"bottom_navigation":false,"is_app_prelaunch":false,"is_app_prelaunching":true}",
+        "service_name": "",
+        "sub_biz": "",
+        "need_encrypt": false,
+        "global_attr": "{"activityTag":"","network_ip":"103.102.203.195","is_background":0,"process_name":"com.smile.gifmaker"}",
+        "h5_extra_attr": "",
+        "common_stid": {
+            "stid_container": {
+                "st_reco_id": "1|2003166004604325442|photo:5203065070226652250|{"pg":"bs"}|{"r":3082,"mix":"1_1_0_0_0"}",
+                "st_ad_id": "",
+                "st_ks_order_id": "",
+                "st_ssid": "",
+                "st_push_id": "",
+                "st_dplink_id": "",
+                "st_reco_stgy_id": "1|2003166004604325442|photo:5203065070226652250|{"pg":"bs"}|{"r":3082,"mix":"1_1_0_0_0","f":"Cg4IARIDaWlkGJmCtNnZAwoKCAESBmlzX3BpYwoNCAESCXN3dG5fcGF0aAoNCAESCXN3dG5faXRlbQoNCAESCXN3dG5fYmlndgoMCAMSAmJ6KgQxXzA0"}"
+            },
+            "stid_merge": "",
+            "stid_container_json": "",
+            "st_ex_params": "",
+            "st_merge_array": [
+                "st_reco_id,st_reco_stgy_id"
+            ]
+        },
+        "api_app_status": 0,
+        "server_process_info": {
+
+        }
+    },
+    "event_package": {
+        "show_event": {
+            "action": "UNKNOWN1",
+            "url_package": {
+                "category": "APP",
+                "page": "UNKNOWN2",
+                "sub_pages": "",
+                "params": "task_id=453ff796-9aa0-490f-a5c8-e6ceb2a27db4",
+                "identity": "bd1e62ee-8048-4a16-91ef-090cc19534bd",
+                "page_seq": 9,
+                "entry_page_id": "a2e835f3-78df-4ae1-b788-852959116824",
+                "entry_page_source": "RECORD_CAMERA",
+                "exp_tag_list": {
+                    "exp_tag_trans": [
+                        {
+                            "server_exp_tag": "feed_photo|5203065070226652250|2194976162|1_u/2003166004604325442_bs105",
+                            "client_exp_tag": "1"
+                        }
+                    ]
+                },
+                "page_type": "NATIVE",
+                "page2": "POST_SELECT_LOCATION",
+                "top_page": "FEATURED_PAGE",
+                "user_route_trace": "[{"page_code":"FEATURED_PAGE","element_action":"VIDEO_REC","content_id":"5203065070226652250","content_type":"PHOTO","urt_id":10},{"page_code":"RECORD_CAMERA","element_action":"RECORD_PRODUCTION_MAKE_OPERATION","urt_id":13},{"page_code":"MULTI_PHOTO_PICKER","element_action":"RECORD_PRODUCTION_MAKE_OPERATION","urt_id":20},{"page_code":"VIDEO_ATLAS_EDIT","element_action":"RECORD_VIDEO_EDIT_OPERATION","urt_id":21}]",
+                "co_page": false
+            },
+            "refer_url_package": {
+                "category": "APP",
+                "page": "VIDEO_POST",
+                "sub_pages": "",
+                "params": "task_id=453ff796-9aa0-490f-a5c8-e6ceb2a27db4&edit_photo_type=normal&photo_type=2&is_reedit=false&edit_visible=public_not_to_pymk",
+                "identity": "96b1fc37-8863-4b2b-a83a-1b6e3e6c11dd",
+                "page_seq": 6,
+                "entry_page_id": "a2e835f3-78df-4ae1-b788-852959116824",
+                "entry_page_source": "RECORD_CAMERA",
+                "page_type": "NATIVE",
+                "page2": "VIDEO_POST",
+                "top_page": "FEATURED_PAGE",
+                "user_route_trace": "",
+                "co_page": false
+            },
+            "type": "BUTTON",
+            "status": "UNKNOWN3",
+            "time_cost": "0",
+            "stay_length": "0",
+            "content_package": {
+                "tag_show_package": {
+                    "tag_package": [
+                        {
+                            "identity": "6724909461696559843",
+                            "name": "北京市",
+                            "exp_tag": "",
+                            "index": "1",
+                            "llsid": "",
+                            "photo_count": "0",
+                            "type": "POI",
+                            "photo_package": [
+
+                            ],
+                            "secondary_type": "location",
+                            "params": "{"request_id":"ELyAgIDAgZaaChiUBCCZ2d6d6DEo3dqYtgM=","page":"1","address":"北京市东城区"}"
+                        }
+                    ]
+                }
+            },
+            "element_package": {
+                "type": "UNKNOWN1",
+                "index": 0,
+                "name": "",
+                "value": 0,
+                "status": "UNKNOWN2",
+                "action": "UNKNOWN2",
+                "params": "",
+                "action2": "RECO_LOCATION_TAG"
+            },
+            "refer_element_package": {
+                "type": "UNKNOWN1",
+                "index": 0,
+                "name": "share_search_location",
+                "value": 0,
+                "status": "UNKNOWN2",
+                "action": "ADD_LOCATION",
+                "params": "",
+                "action2": ""
+            },
+            "show_type": "UNKNOWN4",
+            "sub_action": "UNKNOWN5",
+            "page_show_seq": 0,
+            "content_wrapper": "",
+            "internal_stid_container_json": "",
+            "inter_st_ex_params": ""
+        }
+    },
+    "explore_locale": "",
+    "session_id": "1380a809-818d-4c90-8056-0e4ce9c81513",
+    "event_id": "966a063f-ddf7-4b01-95b2-6b68f3be9582",
+    "front_session_id": "",
+    "process_name": "",
+    "relation_log_id": ""
+}

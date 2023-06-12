@@ -1,0 +1,84 @@
+{
+	"disableVideoWarmup": false,
+	"disableImageWarmup": false,
+	"disableZipWarmup": false,
+	"delayDurationInSeconds": 5,
+	"minWarmupDiskSize": 100,
+	"warmupZips": {
+		"mode": "moderate",
+		"zips": []
+	},
+	"unModifyResourceIds": ["KUAISHOU:44:747681774", "KUAISHOU:88:1214794597", "KUAISHOU:46:-515127145", "KUAISHOU:90:1676923467", "KUAISHOU:90:1736028811", "KUAISHOU:90:185305177", "KUAISHOU:90:793801953", "KUAISHOU:90:1550455362", "KUAISHOU:90:-950294076", "KUAISHOU:55:1007112434", "KUAISHOU:55:-647810059", "KUAISHOU:55:-2008106777", "KUAISHOU:57:-1575292770", "KUAISHOU:57:1121716862", "KUAISHOU:57:422096755", "KUAISHOU:57:-862132012", "KUAISHOU:58:-1116747141", "KUAISHOU:58:-2008658936", "KUAISHOU:59:871803221", "KUAISHOU:59:-141104398", "KUAISHOU:60:-1262255359", "KUAISHOU:60:1233172797", "KUAISHOU:60:-245299122", "KUAISHOU:60:1617167995", "KUAISHOU:60:595652283", "KUAISHOU:60:-1009827654", "KUAISHOU:60:1129602536", "KUAISHOU:60:-921533283", "KUAISHOU:60:1066677531", "KUAISHOU:60:2051517430", "KUAISHOU:60:1849361508", "KUAISHOU:61:1385939734", "KUAISHOU:66:195159029", "KUAISHOU:66:1955472630", "KUAISHOU:66:-1100582453", "KUAISHOU:66:17082734", "KUAISHOU:67:-1489065624", "KUAISHOU:67:-1352149014", "KUAISHOU:67:1028100877", "KUAISHOU:67:2030698725", "KUAISHOU:67:1881961309", "KUAISHOU:67:1479369116", "KUAISHOU:67:1845806459", "KUAISHOU:67:1478282581", "KUAISHOU:67:518580039", "KUAISHOU:67:-271839951", "KUAISHOU:67:1584959415", "KUAISHOU:67:-1074333526", "KUAISHOU:67:-1073410005", "KUAISHOU:67:-1072486484", "KUAISHOU:67:-1071562963", "KUAISHOU:68:464334604", "KUAISHOU:68:1418360693", "KUAISHOU:68:-777749412", "KUAISHOU:69:-555129894", "KUAISHOU:69:-627548212", "KUAISHOU:69:1368495707", "KUAISHOU:71:-1266287289", "KUAISHOU:75:-1108533188", "KUAISHOU:76:412946349", "KUAISHOU:76:-424638855", "KUAISHOU:77:1922665448", "KUAISHOU:77:-209984265", "KUAISHOU:77:-1457058467", "KUAISHOU:77:633716925", "KUAISHOU:77:1545835641", "KUAISHOU:77:1176986474", "KUAISHOU:77:-640524679", "KUAISHOU:77:30211709", "KUAISHOU:77:-1298023284", "KUAISHOU:77:1973276704", "KUAISHOU:77:689390121", "KUAISHOU:77:1912479787", "KUAISHOU:77:558093702", "KUAISHOU:77:192588931", "KUAISHOU:77:1227906053", "KUAISHOU:77:336836943", "KUAISHOU:77:891207258", "KUAISHOU:77:-1709747172", "KUAISHOU:77:-958305190", "KUAISHOU:77:-1062323665", "KUAISHOU:77:2142711473", "KUAISHOU:77:-2089623700", "KUAISHOU:77:-1832656291", "KUAISHOU:77:587432799", "KUAISHOU:77:1679574528", "KUAISHOU:77:321827029", "KUAISHOU:77:1551944299", "KUAISHOU:77:874355166", "KUAISHOU:77:1552867820", "KUAISHOU:77:2077880142", "KUAISHOU:77:-1457981988", "KUAISHOU:77:726673612", "KUAISHOU:77:1589484626", "KUAISHOU:77:-1997625623", "KUAISHOU:77:166141195", "KUAISHOU:77:206224384", "KUAISHOU:77:72255924", "KUAISHOU:77:-1878078153", "KUAISHOU:77:-694746628", "KUAISHOU:77:-31047933", "KUAISHOU:77:1356508336", "KUAISHOU:77:-1379721326", "KUAISHOU:79:-1176377403", "KUAISHOU:79:-1241086126", "KUAISHOU:79:2129611203", "KUAISHOU:79:-349232269", "KUAISHOU:79:-1500091502", "KUAISHOU:80:717410563", "KUAISHOU:80:349622373", "KUAISHOU:80:2057500735", "KUAISHOU:80:1962373671", "KUAISHOU:81:243081010", "KUAISHOU:81:11086840", "KUAISHOU:82:-1069216168", "KUAISHOU:82:-471003250", "KUAISHOU:83:1796049241", "KUAISHOU:41:-503913487", "KUAISHOU:41:574117643", "KUAISHOU:85:1223944417"],
+	"disableResourceWarmup": false,
+	"warmupImages": {
+		"mode": "aggressive",
+		"images": [{
+			"updateTime": 0,
+			"resourceId": "KUAISHOU:83:288727088",
+			"urls": [{
+				"cdn": "kcdn.staging.kuaishou.com",
+				"url": "https://kcdn.staging.kuaishou.com/kos/nlav10734/1702438734840.png"
+			}, {
+				"cdn": "kcdn-w1.staging.kuaishou.com",
+				"url": "https://kcdn-w1.staging.kuaishou.com/kos/nlav10734/1702438734840.png"
+			}],
+			"op": "start",
+			"emergent": true,
+			"resourceKey": "",
+			"allFileMd5": "",
+			"supportDownloadSegment": false,
+			"downloadSize": 0,
+			"smallCache": true,
+			"id": 821,
+			"checksum": "818fa40b53d1a772a7808dff3997ef9b"
+		}, {
+			"updateTime": 0,
+			"resourceId": "KUAISHOU:83:90375982",
+			"urls": [{
+				"cdn": "kcdn.staging.kuaishou.com",
+				"url": "https://kcdn.staging.kuaishou.com/kos/nlav10734/1667805679895.jpg"
+			}, {
+				"cdn": "kcdn-w1.staging.kuaishou.com",
+				"url": "https://kcdn-w1.staging.kuaishou.com/kos/nlav10734/1667805679895.jpg"
+			}],
+			"op": "start",
+			"emergent": true,
+			"resourceKey": "",
+			"allFileMd5": "",
+			"supportDownloadSegment": false,
+			"downloadSize": 0,
+			"smallCache": true,
+			"id": 822,
+			"checksum": "437808f78c57cddf0ed88019e740b252"
+		}]
+	},
+	"result": 1,
+	"laneId": "",
+	"warmupVideos": {
+		"mode": "moderate",
+		"connectTimeoutMs": 5000,
+		"videos": [{
+			"updateTime": 1700721749639,
+			"resourceId": "KUAISHOU:79:-1284372848",
+			"urls": [{
+				"cdn": "kcdn.staging.kuaishou.com",
+				"url": "https://kcdn.staging.kuaishou.com/kos/nlav100043/7010332777874771214.mp4"
+			}, {
+				"cdn": "kcdn-w1.staging.kuaishou.com",
+				"url": "https://kcdn-w1.staging.kuaishou.com/kos/nlav100043/7010332777874771214.mp4"
+			}],
+			"op": "hold",
+			"emergent": true,
+			"resourceKey": "",
+			"allFileMd5": "",
+			"supportDownloadSegment": true,
+			"downloadSize": 400,
+			"smallCache": true,
+			"id": 732,
+			"checksum": "9250d9a2556862b428584263fb4f8e0d"
+		}],
+		"maxSpeed": 52428800,
+		"wifiOnly": false
+	},
+	"cleanResourceWarmup": false
+}

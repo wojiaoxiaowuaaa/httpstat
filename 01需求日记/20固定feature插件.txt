@@ -1,0 +1,5 @@
+固定 Feature 插件 manifest versionCode/Name
+
+https://team.corp.kuaishou.com/task/T5194672
+
+https://docs.corp.kuaishou.com/d/home/fcAB3X5zu3KRieelENj2SzLbf

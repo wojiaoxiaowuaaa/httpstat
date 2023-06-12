@@ -1,0 +1,3307 @@
+{
+	"result": 1,
+	"kpf": "ANDROID_PHONE",
+	"laneId": "",
+	"data": {
+		"daenerys": {
+			"config": {
+				"cameraConfig": [{
+					"previewHeight": 1920,
+					"pictureHeight": 2560,
+					"recorderConfig": {
+						"videoBitrate": 18000000,
+						"recorderThreadPriority": -1,
+						"videoCodecConfig": "",
+						"enableMediaRecorderEarlyPrepare": 1,
+						"hardwareEncoderAlignSize": 2,
+						"enableMediacodecBitrateModeCbr": 0,
+						"enableAudioVideoMuxerInterval": 1,
+						"enableHardwareEncoderColorSpaceSetting": 0,
+						"disableFallbackSoftwareEncoder": 0,
+						"hardwareRecordFpsForHighFrameRate": 0
+					},
+					"business": 0,
+					"cpuThreadPriority": -1,
+					"extBusiness": 0,
+					"previewMaxEdgeSize": 1920,
+					"enableProcessorReport": 0,
+					"previewWidth": 1080,
+					"steadyPtsGapMs": 0,
+					"magicFacePictureLongSide": 1920,
+					"minAdaptiveResolution": -1,
+					"extendConfig": {
+						"disableSetAdaptedCameraFps": 0,
+						"enableStannis": 0,
+						"supportMultiCamera": 0,
+						"enableCameraVivoApi": 0,
+						"enableTakePicture": 1,
+						"enableCameraKit": 0,
+						"enableHdr": 0,
+						"enableDelayEncodeFrame": 1,
+						"oppoStartPreviewWaitTimeMs": 0,
+						"enableLowLightBoost": 0,
+						"disableAdaptiveResolution": 0,
+						"enableDenoise": 0,
+						"supportSuperEis": 0,
+						"supportSuperEisPro": 0,
+						"enableSATCamera": 0,
+						"enableTimeStampCorrect": 1,
+						"sensorRate": 0,
+						"enableCameraUnit": 0,
+						"enableSuperWideAngle": 0
+					},
+					"renderConfig": {
+						"enableRenderThread2": 0,
+						"renderThreadInitPriority": -1,
+						"useEglImageTextureReader": 1,
+						"renderThreadPriority": -1,
+						"disableSurfaceViewSaveVideoFrame": 0,
+						"enableSetDisplayContextOptimization": 0
+					},
+					"pictureWidth": 1440,
+					"dropConfig": {
+						"recorderAllowDropQueueSize": 3,
+						"dropType": 1,
+						"renderAllowDropQueueSize": 3,
+						"maxPreviewDelayTime": 200,
+						"renderMaxDropAllQueueSize": 4,
+						"recorderMaxDropAllQueueSize": 8,
+						"dropFlag": 7,
+						"drainFrameCount": -1
+					},
+					"captureConfig": {
+						"cameraEnablePboReader": false,
+						"cameraOutputDataType": 0,
+						"targetMinFps": 15,
+						"camera2StabilizationResetImagerReader": 0,
+						"captureStabilizationModeForFrontCamera": 0,
+						"disableFaceDetectAutoExposure": 0,
+						"camera1UseSurfaceTimestamp": false,
+						"cameraApiVersion": 1,
+						"enableRecordingHint": 0,
+						"captureStabilizationModeForBackCamera": 0,
+						"enableCameraFallback1v2": 0,
+						"cameraStreamTypeForFrontCamera": 0,
+						"recordingHintCameraType": 0,
+						"cameraStreamTypeForBackCamera": 0,
+						"enableOppoFrontVideoMode": 1
+					}
+				}, {
+					"pages": {
+						"recordPageConfig": {
+							"extBusiness": 1,
+							"captureConfig": {
+								"captureStabilizationModeForBackCamera": 0,
+								"cameraStreamTypeForFrontCamera": 0,
+								"captureStabilizationModeForFrontCamera": 0,
+								"cameraStreamTypeForBackCamera": 0
+							}
+						},
+						"photoPageConfig": {
+							"previewHeight": 1920,
+							"extBusiness": 1,
+							"previewMaxEdgeSize": 1920,
+							"previewWidth": 1080
+						}
+					},
+					"hdCaptureAccThreshold": 1,
+					"business": 1,
+					"enableHigherHdCapture": 0,
+					"disableAdapterLimitResolution": 0,
+					"extBusiness": 0,
+					"hdCaptureSimilarityThreshold": 128,
+					"enableMultiPublishFrameObserver": 0,
+					"enableTraceManager": 0
+				}, {
+					"previewHeight": 1280,
+					"business": 9,
+					"previewMaxEdgeSize": 1920,
+					"captureConfig": {
+						"enableCameraFallback1v2": 1,
+						"targetMinFps": 15,
+						"disableFaceDetectAutoExposure": 0,
+						"cameraApiVersion": 1
+					},
+					"previewWidth": 720
+				}],
+				"abEnable": true
+			}
+		},
+		"frigate": {
+			"config": {
+				"kpn": "KUAISHOU",
+				"appVersion": "9.10.20",
+				"configVersion": 7027,
+				"createTime": 1709092299018,
+				"configs": [{
+					"permission": "location",
+					"frequency": {
+						"unit": "hour",
+						"value": 20
+					},
+					"cooldownTime": 172800,
+					"privacyGroups": [{
+						"groupName": "basics",
+						"bizList": ["default", "moment", "social", "app_selection", "consumer", "creator", "ecology_tuna", "growth", "guru_comment", "health", "ks_mp_platform", "live_author", "live_square", "live_companion_h5", "pay_tuanyou", "socialShake", "search", "live_audience", "ks_ad", "ks_ad_h5", "ks_ad_car", "app_universal", "fin_loan", "im_group_face2face"],
+						"title": "作品浏览",
+						"content": "允许后，可以在精选、同城、发现、关注等场景给您推荐附近的作品和服务"
+					}, {
+						"groupName": null,
+						"bizList": [],
+						"title": "内容发布",
+						"content": "允许后，帮助您在发布作品时展示位置，发现更好生活"
+					}, {
+						"groupName": "local",
+						"bizList": ["campus_introduce", "kzg_recruit", "locallife", "promotion", "yiche", "real_estate", "ex_jingdong_health", "service_activity"],
+						"title": "周边生活",
+						"content": "允许后，可以在团购优惠、门店导航为您推荐附近的门店和服务"
+					}, {
+						"groupName": "ecommerce",
+						"bizList": ["KSMerchantLocationPermissionServiceForUserShoppingAddress", "merchant_address_location", "jimu"],
+						"title": "电商购物",
+						"content": "允许后，可以在购物、下单填写收获地址时为您提供更好的位置服务"
+					}],
+					"bizList": ["default", "post_dynamic_avatar", "live_author", "live_square", "social", "moment", "socialShake", "merchant_address_location", "KSMerchantLocationPermissionServiceForUserShoppingAddress", "promotion", "app_selection", "live_audience", "service_activity", "jimu", "ks_mp_platform", "locallife", "ks_ad", "creator", "consumer", "guru_comment", "kzg_recruit", "health", "real_estate", "ex_jingdong_health", "pay_tuanyou", "growth", "search", "promotion", "ecology_tuna", "campus_introduce", "ks_ad_h5", "live_companion_h5", "yiche", "app_universal", "im_group_face2face", "contentCreation", "ks_ad_car", "fin_loan"],
+					"whitelistScenes": [{
+						"biz": "default",
+						"scenes": ["nearby", "KSLoalRoamingPanel", "KSLocalPhotoMap", "post_poi_picker", "post_poi_picker_krn", "post_magicface", "poi", "tuna_location_picker", "tuna_poi_preview", "location_upload", "yoda_request_location", "locallife_location", "food_list", "cny_locallife", "top_gps_card", "product_details"]
+					}, {
+						"biz": "live_square",
+						"scenes": ["live_square"]
+					}, {
+						"biz": "social",
+						"scenes": ["socialNearbyPeople", "socialNearbyPeopleAlert"]
+					}, {
+						"biz": "moment",
+						"scenes": ["moment_nearby"]
+					}, {
+						"biz": "socialShake",
+						"scenes": ["socialShake", "socialShakeAlert"]
+					}, {
+						"biz": "KSMerchantLocationPermissionServiceForUserShoppingAddress",
+						"scenes": ["KSMerchantLocationPermissionServiceForUserShoppingAddress"]
+					}, {
+						"biz": "merchant_address_location",
+						"scenes": ["merchant_address_location", "address_fill_new"]
+					}, {
+						"biz": "app_selection",
+						"scenes": ["selection_slide_location"]
+					}, {
+						"biz": "promotion",
+						"scenes": ["razor_promotion", "campus_activity", "kindle"]
+					}, {
+						"biz": "live_audience",
+						"scenes": ["live_audience"]
+					}, {
+						"biz": "locallife",
+						"scenes": ["poi", "merchant_enter", "select_city", "post_select_city", "merchant_yellow_cart", "click_shop", "click_poi", "top_gps_card", "ganbijia_list", "new_user_zone", "locallife_location", "big_promotion", "order_details", "purchase_success", "applicable_store", "Free_meal", "food_list", "product_details", "locallife_live", "Order_list", "Order_details", "POI_page"]
+					}, {
+						"biz": "creator",
+						"scenes": ["talent_sale"]
+					}, {
+						"biz": "consumer",
+						"scenes": ["app_weather_h5"]
+					}, {
+						"biz": "guru_comment",
+						"scenes": ["user_location"]
+					}, {
+						"biz": "kzg_recruit",
+						"scenes": ["kzg_recruit_questionnaire", "kzg_recruit_manage", "kzg_recruit_recume_edit"]
+					}, {
+						"biz": "health",
+						"scenes": ["health_register"]
+					}, {
+						"biz": "pay_tuanyou",
+						"scenes": ["get_position"]
+					}, {
+						"biz": "promotion",
+						"scenes": ["razor_promotion", "campus_activity", "kindle"]
+					}, {
+						"biz": "ecology_tuna",
+						"scenes": ["clue_city"]
+					}, {
+						"biz": "ks_ad_h5",
+						"scenes": ["ks_ad_h5"]
+					}, {
+						"biz": "live_companion_h5",
+						"scenes": ["live_companion_h5"]
+					}, {
+						"biz": "yiche",
+						"scenes": ["yiche_nearby_4s"]
+					}, {
+						"biz": "search",
+						"scenes": ["search_goods_filter_v2"]
+					}, {
+						"biz": "app_universal",
+						"scenes": ["client_customize", "client_customize_card", "client_system_dialog"]
+					}, {
+						"biz": "im_group_face2face",
+						"scenes": ["im_group_face2face_dialog", "im_group_face2face_update"]
+					}, {
+						"biz": "contentCreation",
+						"scenes": ["post_poi_picker", "post_poi_picker_krn", "post_magicface"]
+					}],
+					"enableUidIteration": false,
+					"appList": [],
+					"extra": {},
+					"lightMode": false,
+					"privilegedCases": [{
+						"biz": "default",
+						"scenes": ["location_upload"]
+					}],
+					"enablePrivacyGroup": false
+				}, {
+					"permission": "appList",
+					"frequency": {
+						"unit": "day",
+						"value": 1
+					},
+					"cooldownTime": 86400,
+					"privacyGroups": [],
+					"bizList": ["default", "user_growth", "testBiz"],
+					"whitelistScenes": [{
+						"biz": "default",
+						"scenes": ["default"]
+					}, {
+						"biz": "testBiz",
+						"scenes": ["testSecne"]
+					}, {
+						"biz": "user_growth",
+						"scenes": ["spaceclean"]
+					}],
+					"enableUidIteration": true,
+					"appList": [],
+					"extra": {},
+					"lightMode": false,
+					"privilegedCases": [],
+					"enablePrivacyGroup": false
+				}, {
+					"permission": "photo",
+					"frequency": {
+						"unit": "hour",
+						"value": 20
+					},
+					"cooldownTime": 172800,
+					"privacyGroups": [],
+					"bizList": ["post_asset_picker", "post_camera_album", "post_edit_cut_reorder", "post_edit_music_import_voice", "post_edit_image_reorder", "post_custom_cover_album", "post_aicut_album", "post_image_publish_append", "post_main_icon_long_click", "post_entrence_bubble", "post_ks_import_album", "post_ktv_add_image", "post_magicface_album", "post_story_editor", "post_image_template_plc", "im_latest_photo_album", "post_editor", "post_share_saveAlbum", "post_js_record_and_update", "post_camera_burst", "post_camera_popup", "post_smart_album", "post_ai_cut", "post_album_tool", "post_album", "post_image_crop", "post_album_banner", "post_predict", "post_thirdparty_share", "social_moment_album", "feed_comment_emotion", "search_scan", "feed_util_save", "feed_comment_emotion", "feed_screenshot_share", "feed_landscape_screenshot_share", "live_js_screen_shot", "game_image_browser", "live_prepare_album", "social_im_album", "social_emotion_album", "platform_bioauth_album", "merchant_latest_photo_album", "post_asset_picker", "feed_screen_shot_share", "feed_comment_emotion_save", "social_im_quick_image", "social_im_debug", "feed_my_qr_code", "feed_image_download", "feed_photo_download", "game_photo_browser", "merchant_save_idcard", "feed_kuaishou_forward", "feed_watermark", "commercial_showcase", "post_selectMixMediasAndUpload", "post_music_template", "post_memory_album", "post_double_shoot", "feed_comment_picture", "feed_comment_picture_select", "feed_eve_media_analyse", "ksmp_live_card_cover_crop_album", "post_yoda_bridge", "post_nebula_relay", "feed_comment_screen_shot_pic", "locallife_freshman_photo_album", "ks_recruit", "search_chat", "ks_sec_mobile"],
+					"whitelistScenes": [],
+					"enableUidIteration": false,
+					"appList": [],
+					"extra": {},
+					"lightMode": false,
+					"privilegedCases": [],
+					"enablePrivacyGroup": false
+				}],
+				"extra": {},
+				"env": "online"
+			}
+		},
+		"ksalgorithmmodelkit": {
+			"config": {
+				"uvSaturationEnhancement": {
+					"modelVersion": "1",
+					"cdnUrl": "https://s1-11976.kwimgs.com/kos/nlav11976/uv_sat_bt709_int_256.bmp.zip",
+					"deviceLevel": "1"
+				},
+				"mobileRAISR": {
+					"modelVersion": "2",
+					"cdnUrl": "https://s1-11976.kwimgs.com/kos/nlav11976/mobileRAISR_v0.4_1020_staging.zip",
+					"deviceLevel": "1"
+				},
+				"iosMobileKvqVideo": {
+					"modelVersion": "1",
+					"cdnUrl": "https://s1-11976.kwimgs.com/kos/nlav11976/mbnet_b5_0524.zip",
+					"deviceLevel": "5"
+				},
+				"mobileSR": {
+					"modelVersion": "7",
+					"cdnUrl": "https://s1-11976.kwimgs.com/kos/nlav11976/mobileSR_v0.1_M9k_0609_1.zip",
+					"deviceLevel": "1"
+				},
+				"androidMobileKvqVideo": {
+					"modelVersion": "1",
+					"cdnUrl": "https://s1-11976.kwimgs.com/kos/nlav11976/android_mbnet_b5_0524_v2.zip",
+					"deviceLevel": "5"
+				},
+				"type1": {
+					"modelVersion": "2",
+					"cdnUrl": "https://s1-11976.kwimgs.com/kos/nlav11976/RAIENH_v0.4_addnorm-type1.zip",
+					"deviceLevel": "3"
+				}
+			}
+		},
+		"frigateClientCollect": {
+			"config": {
+				"countLimit": 3,
+				"intervals": [300, 900, 1800],
+				"dynamic": {
+					"tag": "staging",
+					"enableQueryWhenCellChanged": true,
+					"cmWhenKa": true,
+					"cmWhenKaMinInterval": 120,
+					"enableMacWithoutPermission": true,
+					"uploadStatisticsData": true,
+					"bothCollectMacWithoutPermission": true,
+					"collectMacWithoutPermission": true,
+					"collectMacWithoutPermissionMinInterval": 60,
+					"enableWifi": true,
+					"enableBasestation": true,
+					"sdkType": "tencent",
+					"shouldQuery": true,
+					"experimentTag": "stagingTest",
+					"geomagnetic": true,
+					"noReGeoCode": true,
+					"filter": {
+						"cnt": 500,
+						"minInterval": 30
+					},
+					"fire": {
+						"timer": {
+							"repeatedInterval": 37,
+							"firstDelayInterval": 10
+						}
+					}
+				},
+				"cellUpload": 1,
+				"wifiScan": -1
+			}
+		},
+		"kpplayerconfig": {
+			"config": {
+				"hodorStrategy": {
+					"p2spDownTolerance": 0,
+					"p2spUpTolerance": 0
+				},
+				"userDefineFroAd": {
+					"UserAdValue": 1,
+					"UserADScorePost": 1,
+					"UserAdUplift": 0,
+					"UserAdConsume": 60
+				},
+				"highValueScore": 0,
+				"userDefineFroMerchant": {
+					"UserGMVScorePost": 1,
+					"UserGmvValue": 1,
+					"UserGmvUplift": 0,
+					"UserGmvConsume": 61
+				},
+				"cjntest": {
+					"UserAdValue": -1,
+					"UserGmvValue3": -1,
+					"UserGmvUplift3": -1,
+					"pcdnTest2Classify": -1,
+					"UserAdUplift2": -1,
+					"classify1": -1,
+					"classify3": -1,
+					"UserAdUplift": -1,
+					"classify2": -1,
+					"pcdnTest1Classify": -1,
+					"UserAdValue2": -1
+				},
+				"playerHwCodec": {
+					"useDevicePersona": 0,
+					"useVod264Hw": -1,
+					"useVod265Hw": -1,
+					"fadeinEndTimeMs": -1,
+					"useLive265Hw": -1,
+					"useLive264Hw": -1,
+					"useHls265Hw": -1,
+					"useHls264Hw": -1,
+					"heightLimit264Hw": -1,
+					"widthLimit264Hw": -1,
+					"heightLimit265Hw": -1,
+					"widthLimit265Hw": -1,
+					"vodMaxCnt": -1,
+					"liveMaxCnt": -1
+				},
+				"bufferSensitiveScore": -10,
+				"vodAdaptiveConfig": {
+					"abrConfigCommon": "",
+					"abrConfigBusiness": "",
+					"abrConfigPreload": ""
+				},
+				"abrDeviceInfoFactor": 1200,
+				"userClarityScore": 71,
+				"deviceGeneralScore": 13.698472
+			}
+		},
+		"imcConfigVersionInfo": {
+			"config": {
+				"imcClientConfigVersionInfo": {
+					"SERNUM": {
+						"version": 23,
+						"timestamp": 0,
+						"duration": 0
+					},
+					"only_message_test_1": {
+						"version": 21,
+						"timestamp": 0,
+						"duration": 0
+					},
+					"MERCHANT": {
+						"version": 47,
+						"timestamp": 0,
+						"duration": 0
+					},
+					"MERCHANT_KIM": {
+						"version": 46,
+						"timestamp": 0,
+						"duration": 0
+					},
+					"WOG_2022": {
+						"version": 48,
+						"timestamp": 0,
+						"duration": 0
+					},
+					"KWAISHOP_SERVICE_MARKET": {
+						"version": 46,
+						"timestamp": 0,
+						"duration": 0
+					},
+					"0": {
+						"version": 1126,
+						"timestamp": 0,
+						"duration": 0
+					}
+				},
+				"imcResourceVersionInfo": {
+					"SERNUM": {
+						"version": 23,
+						"timestamp": 0,
+						"duration": 0
+					},
+					"only_message_test_1": {
+						"version": 21,
+						"timestamp": 0,
+						"duration": 0
+					},
+					"MERCHANT": {
+						"version": 5,
+						"timestamp": 0,
+						"duration": 0
+					},
+					"KWAISHOP_SERVICE_MARKET": {
+						"version": 47,
+						"timestamp": 0,
+						"duration": 0
+					},
+					"MINI_PROGRAM_D2P": {
+						"version": 47,
+						"timestamp": 0,
+						"duration": 0
+					},
+					"0": {
+						"version": 46,
+						"timestamp": 0,
+						"duration": 0
+					}
+				}
+			}
+		},
+		"ksclipkit": {
+			"config": {
+				"importConfig": {
+					"gradeConfigList": [
+						[{
+							"videoType": 5,
+							"gradeLevel": 3,
+							"conditionConfig": {
+								"imageLimitConditionConfig": {
+									"limitWidth": 1920,
+									"limitHeight": 1920
+								},
+								"videoLimitConditionConfig": {
+									"limitWidth": 1080,
+									"limitHeight": 1920
+								}
+							},
+							"transcodeConfig": {
+								"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0:vbv_maxrate=11000:vbv_bufsize=22000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+								"x264Preset": "ultrafast",
+								"width": 1080,
+								"height": 1920,
+								"audioEncodeConfig": [{
+									"audioProfile": "aac_he",
+									"audioCutoff": 0,
+									"audioBitrate": 96000
+								}],
+								"hardwareConfig": {
+									"videoBitrate": 25000000,
+									"videoGopSize": 150
+								}
+							}
+						}],
+						[{
+							"videoType": 5,
+							"gradeLevel": 2,
+							"conditionConfig": {
+								"imageLimitConditionConfig": {
+									"limitWidth": 1280,
+									"limitHeight": 1280
+								},
+								"videoLimitConditionConfig": {
+									"limitWidth": 720,
+									"limitHeight": 1280
+								}
+							},
+							"transcodeConfig": {
+								"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2: trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0: vbv_maxrate=8000:vbv_bufsize=16000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+								"x264Preset": "ultrafast",
+								"width": 720,
+								"height": 1280,
+								"audioEncodeConfig": [{
+									"audioProfile": "aac_he",
+									"audioCutoff": 0,
+									"audioBitrate": 96000
+								}],
+								"hardwareConfig": {
+									"videoBitrate": 18000000,
+									"videoGopSize": 150
+								}
+							}
+						}],
+						[{
+							"videoType": 5,
+							"gradeLevel": 1,
+							"conditionConfig": {
+								"imageLimitConditionConfig": {
+									"limitWidth": 1024,
+									"limitHeight": 1024
+								},
+								"videoLimitConditionConfig": {
+									"limitWidth": 576,
+									"limitHeight": 1024
+								}
+							},
+							"transcodeConfig": {
+								"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2: trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0: vbv_maxrate=7000:vbv_bufsize=14000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+								"x264Preset": "ultrafast",
+								"width": 576,
+								"height": 1024,
+								"audioEncodeConfig": [{
+									"audioProfile": "aac_he",
+									"audioCutoff": 0,
+									"audioBitrate": 96000
+								}],
+								"hardwareConfig": {
+									"videoBitrate": 9000000,
+									"videoGopSize": 150
+								}
+							}
+						}]
+					]
+				},
+				"enableTranscodeConfigV2": 2,
+				"videoQualityEvaluateTaskConfig": {
+					"feedback": {
+						"maxDecodeCount": 10,
+						"enable": false,
+						"transcodeParam": {
+							"1080p": {
+								"x264Preset": "medium",
+								"x264Param": "cabac=1:mixed-refs=0:rc-lookahead=1:ref=1:subme=2:trellis=0:weightp=1:crf=5:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=0:ipratio=1.4:qcomp=0.6:keyint=150:bframes=0:open-gop=0:threads=4:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8"
+							},
+							"720p": {
+								"x264Preset": "medium",
+								"x264Param": "cabac=1:mixed-refs=0:rc-lookahead=1:ref=1:subme=2:trellis=0:weightp=1:crf=5:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=0:ipratio=1.4:qcomp=0.6:keyint=150:bframes=0:open-gop=0:threads=4:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8"
+							}
+						}
+					},
+					"preview": {
+						"enable": false
+					},
+					"transcode": {
+						"maxDecodeCount": 10,
+						"enable": false,
+						"transcodeParam": {
+							"1080p": {
+								"x264Preset": "medium",
+								"x264Param": "cabac=1:mixed-refs=0:rc-lookahead=1:ref=1:subme=2:trellis=0:weightp=1:crf=5:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=0:ipratio=1.4:qcomp=0.6:keyint=150:bframes=0:open-gop=0:threads=4:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8"
+							},
+							"720p": {
+								"x264Preset": "medium",
+								"x264Param": "cabac=1:mixed-refs=0:rc-lookahead=1:ref=1:subme=2:trellis=0:weightp=1:crf=5:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=0:ipratio=1.4:qcomp=0.6:keyint=150:bframes=0:open-gop=0:threads=4:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8"
+							}
+						}
+					}
+				},
+				"exportConfig": {
+					"gradeLevel": 3,
+					"gradeType": 2,
+					"gradeConfigList": [
+						[{
+							"videoType": 0,
+							"conditionConfig": {
+								"enable": 0,
+								"minSourceWidth": 1080,
+								"minSourceHeight": 1080,
+								"videoLimitConditionConfig": {
+									"limitWidth": 1080,
+									"limitHeight": 1920
+								}
+							},
+							"transcodeConfig": {
+								"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=3:trellis=0:weightp=1:crf=15.4:fast_algo=2:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=150:bframes=3:open-gop=0:vbv_maxrate=8000:vbv_bufsize=16000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+								"capeSwBitrateAdjustRatio": 0.94,
+								"x264Preset": "veryfast",
+								"width": 1080,
+								"height": 1920,
+								"singleImageQuality": 90,
+								"hardwareConfig": {
+									"videoBitrate": 11000000,
+									"videoGopSize": 250
+								},
+								"fileSizeDegradeConfig": {
+									"supportDegradeFlag": 7,
+									"bitrateDegradeConfig": {
+										"sw": {
+											"min": 0.1,
+											"max": 0.4
+										},
+										"hwH264": {
+											"min": 0.2,
+											"max": 0.55
+										},
+										"hwHevc": {
+											"min": 0.2,
+											"max": 0.6
+										}
+									}
+								},
+								"audioEncodeConfig": [{
+									"type": 1,
+									"audioBitrate": 192000,
+									"audioCutoff": 20000,
+									"audioProfile": "aac_low"
+								}],
+								"skipTranscodeConfig": {
+									"enable": 1,
+									"supportAdvancedColorspace": 1,
+									"maxBytes": 100000000,
+									"enableUploadDecision": 1,
+									"uploadDecisionMaxBytes": 1000000000,
+									"allowTrackSizeExceedsProject": true,
+									"maxBytesWifi": 100000000
+								}
+							},
+							"optionsConfigList": [{
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 1,
+									"minSourceVideoDuration": 900.0
+								},
+								"transcodeConfig": {
+									"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0:vbv_maxrate=12000:vbv_bufsize=24000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+									"x264Preset": "veryfast",
+									"hardwareConfig": {
+										"videoBitrate": 16000000,
+										"videoGopSize": 250
+									},
+									"skipTranscodeConfig": {
+										"computeMaxBytesByDuration": 1
+									}
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 1
+								},
+								"transcodeConfig": {
+									"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0:vbv_maxrate=12000:vbv_bufsize=24000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+									"x264Preset": "veryfast",
+									"hardwareConfig": {
+										"videoBitrate": 16000000,
+										"videoGopSize": 250
+									}
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 2
+								},
+								"transcodeConfig": {
+									"x264Params": "crf=15:threads=6:keyint=250:vbv_maxrate=2700:vbv_bufsize=5400",
+									"width": 576,
+									"height": 1024,
+									"fps": 30,
+									"x264Preset": "veryfast",
+									"singleImageQuality": 90,
+									"hardwareConfig": {
+										"videoBitrate": 4300000,
+										"videoGopSize": 20
+									},
+									"audioEncodeConfig": [{
+										"type": 1,
+										"audioBitrate": 64000,
+										"audioProfile": "aac_low"
+									}],
+									"skipTranscodeConfig": {
+										"enable": 0
+									}
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 7
+								},
+								"transcodeConfig": {
+									"skipTranscodeConfig": {
+										"enable": 1,
+										"supportAdvancedColorspace": 1,
+										"enableUploadDecision": 1,
+										"allowTrackSizeExceedsProject": true,
+										"uploadDecisionMaxBytes": 500000000,
+										"maxBytes": 500000000,
+										"maxBytesWifi": 500000000
+									}
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"minSourceVideoDuration": 900.0
+								},
+								"transcodeConfig": {
+									"skipTranscodeConfig": {
+										"computeMaxBytesByDuration": 1
+									}
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"minSourceVideoFps": 31
+								},
+								"transcodeConfig": {
+									"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0:vbv_maxrate=12000:vbv_bufsize=24000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+									"x264Preset": "veryfast",
+									"fileSizeDegradeConfig": {
+										"supportDegradeFlag": 7,
+										"bitrateDegradeConfig": {
+											"sw": {
+												"min": 0.05,
+												"max": 0.6
+											},
+											"hwH264": {
+												"min": 0.1,
+												"max": 0.65
+											},
+											"hwHevc": {
+												"min": 0.25,
+												"max": 0.8
+											}
+										}
+									},
+									"hardwareConfig": {
+										"videoBitrate": 15000000,
+										"videoGopSize": 250
+									}
+								}
+							}]
+						}, {
+							"videoType": 1,
+							"conditionConfig": {
+								"enable": 1
+							}
+						}, {
+							"videoType": 4,
+							"extVideoType": 1
+						}, {
+							"videoType": 5,
+							"gradeLevel": 3,
+							"conditionConfig": {
+								"enable": 1,
+								"minSourceWidth": 1000,
+								"minSourceHeight": 1000
+							},
+							"transcodeConfig": {
+								"width": 1080,
+								"height": 1920,
+								"audioEncodeConfig": [{
+									"audioProfile": "aac_he",
+									"audioCutoff": 20000,
+									"audioBitrate": 192000
+								}],
+								"hardwareConfig": {
+									"videoBitrate": 11000000,
+									"videoGopSize": 250
+								}
+							}
+						}, {
+							"videoType": 16,
+							"extVideoType": 1
+						}, {
+							"videoType": 19,
+							"extVideoType": 1
+						}, {
+							"videoType": 20,
+							"extVideoType": 1
+						}, {
+							"videoType": 21,
+							"extVideoType": 1
+						}, {
+							"videoType": 22,
+							"extVideoType": 1
+						}, {
+							"videoType": 23,
+							"extVideoType": 1
+						}, {
+							"videoType": 24,
+							"extVideoType": 1
+						}, {
+							"videoType": 27,
+							"conditionConfig": {
+								"enable": 1,
+								"minSourceWidth": 720,
+								"minSourceHeight": 720,
+								"videoLimitConditionConfig": {
+									"limitWidth": 720,
+									"limitHeight": 1280
+								}
+							},
+							"transcodeConfig": {
+								"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=3:trellis=0:weightp=1:crf=15.4:fast_algo=2:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=150:bframes=3:open-gop=0:vbv_maxrate=5000:vbv_bufsize=10000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+								"x264Preset": "veryfast",
+								"singleImageQuality": 90,
+								"videoEncoderType": -1,
+								"hardwareConfig": {
+									"videoBitrate": 5000000,
+									"videoGopSize": 250
+								},
+								"audioEncodeConfig": [{
+									"type": 1,
+									"audioBitrate": 192000,
+									"audioCutoff": 20000,
+									"audioProfile": "aac_low"
+								}],
+								"skipTranscodeConfig": {
+									"enable": 0
+								}
+							},
+							"optionsConfigList": [{
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 2
+								},
+								"transcodeConfig": {
+									"x264Params": "crf=15:threads=6:keyint=250:vbv_maxrate=2700:vbv_bufsize=5400",
+									"width": 576,
+									"height": 1024,
+									"fps": 30,
+									"x264Preset": "veryfast",
+									"singleImageQuality": 90,
+									"hardwareConfig": {
+										"videoBitrate": 3000000,
+										"videoGopSize": 20
+									},
+									"audioEncodeConfig": [{
+										"type": 1,
+										"audioBitrate": 64000,
+										"audioProfile": "aac_low"
+									}]
+								}
+							}]
+						}],
+						[{
+							"videoType": 0,
+							"conditionConfig": {
+								"enable": 1,
+								"minSourceWidth": 0,
+								"minSourceHeight": 0,
+								"videoLimitConditionConfig": {
+									"limitWidth": 720,
+									"limitHeight": 1280
+								}
+							},
+							"transcodeConfig": {
+								"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0:vbv_maxrate=4250:vbv_bufsize=8500:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+								"x264Preset": "veryfast",
+								"singleImageQuality": 90,
+								"fileSizeDegradeConfig": {
+									"supportDegradeFlag": 7,
+									"bitrateDegradeConfig": {
+										"sw": {
+											"min": 0.15,
+											"max": 0.4
+										},
+										"hwH264": {
+											"min": 0.1,
+											"max": 0.65
+										},
+										"hwHevc": {
+											"min": 0.1,
+											"max": 0.65
+										}
+									}
+								},
+								"hardwareConfig": {
+									"enable": 0,
+									"videoBitrate": 6400000,
+									"videoGopSize": 250
+								},
+								"audioEncodeConfig": [{
+									"type": 1,
+									"audioBitrate": 192000,
+									"audioCutoff": 20000,
+									"audioProfile": "aac_low"
+								}],
+								"skipTranscodeConfig": {
+									"enable": 1,
+									"supportAdvancedColorspace": 1,
+									"maxBytes": 100000000,
+									"enableUploadDecision": 1,
+									"uploadDecisionMaxBytes": 1000000000,
+									"allowTrackSizeExceedsProject": true,
+									"maxBytesWifi": 100000000
+								}
+							},
+							"optionsConfigList": [{
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 1,
+									"minSourceVideoDuration": 900.0
+								},
+								"transcodeConfig": {
+									"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0:vbv_maxrate=7500:vbv_bufsize=15000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+									"x264Preset": "veryfast",
+									"skipTranscodeConfig": {
+										"computeMaxBytesByDuration": 1
+									},
+									"hardwareConfig": {
+										"videoBitrate": 11000000,
+										"videoGopSize": 250
+									}
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 1
+								},
+								"transcodeConfig": {
+									"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0:vbv_maxrate=7500:vbv_bufsize=15000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+									"x264Preset": "veryfast",
+									"hardwareConfig": {
+										"videoBitrate": 11000000,
+										"videoGopSize": 250
+									}
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 2
+								},
+								"transcodeConfig": {
+									"x264Params": "crf=15:threads=6:keyint=250:vbv_maxrate=2700:vbv_bufsize=5400",
+									"width": 576,
+									"height": 1024,
+									"fps": 30,
+									"x264Preset": "veryfast",
+									"singleImageQuality": 90,
+									"hardwareConfig": {
+										"videoBitrate": 4300000,
+										"videoGopSize": 20
+									},
+									"audioEncodeConfig": [{
+										"type": 1,
+										"audioBitrate": 64000,
+										"audioProfile": "aac_low"
+									}],
+									"skipTranscodeConfig": {
+										"enable": 0
+									}
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 7
+								},
+								"transcodeConfig": {
+									"skipTranscodeConfig": {
+										"enable": 1,
+										"supportAdvancedColorspace": 1,
+										"enableUploadDecision": 1,
+										"allowTrackSizeExceedsProject": true,
+										"uploadDecisionMaxBytes": 500000000,
+										"maxBytes": 500000000,
+										"maxBytesWifi": 500000000
+									}
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"minSourceVideoDuration": 900.0
+								},
+								"transcodeConfig": {
+									"skipTranscodeConfig": {
+										"computeMaxBytesByDuration": 1
+									}
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"minSourceVideoFps": 31
+								},
+								"transcodeConfig": {
+									"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0:vbv_maxrate=7500:vbv_bufsize=15000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+									"x264Preset": "veryfast",
+									"fileSizeDegradeConfig": {
+										"supportDegradeFlag": 7,
+										"bitrateDegradeConfig": {
+											"sw": {
+												"min": 0.1,
+												"max": 0.6
+											},
+											"hwH264": {
+												"min": 0,
+												"max": 0.55
+											},
+											"hwHevc": {
+												"min": 0.05,
+												"max": 0.65
+											}
+										}
+									},
+									"hardwareConfig": {
+										"videoBitrate": 10000000,
+										"videoGopSize": 250
+									}
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 3
+								},
+								"transcodeConfig": {
+									"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=3:trellis=0:weightp=1:crf=15.8:fast-algo=2:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=150:bframes=3:open-gop=0:vbv_maxrate=4250:vbv_bufsize=8500:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+									"capeSwBitrateAdjustRatio": 0.94
+								}
+							}]
+						}, {
+							"videoType": 1
+						}, {
+							"videoType": 3,
+							"transcodeConfig": {
+								"x264Params": "ref=%d:cabac=1:mixed-refs=0:rc-lookahead=10:subme=5:trellis=0:weightp=1:crf=%d:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=0:ipratio=1.4:qcomp=0.6:keyint=1000:bframes=0:deblock=-3,-3:psy-rd=2.0,0.7:aq-strength=1.2:keyint-min=1000:open-gop=0",
+								"hardwareConfig": {
+									"mediacodecFormatParams": {
+										"video-qp-max": -2,
+										"video-qp-min": -1
+									}
+								}
+							},
+							"optionsConfigList": [{
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 2
+								},
+								"transcodeConfig": {
+									"x264Params": "crf=15:threads=6:keyint=250:vbv_maxrate=2700:vbv_bufsize=5400",
+									"width": 576,
+									"height": 1024,
+									"fps": 30,
+									"x264Preset": "veryfast",
+									"singleImageQuality": 90,
+									"hardwareConfig": {
+										"videoBitrate": 4300000,
+										"videoGopSize": 20
+									},
+									"audioEncodeConfig": [{
+										"type": 1,
+										"audioBitrate": 64000,
+										"audioProfile": "aac_low"
+									}]
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 3
+								},
+								"transcodeConfig": {
+									"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=0:ipratio=1.4:qcomp=0.6:keyint=150:bframes=3:open-gop=0:vbv_maxrate=4250:vbv_bufsize=8500:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+									"capeSwBitrateAdjustRatio": 0.94
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 4
+								},
+								"transcodeConfig": {
+									"x264Params": "crf=15:vbv_maxrate=5000:vbv_bufsize=10000:threads=6:open-gop=0"
+								}
+							}]
+						}, {
+							"videoType": 4
+						}, {
+							"videoType": 5,
+							"gradeLevel": 2,
+							"conditionConfig": {
+								"enable": 1,
+								"minSourceWidth": 576,
+								"minSourceHeight": 576
+							},
+							"transcodeConfig": {
+								"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0:vbv_maxrate=5000:vbv_bufsize=10000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+								"x264Preset": "veryfast",
+								"width": 720,
+								"height": 1280,
+								"audioEncodeConfig": [{
+									"audioProfile": "aac_he",
+									"audioCutoff": 20000,
+									"audioBitrate": 192000
+								}],
+								"hardwareConfig": {
+									"videoBitrate": 8000000,
+									"videoGopSize": 250
+								}
+							},
+							"optionsConfigList": [{
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 2
+								},
+								"transcodeConfig": {
+									"x264Params": "crf=15:threads=6:keyint=250:vbv_maxrate=2700:vbv_bufsize=5400",
+									"width": 576,
+									"height": 1024,
+									"fps": 30,
+									"x264Preset": "veryfast",
+									"singleImageQuality": 90,
+									"hardwareConfig": {
+										"videoBitrate": 4300000,
+										"videoGopSize": 20
+									},
+									"audioEncodeConfig": [{
+										"type": 1,
+										"audioBitrate": 64000,
+										"audioProfile": "aac_low"
+									}]
+								}
+							}]
+						}, {
+							"videoType": 11
+						}, {
+							"videoType": 14,
+							"transcodeConfig": {
+								"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0:vbv_maxrate=5000:vbv_bufsize=10000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8"
+							}
+						}, {
+							"videoType": 15,
+							"extVideoType": 3,
+							"optionsConfigList": [{
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 2
+								},
+								"transcodeConfig": {
+									"x264Params": "crf=15:threads=6:keyint=250:vbv_maxrate=2700:vbv_bufsize=5400",
+									"width": 576,
+									"height": 1024,
+									"fps": 30,
+									"x264Preset": "veryfast",
+									"singleImageQuality": 90,
+									"hardwareConfig": {
+										"videoBitrate": 4300000,
+										"videoGopSize": 20
+									},
+									"audioEncodeConfig": [{
+										"type": 1,
+										"audioBitrate": 64000,
+										"audioProfile": "aac_low"
+									}]
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 3
+								},
+								"transcodeConfig": {
+									"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=0:ipratio=1.4:qcomp=0.6:keyint=150:bframes=3:open-gop=0:vbv_maxrate=4250:vbv_bufsize=8500:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+									"capeSwBitrateAdjustRatio": 0.94
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 4
+								},
+								"transcodeConfig": {
+									"x264Params": "crf=15:vbv_maxrate=5000:vbv_bufsize=10000:threads=6:open-gop=0"
+								}
+							}]
+						}, {
+							"videoType": 16
+						}, {
+							"videoType": 17
+						}, {
+							"videoType": 18,
+							"extVideoType": 3,
+							"transcodeConfig": {
+								"singleImageQuality": 95
+							},
+							"optionsConfigList": [{
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 2
+								},
+								"transcodeConfig": {
+									"x264Params": "crf=15:threads=6:keyint=250:vbv_maxrate=2700:vbv_bufsize=5400",
+									"width": 576,
+									"height": 1024,
+									"fps": 30,
+									"x264Preset": "veryfast",
+									"singleImageQuality": 90,
+									"hardwareConfig": {
+										"videoBitrate": 4300000,
+										"videoGopSize": 20
+									},
+									"audioEncodeConfig": [{
+										"type": 1,
+										"audioBitrate": 64000,
+										"audioProfile": "aac_low"
+									}]
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 3
+								},
+								"transcodeConfig": {
+									"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=0:ipratio=1.4:qcomp=0.6:keyint=150:bframes=3:open-gop=0:vbv_maxrate=4250:vbv_bufsize=8500:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+									"capeSwBitrateAdjustRatio": 0.94
+								}
+							}, {
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 4
+								},
+								"transcodeConfig": {
+									"x264Params": "crf=15:vbv_maxrate=5000:vbv_bufsize=10000:threads=6:open-gop=0"
+								}
+							}]
+						}, {
+							"videoType": 19
+						}, {
+							"videoType": 20
+						}, {
+							"videoType": 21
+						}, {
+							"videoType": 22
+						}, {
+							"videoType": 23
+						}, {
+							"videoType": 24
+						}, {
+							"videoType": 25,
+							"transcodeConfig": {
+								"singleImageQuality": 95,
+								"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0:vbv_maxrate=5000:vbv_bufsize=10000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8"
+							}
+						}, {
+							"videoType": 27,
+							"conditionConfig": {
+								"enable": 1,
+								"minSourceWidth": 720,
+								"minSourceHeight": 720,
+								"videoLimitConditionConfig": {
+									"limitWidth": 720,
+									"limitHeight": 1280
+								}
+							},
+							"transcodeConfig": {
+								"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=3:trellis=0:weightp=1:crf=15.4:fast_algo=2:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=150:bframes=3:open-gop=0:vbv_maxrate=5000:vbv_bufsize=10000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+								"x264Preset": "veryfast",
+								"singleImageQuality": 90,
+								"videoEncoderType": -1,
+								"hardwareConfig": {
+									"videoBitrate": 5000000,
+									"videoGopSize": 250
+								},
+								"audioEncodeConfig": [{
+									"type": 1,
+									"audioBitrate": 192000,
+									"audioCutoff": 20000,
+									"audioProfile": "aac_low"
+								}],
+								"skipTranscodeConfig": {
+									"enable": 0
+								}
+							},
+							"optionsConfigList": [{
+								"conditionConfig": {
+									"enable": 1,
+									"conditionType": 2
+								},
+								"transcodeConfig": {
+									"x264Params": "crf=15:threads=6:keyint=250:vbv_maxrate=2700:vbv_bufsize=5400",
+									"width": 576,
+									"height": 1024,
+									"fps": 30,
+									"x264Preset": "veryfast",
+									"singleImageQuality": 90,
+									"hardwareConfig": {
+										"videoBitrate": 3000000,
+										"videoGopSize": 20
+									},
+									"audioEncodeConfig": [{
+										"type": 1,
+										"audioBitrate": 64000,
+										"audioProfile": "aac_low"
+									}]
+								}
+							}]
+						}, {
+							"videoType": 50
+						}],
+						[{
+							"videoType": 0,
+							"transcodeConfig": {
+								"x264Params": "crf=15:threads=6:keyint=250:vbv_maxrate=2700:vbv_bufsize=5400",
+								"width": 576,
+								"height": 1024,
+								"fps": 30,
+								"x264Preset": "veryfast",
+								"hardwareConfig": {
+									"enable": 0,
+									"videoBitrate": 4300000,
+									"videoGopSize": 250,
+									"mediacodecFormatParams": {
+										"operating-rate": -1,
+										"priority": -1
+									}
+								}
+							},
+							"conditionConfig": {
+								"enable": 1,
+								"videoLimitConditionConfig": {
+									"limitWidth": 576,
+									"limitHeight": 720
+								}
+							}
+						}, {
+							"videoType": 5,
+							"gradeLevel": 1,
+							"transcodeConfig": {
+								"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0:vbv_maxrate=3800:vbv_bufsize=7600:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+								"x264Preset": "veryfast",
+								"width": 576,
+								"height": 1024,
+								"audioEncodeConfig": [{
+									"audioProfile": "aac_he",
+									"audioCutoff": 20000,
+									"audioBitrate": 192000
+								}],
+								"hardwareConfig": {
+									"videoBitrate": 6000000,
+									"videoGopSize": 250
+								}
+							}
+						}]
+					]
+				},
+				"editorPreviewConfig": {
+					"enablePreviewLanczos": true,
+					"previewSizeLimitations": [{
+						"videoType": [0],
+						"shortEdge": -1
+					}, {
+						"videoType": [5, 11, 17],
+						"shortEdge": -1
+					}]
+				},
+				"simpleTemplateGradeConfig": {
+					"liveCnyTemplateGrade": 2
+				},
+				"hardwareConfigs": {},
+				"encodePtsCheckFallback": {
+					"enableFallbackFlags": {
+						"2": 1,
+						"4": 1
+					},
+					"maxFallbackTimes": 1
+				},
+				"iosEditorImageConfig": {
+					"singleExportSize": 1920,
+					"singlePreviewSize": 1920,
+					"atlasExportSize": 1920
+				},
+				"editorEncodeConfig": {
+					"importEncodeWithHevc": true,
+					"mvDoubleClipConfig": {
+						"importParams": {
+							"version": 1,
+							"targetBitrate": [{
+								"fps": 30,
+								"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=150:bframes=3:open-gop=0:vbv_maxrate=8000:vbv_bufsize=16000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+								"videoBitrate": 13500000,
+								"videoGopSize": 150
+							}, {
+								"fps": 60,
+								"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=150:bframes=3:open-gop=0:vbv_maxrate=12000:vbv_bufsize=24000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+								"videoBitrate": 16500000,
+								"videoGopSize": 150
+							}],
+							"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2: trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=150:bframes=3:open-gop=0:vbv_maxrate=12000:vbv_bufsize=24000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+							"x264Preset": "ultrafast",
+							"width": 720,
+							"height": 1280,
+							"videoBitRate": 16500000,
+							"videoGopSize": 150,
+							"audioProfile": "aac_low",
+							"audioCutOff": 20000,
+							"audioBitrate": 192000,
+							"supportHwEncode": true,
+							"supportImportSwDecode": 1,
+							"importTranscodeConditions": []
+						}
+					},
+					"enableComment": false,
+					"mvMaxTrackNumForBigImport": 3,
+					"normalConfig": {
+						"supportHwEncodeIOS": true,
+						"exportVideoParams": {
+							"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=18:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0:vbv_maxrate=5000:vbv_bufsize=10000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+							"videoBitRate": 8000000,
+							"isSupportPipleline": true,
+							"minEncodeSpeed": 0.5,
+							"minProfile": 1,
+							"alignmentFlag": 2,
+							"x264ParamsPipeline": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=18:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=0:ipratio=1.4:qcomp=0.6:keyint=150:bframes=3:open-gop=0:vbv_maxrate=5000:vbv_bufsize=10000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+							"audioBitrate": 96000,
+							"audioProfile": "aac_he",
+							"width": 720,
+							"videoGopSize": 150,
+							"supportHwEncode": true,
+							"audioCutoff": 20000,
+							"x264Preset": "veryfast",
+							"height": 1280
+						},
+						"skipTranscodeConfig": {
+							"maxAvgVideoBitrate": 0,
+							"maxBytes4G": 20000000,
+							"supportAdvancedColorspace": true,
+							"maxBytesWifi": 30000000,
+							"maxBytes": 10000000,
+							"enabled": true
+						},
+						"importParams": {
+							"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2: trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0:vbv_maxrate=12000:vbv_bufsize=24000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+							"videoBitRate": 20000000,
+							"minEncodeSpeed": 0.1,
+							"supportImportSwDecode": 1,
+							"targetBitrate": [{
+								"fps": 30,
+								"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0:vbv_maxrate=12000:vbv_bufsize=24000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+								"videoBitrate": 20000000,
+								"videoGopSize": 150
+							}, {
+								"fps": 60,
+								"x264Params": "cabac=1:mixed-refs=0:rc-lookahead=10:ref=1:subme=2:trellis=0:weightp=1:crf=15:qpmin=0:qpmax=69:merange=16:me=hex:scenecut=40:ipratio=1.4:qcomp=0.6:keyint=250:bframes=3:open-gop=0:vbv_maxrate=18000:vbv_bufsize=36000:threads=6:mbtree=1:analyse=i4x4,i8x8,p8x8,b8x8",
+								"videoBitrate": 30000000,
+								"videoGopSize": 300
+							}],
+							"minProfile": 2,
+							"alignmentFlag": 2,
+							"enableHDR": 1,
+							"version": 2,
+							"audioBitrate": 192000,
+							"audioProfile": "aac_low",
+							"forceMediaCodecBaseline": true,
+							"importTranscodeConditions": [],
+							"width": 1080,
+							"videoGopSize": 150,
+							"supportHwEncode": true,
+							"audioCutOff": 20000,
+							"x264Preset": "ultrafast",
+							"height": 1920
+						},
+						"supportHwEncodeAndroid": true
+					},
+					"enableSkipVideoTranscode": 1,
+					"exportVersion": 2,
+					"allowTrackSizeExceedsProject": true
+				},
+				"frameExtractionConfig": {
+					"coverRecoTimeout": 8000
+				},
+				"ks265DecoderBufferFix": 1,
+				"editorImageConfig": {
+					"singleExportSize": 4096,
+					"singlePreviewSize": 4096,
+					"atlasPreviewSize": 2560,
+					"singleImageQuality": 85,
+					"atlasExportSize": 4096
+				},
+				"editorDebugConfigs": {
+					"enableDebugModule": true,
+					"jsonConfigs": {}
+				},
+				"thumbnailSWShortEdgeLimit": -1
+			}
+		},
+		"kinsightFtPrediction": {
+			"config": {
+				"sortedFtList": ["FT_Feed", "FT_Social", "FT_Live"],
+				"statusCode": 1
+			}
+		},
+		"obiwan": {
+			"action": {
+				"tasks": [],
+				"supportRealTimeLog": false,
+				"apmTasks": []
+			},
+			"config": {
+				"retryCount": 3,
+				"retryDelay": 10,
+				"timeout": 500,
+				"checkInterval": 30,
+				"max_upload_file_size": 50
+			}
+		},
+		"push": {
+			"config": {
+				"takeover_system": true,
+				"hook_activity_manager": true,
+				"allow_unknown_channel": true,
+				"allow_channels_list": [{
+					"name": "推送通知",
+					"id": "remote_push_v1",
+					"vibrate": true,
+					"light": true,
+					"importance": 4,
+					"lockVisibility": true,
+					"badge": true,
+					"description": "",
+					"bubble": true,
+					"passDnd": true
+				}, {
+					"name": "其他通知",
+					"id": "other_push_v1",
+					"vibrate": false,
+					"light": false,
+					"importance": 2,
+					"lockVisibility": false,
+					"badge": false,
+					"description": "",
+					"bubble": false,
+					"passDnd": false
+				}, {
+					"name": "工具通知",
+					"id": "tool_push_v1",
+					"vibrate": false,
+					"light": false,
+					"importance": 2,
+					"lockVisibility": false,
+					"badge": false,
+					"description": "",
+					"bubble": false,
+					"passDnd": false
+				}],
+				"migrate_strategy": [{
+					"legacy_channel_id": "kwai-push-high",
+					"new_channel_id": "remote_push_v1"
+				}, {
+					"legacy_channel_id": "kwai-push-low",
+					"new_channel_id": "other_push_v1"
+				}, {
+					"legacy_channel_id": "GROWTH_NOTIFICATION",
+					"new_channel_id": "tool_push_v1"
+				}]
+			}
+		},
+		"devicepersonasdk": {
+			"config": {
+				"deviceStrategyConfigs": {
+					"common": {
+						"marginNotSupportErrorRate": 0.1,
+						"tryHWLongEdgeMargin": 0,
+						"mcsSpeedWeight": 1,
+						"maxHWFirstFrameCost": 2,
+						"minHWDecodeShortEdge": 721,
+						"reComputeMaxLongEdge": false,
+						"minHWSystemSupport": 0,
+						"marginMaxLongEdge": 3840,
+						"minHWDecodeSpeed": 0,
+						"preferHWDecodeType": "mcbb",
+						"maxEncode1080PLongEdge": 1920,
+						"marginMinSupportLongEdge": 1280,
+						"marginNotSupportErrorCodes": [-2000],
+						"minHWSupportRate": 0.9,
+						"ensureYuvCheck": 0
+					}
+				},
+				"benchmarkConfigs": {
+					"minTestVersions": {
+						"kw265Decoder": 0,
+						"memory": 0,
+						"operatingRateEncode": 0,
+						"io": 0,
+						"cpu": 0,
+						"decoder": 4,
+						"swEncoder": 3,
+						"encoder": 3,
+						"gpu": 0,
+						"gpuInfo": 1,
+						"operatingRateDecode": 0,
+						"hdrDecoder": 0,
+						"deviceBaseInfo": 0,
+						"kvcDecoder": 0,
+						"cpuCodec": 0
+					},
+					"maxTestTime": 0,
+					"enableAvcDecodeMcbbBenchmark": 0,
+					"enableHevcEncodeBenchmark": 0,
+					"autoTestConfigs": {},
+					"openYuvCheck": 1,
+					"enableHevcDecodeMcsBenchmark": 0,
+					"autoTestDecodeVersion": 3,
+					"resVersion": 3,
+					"openNormalTest": 1,
+					"resMinClientVersion": 1,
+					"enableAvcDecodeMcsBenchmark": 0,
+					"forceBenchmarkConfig": 0,
+					"resMetaVersion": 4,
+					"minClientVersion": 5,
+					"enableAvcEncodeBenchmark": 0,
+					"openForceEncodeTest": true,
+					"autoTestSwEncodeResolution": {
+						"avc1280": 0,
+						"avc1920": 0,
+						"avc960": 0,
+						"avc3840": 0
+					},
+					"resUrl": "https://ali.static.yximgs.com/kos/nlav10785/devicepersona_3.zip",
+					"autoTestEncodeResolution": {
+						"avc1280": 0,
+						"hevc1920": 0,
+						"avc1920": 0,
+						"hevc1280": 0,
+						"avc960": 0,
+						"hevc960": 0,
+						"avc3840": 0,
+						"hevc3840": 0
+					},
+					"enableHevcDecodeMcbbBenchmark": 0,
+					"autoTestEncodeVersion": 3,
+					"maxHeavyDecodeNum": 5,
+					"openHwDecodeSystemLimit": 0,
+					"maxDecodeNum": 3,
+					"allTestItemsInfo": {
+						"kw265Decoder": {
+							"complex": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"simple": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"medium": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							}
+						},
+						"memory": {
+							"testItemInfo": {
+								"latestTestVersionForException": 4,
+								"minTestVersion": 4
+							}
+						},
+						"operatingRateEncode": {
+							"avc_3840": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"hevc_3840": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"hevc_960": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"avc_960": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"avc_1920": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"hevc_2560": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"avc_1280": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"hevc_1280": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"avc_2560": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"hevc_1920": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							}
+						},
+						"io": {
+							"testItemInfo": {
+								"latestTestVersionForException": 4,
+								"minTestVersion": 4
+							}
+						},
+						"cpu": {
+							"testItemInfo": {
+								"latestTestVersionForException": 4,
+								"minTestVersion": 5
+							}
+						},
+						"decoder": {
+							"consumeHevc": {
+								"portrait": {
+									"mcbb": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									},
+									"mcs": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									}
+								},
+								"landscape": {
+									"mcbb": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									},
+									"mcs": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									}
+								}
+							},
+							"hevc": {
+								"portrait": {
+									"mcbb": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										}
+									},
+									"mcs": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									}
+								},
+								"landscape": {
+									"mcbb": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										}
+									},
+									"mcs": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									}
+								}
+							},
+							"avc": {
+								"portrait": {
+									"mcbb": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										}
+									},
+									"mcs": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									}
+								},
+								"landscape": {
+									"mcbb": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 5
+											}
+										}
+									},
+									"mcs": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									}
+								}
+							}
+						},
+						"swEncoder": {
+							"avc_3840": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"avc_960": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"avc_1920": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"avc_1280": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							}
+						},
+						"encoder": {
+							"avc_3840": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"hevc_3840": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"hevc_960": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"avc_960": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"avc_1920": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"avc_1280": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"hevc_1280": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"hevc_1920": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							}
+						},
+						"gpu": {
+							"testItemInfo": {
+								"latestTestVersionForException": 4,
+								"minTestVersion": 4
+							}
+						},
+						"gpuInfo": {
+							"testItemInfo": {
+								"latestTestVersionForException": 4,
+								"minTestVersion": 4
+							}
+						},
+						"operatingRateDecode": {
+							"consumeHevc": {
+								"portrait": {
+									"mcbb": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									},
+									"mcs": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									}
+								},
+								"landscape": {
+									"mcbb": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									},
+									"mcs": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									}
+								}
+							},
+							"hevc": {
+								"portrait": {
+									"mcbb": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									},
+									"mcs": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									}
+								},
+								"landscape": {
+									"mcbb": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									},
+									"mcs": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									}
+								}
+							},
+							"avc": {
+								"portrait": {
+									"mcbb": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									},
+									"mcs": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									}
+								},
+								"landscape": {
+									"mcbb": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									},
+									"mcs": {
+										"1920": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"960": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"3840": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2560": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"1280": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										},
+										"2160": {
+											"testItemInfo": {
+												"latestTestVersionForException": 4,
+												"minTestVersion": 4
+											}
+										}
+									}
+								}
+							}
+						},
+						"hdrDecoder": {
+							"testItemInfo": {
+								"latestTestVersionForException": 4,
+								"minTestVersion": 4
+							}
+						},
+						"deviceBaseInfo": {
+							"testItemInfo": {
+								"latestTestVersionForException": 4,
+								"minTestVersion": 4
+							}
+						},
+						"kvcDecoder": {
+							"complex": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"simple": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							},
+							"medium": {
+								"testItemInfo": {
+									"latestTestVersionForException": 4,
+									"minTestVersion": 4
+								}
+							}
+						},
+						"cpuCodec": {
+							"testItemInfo": {
+								"latestTestVersionForException": 4,
+								"minTestVersion": 4
+							}
+						}
+					},
+					"forceTestConfigs": {
+						"swEncoder": {
+							"avc_1920": 1,
+							"avc_1280": 1
+						},
+						"encoder": {
+							"avc_1920": 1,
+							"avc_1280": 1
+						}
+					},
+					"resMetaUrl": "https://ali.static.yximgs.com/kos/nlav10785/resources/ResMetaConfigTest_4.json",
+					"autoBenchmarkConfig": 0,
+					"maxExceptionCount": 2
+				},
+				"deviceLevels": "{\"iOSPreviewingSaveDeviceLevel\":0,\"AndroidPreviewLanczosClassifier\":1,\"iOSPreviewLanczosClassifier\":0,\"generalDeviceClassifier\":92,\"iOSImportPerformance\":0,\"iOSPreviewingShareDeviceLevel\":0,\"importMVPerformance\":3,\"generalDeviceScore\":13698,\"AndroidLiveCnyTemplateGrade\":2,\"AndroidEditorPreviewResolutionWhiteListClassifier\":720,\"iOSImportHDRPerformance\":0,\"IOSImageEditParams\":0,\"scene01\":99,\"AndroidTemplatePreviewResolutionDeviceClassifier\":-1,\"slideDispatcherPerformanceDeviceLevel\":9,\"importHDRPerformance\":3,\"iOSLiveCnyTemplateGrade\":2,\"standandDevicePerformance\":74,\"androidPreviewingSaveDeviceLevel\":2,\"iOSCameraResolutionPerformance\":0,\"IOSEditorTranscodeVQEDeviceClassifier\":0,\"lowDevice\":1,\"IOSEditorPreviewResolutionWhiteListClassifier\":-1,\"androidPreviewingShareDeviceLevel\":2,\"AndroidEditorTranscodeVQEDeviceClassifier\":1,\"exportMVConfigClassifier\":3,\"iOSExportClassifier\":2,\"PosterFrameUploadDeviceModel\":1,\"kuaishouGeneralDeviceClassifier\":92,\"CaptureTotalTime\":2,\"RecreationExportVESharpenDevicePerformance\":2,\"iOSExportConfigKSwitchClassifier\":2,\"iOSImVideoCallResolutionClassifier\":0,\"exportClassifier\":3,\"cameraResolutionPerformance\":3,\"AndroidEditorPreviewResolutionDeviceClassifier\":-1,\"trinityGeneralDeviceClassifier\":-1,\"RecreationPreviewVESharpenDevicePerformance\":2,\"IOSEditorPreviewResolutionDeviceClassifier\":720,\"AndroidCameraSwEncodeClassifier\":0,\"exportConfigKSwitchClassifier\":3,\"androidImageEditParams\":2,\"importPerformance\":5}",
+				"hardwareConfigs": {
+					"hdrDecoder": {
+						"decodeErrorCode": {
+							"1920": 0,
+							"3840": 0,
+							"1280": 0
+						},
+						"isColorAccurateAffectedByOsVersion": 0,
+						"displaySupportedTypes": [3, 2, 4],
+						"firstFrameCost": {
+							"1920": 0.16,
+							"3840": 0.284,
+							"1280": 0.222
+						},
+						"errorCode": 0,
+						"maxLongEdge": 3840,
+						"colorAccurate": 0,
+						"speed": {
+							"1920": 105.479,
+							"3840": 71.042,
+							"1280": 179.738
+						}
+					},
+					"decoder": {
+						"fromWhiteList": false,
+						"hevc": {
+							"mcbb": {
+								"systemSupport": {
+									"1920": -1.0,
+									"960": -1.0,
+									"3840": -1.0,
+									"2560": -1.0,
+									"1280": -1.0,
+									"2160": -1.0
+								},
+								"maxDecoderNum": {
+									"1920": 0,
+									"960": 0,
+									"3840": 0,
+									"2560": 0,
+									"1280": 0,
+									"2160": 0
+								},
+								"errorCode": {
+									"1920": {},
+									"960": {},
+									"3840": {},
+									"2560": {},
+									"1280": {},
+									"2160": {}
+								},
+								"supportRate": {
+									"1920": -1.0,
+									"960": -1.0,
+									"3840": -1.0,
+									"2560": -1.0,
+									"1280": -1.0,
+									"2160": -1.0
+								},
+								"firstFrameCost": {
+									"1920": -1.0,
+									"960": -1.0,
+									"3840": -1.0,
+									"2560": -1.0,
+									"1280": -1.0,
+									"2160": -1.0
+								},
+								"yuvCheck": {
+									"1920": -1.0,
+									"960": -1.0,
+									"3840": -1.0,
+									"2560": -1.0,
+									"1280": -1.0,
+									"2160": -1.0
+								},
+								"maxLongEdge": 0,
+								"maxDecoderNum_v2": {
+									"1920": {
+										"1": -1.0,
+										"2": -1.0,
+										"3": -1.0
+									},
+									"960": {
+										"1": -1.0,
+										"2": -1.0,
+										"3": -1.0
+									},
+									"3840": {
+										"1": -1.0,
+										"2": -1.0,
+										"3": -1.0
+									},
+									"2560": {
+										"1": -1.0,
+										"2": -1.0,
+										"3": -1.0
+									},
+									"1280": {
+										"1": -1.0,
+										"2": -1.0,
+										"3": -1.0
+									},
+									"2160": {
+										"1": -1.0,
+										"2": -1.0,
+										"3": -1.0
+									}
+								},
+								"speed": {
+									"1920": -1.0,
+									"960": -1.0,
+									"3840": -1.0,
+									"2560": -1.0,
+									"1280": -1.0,
+									"2160": -1.0
+								}
+							},
+							"mcs": {
+								"systemSupport": {
+									"1920": 1.0,
+									"960": 1.0,
+									"3840": 1.0,
+									"2560": 1.0,
+									"1280": 1.0,
+									"2160": 1.0
+								},
+								"maxDecoderNum": {
+									"1920": 3,
+									"960": 3,
+									"3840": 1,
+									"2560": 3,
+									"1280": 3,
+									"2160": 3
+								},
+								"errorCode": {
+									"1920": {},
+									"960": {},
+									"3840": {},
+									"2560": {},
+									"1280": {},
+									"2160": {}
+								},
+								"supportRate": {
+									"1920": 0.98,
+									"960": 0.97,
+									"3840": 0.93,
+									"2560": 0.97,
+									"1280": 0.98,
+									"2160": 0.98
+								},
+								"firstFrameCost": {
+									"1920": 0.281,
+									"960": 0.335,
+									"3840": 0.502,
+									"2560": 0.345,
+									"1280": 0.4205,
+									"2160": 0.248
+								},
+								"yuvCheck": {
+									"1920": 0.9775641025641025,
+									"960": 0.9838709677419355,
+									"3840": 0.9918367346938776,
+									"2560": 1.0,
+									"1280": 0.9829931972789115,
+									"2160": 1.0
+								},
+								"maxLongEdge": 3840,
+								"maxDecoderNum_v2": {
+									"1920": {
+										"1": 0.975,
+										"2": 0.959375,
+										"3": 0.95625
+									},
+									"960": {
+										"1": 0.9748427672955975,
+										"2": 0.9716981132075472,
+										"3": 0.9685534591194969
+									},
+									"3840": {
+										"1": 0.9315589353612167,
+										"2": 0.8745247148288974,
+										"3": 0.7756653992395437
+									},
+									"2560": {
+										"1": 0.9743589743589743,
+										"2": 0.9597069597069597,
+										"3": 0.9523809523809523
+									},
+									"1280": {
+										"1": 0.98,
+										"2": 0.9666666666666667,
+										"3": 0.9366666666666666
+									},
+									"2160": {
+										"1": 0.9819494584837545,
+										"2": 0.9747292418772563,
+										"3": 0.9638989169675091
+									}
+								},
+								"speed": {
+									"1920": 102.1495,
+									"960": 138.1285,
+									"3840": 72.309,
+									"2560": 98.042,
+									"1280": 109.067,
+									"2160": 97.9255
+								}
+							},
+							"tunnelModeSupport": 0
+						},
+						"autoTestDecodeVersion": 4,
+						"avc": {
+							"mcbb": {
+								"systemSupport": {
+									"1920": -1.0,
+									"960": -1.0,
+									"3840": -1.0,
+									"2560": -1.0,
+									"1280": -1.0,
+									"2160": -1.0
+								},
+								"maxDecoderNum": {
+									"1920": 0,
+									"960": 0,
+									"3840": 0,
+									"2560": 0,
+									"1280": 0,
+									"2160": 0
+								},
+								"errorCode": {
+									"1920": {},
+									"960": {},
+									"3840": {},
+									"2560": {},
+									"1280": {},
+									"2160": {}
+								},
+								"supportRate": {
+									"1920": -1.0,
+									"960": -1.0,
+									"3840": -1.0,
+									"2560": -1.0,
+									"1280": -1.0,
+									"2160": -1.0
+								},
+								"firstFrameCost": {
+									"1920": -1.0,
+									"960": -1.0,
+									"3840": -1.0,
+									"2560": -1.0,
+									"1280": -1.0,
+									"2160": -1.0
+								},
+								"yuvCheck": {
+									"1920": -1.0,
+									"960": -1.0,
+									"3840": -1.0,
+									"2560": -1.0,
+									"1280": -1.0,
+									"2160": -1.0
+								},
+								"maxLongEdge": 0,
+								"maxDecoderNum_v2": {
+									"1920": {
+										"1": -1.0,
+										"2": -1.0,
+										"3": -1.0
+									},
+									"960": {
+										"1": -1.0,
+										"2": -1.0,
+										"3": -1.0
+									},
+									"3840": {
+										"1": -1.0,
+										"2": -1.0,
+										"3": -1.0
+									},
+									"2560": {
+										"1": -1.0,
+										"2": -1.0,
+										"3": -1.0
+									},
+									"1280": {
+										"1": -1.0,
+										"2": -1.0,
+										"3": -1.0
+									},
+									"2160": {
+										"1": -1.0,
+										"2": -1.0,
+										"3": -1.0
+									}
+								},
+								"speed": {
+									"1920": -1.0,
+									"960": -1.0,
+									"3840": -1.0,
+									"2560": -1.0,
+									"1280": -1.0,
+									"2160": -1.0
+								}
+							},
+							"mcs": {
+								"systemSupport": {
+									"1920": 1.0,
+									"960": 1.0,
+									"3840": 1.0,
+									"2560": 1.0,
+									"1280": 1.0,
+									"2160": 1.0
+								},
+								"maxDecoderNum": {
+									"1920": 3,
+									"960": 3,
+									"3840": 1,
+									"2560": 2,
+									"1280": 3,
+									"2160": 3
+								},
+								"errorCode": {
+									"1920": {},
+									"960": {},
+									"3840": {},
+									"2560": {},
+									"1280": {},
+									"2160": {}
+								},
+								"supportRate": {
+									"1920": 0.98,
+									"960": 0.99,
+									"3840": 0.9,
+									"2560": 0.93,
+									"1280": 0.97,
+									"2160": 0.99
+								},
+								"firstFrameCost": {
+									"1920": 0.302,
+									"960": 0.3185,
+									"3840": 0.4805,
+									"2560": 0.479,
+									"1280": 0.445,
+									"2160": 0.303
+								},
+								"yuvCheck": {
+									"1920": 0.742603550295858,
+									"960": 0.7306590257879656,
+									"3840": 0.9852941176470589,
+									"2560": 1.0,
+									"1280": 0.8067484662576687,
+									"2160": 0.9932885906040269
+								},
+								"maxLongEdge": 3840,
+								"maxDecoderNum_v2": {
+									"1920": {
+										"1": 0.976878612716763,
+										"2": 0.9508670520231214,
+										"3": 0.9450867052023122
+									},
+									"960": {
+										"1": 0.9858757062146892,
+										"2": 0.9830508474576272,
+										"3": 0.9774011299435028
+									},
+									"3840": {
+										"1": 0.9006622516556292,
+										"2": 0.8576158940397351,
+										"3": 0.7980132450331126
+									},
+									"2560": {
+										"1": 0.9333333333333333,
+										"2": 0.9017543859649123,
+										"3": 0.8736842105263158
+									},
+									"1280": {
+										"1": 0.9702380952380952,
+										"2": 0.9702380952380952,
+										"3": 0.9613095238095238
+									},
+									"2160": {
+										"1": 0.9900332225913622,
+										"2": 0.9767441860465116,
+										"3": 0.9767441860465116
+									}
+								},
+								"speed": {
+									"1920": 103.3125,
+									"960": 151.19,
+									"3840": 80.7405,
+									"2560": 67.335,
+									"1280": 119.727,
+									"2160": 96.093
+								}
+							},
+							"tunnelModeSupport": 0
+						}
+					},
+					"encoder": {
+						"autoTestEncodeVersion": 2
+					}
+				}
+			}
+		},
+		"ksuploaderkit": {
+			"config": {
+				"retryNum": 3,
+				"httpConfig": {
+					"uploadTaskFragmentSizeBytes": 104857600,
+					"fallbackToHTTP": false,
+					"dataTaskMaxConcurrentCount": 0,
+					"useUploadTaskInBg": false,
+					"maxRetryNumPerRequest": 3
+				},
+				"disableResumeCrcCheck": false,
+				"uploadType": "rickon",
+				"retryErrorCode": [1007, 1011, 1000],
+				"rickonConfig": "{\"responseMPS\":5}"
+			}
+		}
+	},
+	"retrieveLogCommandSuccess": true,
+	"kpn": "KUAISHOU",
+	"enableObiwan": true,
+	"host-name": "public-xm-c-kce-node52.idchb1az1.hb1.kwaidc.com",
+	"userId": 0,
+	"deviceId": "ANDROID_9dcd5704839b0881"
+}

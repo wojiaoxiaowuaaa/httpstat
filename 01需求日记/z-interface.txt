@@ -1,0 +1,53 @@
+/rest/zt/appsupport/configs
+/rest/zt/frigate/col/loc/apq
+/rest/zt/frigate/col/loc/query
+/rest/zt/appsupport/resource/warmup/list
+frigate/col/loc
+
+Android资源预热摇一摇导出配置信息(root权限):  
+adb  pull /storage/emulated/0/Android/data/com.smile.gifmaker/files/warmUpConfig.txt
+php110:  ANDROID_9dcd5704839b0881
+小米测试机:   ANDROID_522f38501c76ffdd
+批量解压:  find .  -name  "*.zip"  -exec unzip -o {} \;
+关键埋点:  KSWITCH_CONFIG_AFFECT   biz_custom_log_ab_entrance
+搜账号2245313599进入profile页，点击导航到店Label,进入地图页面，观察UI, 直到获得导航路径结果.(关注搜索  好奇)
+环境标识字段:trace-context: {"laneId":"STAGING.resource_warmup"}
+androd极速版日志导出: 
+adb  pull /sdcard/Android/data/com.kuaishou.nebula/files/.debug
+摇一摇iOS沙盒开启路径: 设置--3:工具---开关沙盒文件浏览服务---得到ip和端口 -- 浏览器访问
+iOS资源预热文件资源地址查看:  
+http://172.23.210.209:8088/browser/Library/com.kuaishou.warmup.platform/warmup
+NPM JSON服务器： json-server demo.json
+adb shell am start -a "android.intent.action.VIEW" -d "kwai://settings"
+Android资源预热根据资源的URL查询到资源的cacheKey,资源的cacheKey在media_v3_scope目录下会是视频资源文件名的一部分.
+安卓资源预热目录(root权限):  /data/user/0/com.smile.gifmaker/files/.warmup/
+安卓资源预热-视频资源目录: /data/data/com.smile.gifmaker/files/.hodor/media_v3_scope
+iOS日志写入存储测试地址(ip的结尾数据可能会变): 
+http://172.23.210.209:8088/browser/Library/Caches/ObiwanLogs/app
+
+ios资源预热-视频资源查看路径:  
+http://172.23.215.72:8088/browser/Library/com.skwai.video.hodor/.hodor/media_v3_scope/
+iOS的资源预热接口不允许降级到HTTP  降级了抓不到.
+
+staging门店推广账号：13126581341  ll123456   2182065303
+微信账号UID：  3043748794    3995687392  
+红梅普通账号： 13522500420  12345678test    1666515656    2153894354
+个人账号uid: 1qaz2wsx  2260817340     2197418142
+
+android日志导出: 
+adb  pull /sdcard/Android/data/com.smile.gifmaker/files/.debug 
+
+打开摇一摇
+adb shell am start -p com.smile.gifmaker -a android.intent.action.VIEW -n com.smile.gifmaker/com.yxcorp.gifshow.activity.UriRouterActivity  'kwai://testconfig/testconfig'
+
+设置代理  
+adb shell settings put global  http_proxy 172.23.224.89:8888
+
+断开代理  
+adb shell settings put global http_proxy :0         
+adb shell settings delete global http_proxy
+
+
+
+
+

@@ -1,0 +1,84 @@
+https://team.corp.kuaishou.com/task/T4933191
+
+https://kswitch.corp.kuaishou.com/#/flag/targeting?project=kuaishou&environment=production&key=KSPKRuntimeSwitch
+
+技术文档:
+https://docs.corp.kuaishou.com/d/home/fcADv3dYvDM-fQN9uA_Vv3hoC#section=h.iot1n1ff68z
+
+埋点: 
+KS_PK_API_INTERCEPT_KEY
+
+冷启动未同意隐私协议的时   拦截指定接口的调用  上报埋点
+
+管控接口列表:
+https://docs.corp.kuaishou.com/s/home/fcAD-6F1Ara9Rrx55gM07Lfoz
+
+剪切板开关：
+https://kswitch.corp.kuaishou.com/#/flag/targeting?key=isInterceptReadClipboardBackground&project=kuaishou&environment=production
+
+基建技术文档
+https://docs.corp.kuaishou.com/d/home/fcAArtklebhvN-zUzeXQc7dH_
+
+开关：23531   KSPKRuntimeSwitch
+
+{
+					"permission": "location",
+					"mode": 3, # 1 审计  2  弹窗  3  埋点+弹窗
+					"exitAfterAlert": false,}
+
+测试覆盖的apiName：（二次提测）（授权+登录）
+ContentResolver#query
+TelephonyManager#getCellLocation
+Settings.Secure#getString
+NetworkInterface#getInetAddresses
+WifiInfo#getMacAddress
+WifiInfo#getSSID
+WifiManager#getScanResults
+
+BUG(二次提测)：
+1. debug包首次安装或者清理存储-- 冷启 -- 隐私弹窗点击不同意  ---  进入访客模式 -- 一段时间后CRASH（大概一个短视频播放时间）(不稳定复现)
+2. 授权并登录，huidu&&debug&&release包摇一摇--架构--点击“打开IMEI相关测试页面”必现CRASH。ime:输出的字段值为空。（访客模式下有内容输出。）（未同意隐私协议，访客模式下进入摇一摇点击该button正常，无CRASH。）
+
+
+TODO：
+1. (done)release包/hudulite包都属于线下,预期结果一致(待测试).
+2. 商店包（待测试）
+
+01/25崩溃堆栈：
+https://keep.corp.kuaishou.com/exception-analysis/crash/android/crash?pid=1&queryParams=%7B%22start_time%22%3A%5B%22%3D%22,1706141075931%5D,%22end_time%22%3A%5B%22%3D%22,1706151875931%5D,%22deviceId%22%3A%5B%22in%22,%5B%22ANDROID_522f38501c76ffdd%22%5D%5D%7D&lockTime=all
+
+event_package":
+{
+"custom_event":
+{
+"key":
+"KS_PK_API_INTERCEPT_KEY",
+"value":
+"{"apiName":"WifiInfo#getBSSID","agreeLicense":false,"stack":"java.util.concurrent.Executors$RunnableAdapter/call","showDialog":true,"intercept":true,"inWhiteList":false,"permission":"device","redApi":true}",
+"biz":
+"ARCH_BASE",
+"page":
+"FEATURED_PAGE"
+}
+}
+
+TODO:
+1. 防劣化管控接口被调用对应日志输出;
+2. 摇一摇加对应管控接口调用,包含白名单堆栈调用&非白名单堆调用,区分开来,便于测试不同场景;
+3. 补充调整白名单堆栈&弹窗相关case
+
+1. keep打包debug可以出防劣化弹窗，huidulite含插件包不出防劣化弹窗&&不上报买点，是否符合预期；（用例评审：keep打的包全部属于测试包:
+   埋点100%采集 有防劣化弹窗）
+2. 访客模式下出防劣化弹窗时未上报对应埋点。KS_PK_API_INTERCEPT_KEY。（摇一摇里手动调用也未上报）
+3. 清理存储或者首次冷启点击防劣化弹窗关闭，点击欢迎使用快手弹窗的“不同意”button进入访客模式，十几秒后有稳定复现的CRASH。（稳定复现BUG）（授权并登录无CRASH）
+4. (未同意过隐私权限)冷启无防劣化弹窗（概率较小 需要多试几次），摇一摇进入架构---点击button手动触发防劣化API调用，无防劣化弹窗展示。
+
+测试覆盖的apiName：（历史）
+"NetworkInterface#getInetAddresses"
+"WifiInfo#getSSID"
+"Settings.Secure#getString"
+"WifiInfo#getIpAddress"
+
+
+热修-搜日志：
+onEnter: ContentResolver#query

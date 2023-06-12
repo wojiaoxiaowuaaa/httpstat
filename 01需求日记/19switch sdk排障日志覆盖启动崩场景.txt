@@ -1,0 +1,7 @@
+https://team.corp.kuaishou.com/task/T5147725
+
+https://keep.corp.kuaishou.com/dev-ops/workflow/detail?current=2&devTab=dev&id=627b68cb-0f3a-46cb-af4e-82c10732078f&pid=1&taskId=5effe5fd-ec14-4909-a94a-8256a1c5f9ff&workflowType=app  
+
+/debug/app/main:
+ grep -ri 'logToObiwanWhenLuanchCrash'
+ grep -ri 'cacheLogSize'

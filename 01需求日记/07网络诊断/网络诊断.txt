@@ -1,0 +1,69 @@
+路演
+https://docs.corp.kuaishou.com/d/home/fcAAgBFarghySpPkT7qyvNfk0
+
+https://docs.corp.kuaishou.com/d/home/fcABRw-8DKafGF6TyyKSiWhG8#section=h.4o8rxbaxid06
+
+开启诊断
+https://kswitch.corp.kuaishou.com/#/flag/targeting?project=kuaishou&environment=production&key=enableNetworkDiagnostic
+
+开启静默诊断
+https://kswitch.corp.kuaishou.com/#/flag/targeting?project=kuaishou&environment=production&key=enableAutoStartDiagnostic
+
+覆盖场景记录:
+https://docs.corp.kuaishou.com/d/home/fcABLHZJu0SZGbJM-fcJKp8TB
+
+Android性能报告:
+https://kperf.corp.kuaishou.com/manage/report?id=111851
+iOS性能报告:
+https://kperf.corp.kuaishou.com/manage/report?id=112450
+
+
+Android日志过滤:
+KsNetWorkDiagnostic
+grep -ri 'KsNetWorkDiagnostic'
+
+Android到达日志缓存上限后删除最早的日志(超过1W条，就移除，移除的时候会打印maxSize)(app/main)
+grep -ri 'maxSize'
+
+iOS到达上限后删除的逻辑搜日志:
+KSNetworkDiagnosticCenter start diagnose 就可以 5min会有一条
+
+开关:
+enableAutoStartDiagnostic               53029
+enableNetworkDiagnostic                 52515
+
+插件:
+network_diagnostic
+
+埋点:
+NETWORK_DIAGNOSTIC_ENTER_BUTTON_SHOW
+NETWORK_DIAGNOSIS_RESULT_DISPLAY
+NETWORK_DIAGNOSTIC_
+NETWORK_DIAGNOSIS_
+
+待确认问题:
+1. 部分页面如小店没有展示诊断的入口(可能跟组件有关 e业务自己写的rror没法统一处理  没有用到我们的组件)(我看了下，这个组件是我们提供的，
+诊断按钮没展示的原因是。这个组件原本有个”查看解决办法按钮“，我们之前定的是查看解决办法按钮不展示，我们的组件就不展示
+
+BUG:
+1. Android端插件加载失败,前端弹窗提示的插件异常信息被Toast信息覆盖,无法查看异常信息.Toast提示的:未能诊断出异常原因.不太合理..
+2. Android端极端弱网下,诊断结果为业务接口异常.(代理异常时也会被诊断为这个结果)(iOS端的诊断结果是网络链接异常)..
+3. Android端,诊断页面展示&有无帮助/无帮助,点击次数涉及到的埋点未上报.(验收通过)..
+4. 网络诊断,Android端,断网状态下恢复WiFi网络,点击诊断button(此时网络已经恢复),诊断结果在原来的基础上追加了一个"业务接口异常"..
+5. 网络诊断Android端,断网状态下,恢复网络,诊断button的展示页面,点击按钮,重新诊断出来的结果为:errorCode2  无法定位问题原因.
+6. 网络诊断Android端,设置错误的charles代理的ip地址时,前端提示的诊断结论是业务接口异常.
+
+
+1. 网络诊断,iOS端,网络状态切换,如从WiFi到断网,前端不展示"诊断"button, 只展示"点击重试"&"查看解决办法"页面,必须冷启一次才展示.(Android可以直接展示诊断的button).
+2. 网络诊断,iOS端网络恢复后,点击诊断,结果提示在原有的异常基础上追加"网络链接异常"......
+3. 网络诊断,iOS端设置错误的IP地址,点击诊断,展示的结果为网络连接异常,并且重复提示了两次.完全相同的结果..
+4. 网络诊断,iOS端诊断结果提示信息,过长时,展示不全,没有实现自动换行.(Android端可以正常换行)
+5. 网络诊断,中英文简繁体,iOS端没有完全适配.部分提示信息仍旧展示位默认方式.....
+6. 网络诊断,禁用插件后断网点击诊断按钮,有稳定复现的crash.......
+7. 设置当前版本为审核状态,对诊断没有起到限制作用,仍然可以正常点击进行诊断.
+8. 网络诊断iOS端,断网状态下恢复网络,点击诊断按钮,此时前端仍旧展示原来的诊断结果.未体现出网络已经恢复.
+
+
+
+
+

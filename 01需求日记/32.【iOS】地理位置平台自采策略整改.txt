@@ -1,0 +1,14 @@
+https://team.corp.kuaishou.com/task/T5466027
+
+文档
+https://docs.corp.kuaishou.com/d/home/fcAASEblGjNPVbkHTDHjW3721
+
+
+接口
+/rest/zt/frigate/col/loc/query
+
+
+1. 客户端请求/rest/zt/frigate/col/loc/query公参新增字段klp&kls
+2. klp字段值为当前页面  str类型如FEATURED_PAGE
+3. kls字段值为分场景授权的开关状态,关闭是off
+4. kls字段值为分场景授权的开关状态,打开是列表包含业务的名称全部关闭时是off

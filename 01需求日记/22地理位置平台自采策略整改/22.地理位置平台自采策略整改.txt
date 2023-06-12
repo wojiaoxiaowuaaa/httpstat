@@ -1,0 +1,93 @@
+地理位置平台自采策略整改
+https://team.corp.kuaishou.com/task/T4735566
+
+https://docs.corp.kuaishou.com/d/home/fcADGk5vkoXcOdl1Z5DWpzMkX#section=h.1cix1h5xwczj
+
+
+1、定时策略完全下线的字段体现？
+{
+    "klc": false  // 优先级高于kmo 
+    "klt": 60
+    "kmo": True
+}
+
+地理位置整改经纬度上报&WiFimac地址上报：
+/rest/zt/frigate/col/loc/query  
+/rest/zt/mil/q 
+/rest/zt/fat/m
+
+applist采集自采策略下发接口
+/frigate/col/loc/apq
+
+applist采集自采信息上传接口
+/frigate/col/loc/apu
+
+/q  冷启可能同时会同时有2次请求  一个有GPS  一个没有（解析看下）
+
+手动定位成功或者业务使用了定位通过/rest/zt/mil/q上报经纬度（qinfo解密后有详细的经纬度信息）（其中uploadType==2自采上报的值为1）
+
+上报接口解密后：
+uploadType==2   业务定位回传自采
+uploadType==1   自采上报 
+
+# 正则过滤
+/rest/zt/frigate/col/loc/query|/rest/zt/fat/m|/rest/zt/mil/q
+
+主动定位 定位成功  必定会请求/q 上报经纬度
+
+# wifi信息单独上报/rest/zt/mil/q不依赖询问接口的返回吗？（需要collectMacWithoutPermission==true）
+
+自采配置接口:(自采: 通过服务端规则及条件自动采集客户端位置信息)（使用服务端默认内容）
+ 	/rest/zt/appsupport/configs
+自采询问接口(复用地理定位采集接口):
+    /rest/zt/frigate/col/loc/query 
+自采数据上报接口被/rest/zt/mil/q取代）
+	/rest/zt/frigate/col/loc
+
+
+
+/m接口上报的mac地址信息
+{"wifiMacShuffleValue":"7c:de:78:43:14:01","statisticsData":""}
+7c:de:78:43:14:01 是一个 MAC 地址，通常用于唯一标识网络设备，如手机、电脑、路由器等。在 Android 手机中，
+这个地址通常被分配给设备的 Wi-Fi 网络接口。MAC 地址是一个全球唯一的硬件地址，由设备制造商在生产时分配。
+
+解密后的经纬度上报 公参中的qinfo字段
+{
+          "latlon":  {
+                    "latitude":  40.048851,
+                    "longitude":  116.316778,
+                    "country":  "中国",
+                    "province":  "北京市",
+                    "city":  "NULL",
+                    "county":  "海淀区",
+                    "street":  "西二旗南路辅路",
+                    "unnormalized":  "",
+                    "getFromSystemCache":  false
+          },
+          "accuracy":  30,
+          "collectTime":  1709090942002,
+          "statisticsData":  "CAEQARgBQgRhbWFwSj4jb2JhaWplZ2I4ZjU1MmNuY2dob2ltM2U4NTY0ZmEzI29iYWlqZWdiOGY1NTJjbmNnaG9pbTNlODU2NGZhMw==",
+          "uploadType":  2,
+          "useVpn":  false,
+          "configTag":  "off",
+          "kltag":  "off"
+}
+
+
+
+1.mock configs接口 shouldQuery为true（该字段控制是否主动询问服务器）
+2.mock /frigate/col/loc/query接口（该接口为询问接口），klc为true（表示是否需要采集定位），klt为60（定时器60s上报一次）
+3.冷启动
+4.抓包/frigate/col接口 每60s上报一次
+
+
+触发时机:
+	1.冷启动
+	2.切前后台
+	3.间隔器
+    4.基站变化
+	5.网络状态变化
+	6. 主动定位（同城或者小店或者其他业务）
+
+
+

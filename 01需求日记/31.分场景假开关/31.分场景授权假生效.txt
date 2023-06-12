@@ -1,0 +1,53 @@
+
+客户端方案
+https://docs.corp.kuaishou.com/d/home/fcABCDV_aTIoHgPLmQ3e7dTpP
+
+客户端开关
+https://kswitch.corp.kuaishou.com/#/flag/targeting?project=kuaishou&environment=staging&key=KSPKPrivacyGroupSwitch
+
+服务端配置接口:
+/rest/zt/appsupport/configs
+
+
+新增字段:
+"frigateGroupAuth": {
+			"config": {
+			// 服务端开关
+			"trulyEffect": true
+			}
+		},
+
+
+
+2. Android,服务端下发的trulyEffect值为true&&客户端开关值为true.
+关闭某个业务(如同城)分场景授权开关后，业务定位时没有弹窗申请打开开关的流程，直接把隐私设置里分场景的开关打开了.   --- pass
+
+3.Android,服务端下发的trulyEffect值为true&&客户端开关值为true.
+隐私设置里关闭四个业务的分场景授权开关.某个业务如同城点击定位后,隐私面板里四个业务的分场景开关全部都被打开.  ---  pass
+
+
+1.iOS提测电商定位前端Toast提示定位失败,生产POI列表位置为空,前端提示没有更多内容.nearby接口返回的额locations字段值是NULL.(兼容性iOS15.5 iPhone13?需要排除下.)
+
+
+4. 双端,服务端下发的trulyEffect为非布尔类型例如"trulyEffect": "0".(这里为int类型的0也能复现问题)客户端分场景授权面板失效(约定的客户端默认值是true).业务可以直接定位成功.不受分场景开关控制.也没有弹窗申请打开分场景开关的流程.(iOS设置为字符串的"1"可以拿到默认的true.辛苦check下针对0的判断逻辑))  --- pass 
+
+5. Android端分场景授权(客户端&&服务端开关均为true)."作品浏览"业务,首次安装冷启同城定位弹窗申请权限,授予后定位成功.关闭隐私设置里该业务的分场景授权开关,后续同城定位时没有申请授权打开开关相关流程的弹窗.(其他三个业务关闭开关后能正常出权限申请的弹窗)
+
+
+6. Android,服务端下发的trulyEffect为NULL,或者不下发该字段,分场景授权面板的开关无效,四个业务可以直接定位成功,(隐私设置里业务的分场景开关是关闭的)无弹窗申请权限的流程.(iOS端正常走客户端兜底的逻辑,取默认值true.出弹窗申请权限.) --- pass
+
+7. Android端,开关状态变更,客户端分场景逻辑异常.服务端开关trulyEffect字段值有false变更为true.客户端开关为true.打开生产分场景生产的授权开关.其余三个业务分场景开关为关闭状态.
+变更服务端trulyEffect字段值为true.同城/电商/周边生活三个业务adroid端可以直接定位成功,没有弹窗申请权限的流程.(iOS出弹窗申请分场景权限符合业务产品的预期.)
+
+
+
+
+
+疑似
+1. iOS发布作品当前账号会被踢出登录  发布失败(稳定复现)
+
+
+执行严格分场景逻辑双端未对齐业务:
+前提: 同城定位成功后关闭隐私设置里业务的分场景开关
+操作: 同城定位
+结果: android可以定位成功无提示;iOS前端有提示开启分场景授权&&有按钮点击可以更改隐私设置里业务的分场景开关状态

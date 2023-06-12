@@ -1,0 +1,20 @@
+1. 前后台切换  未请求预热接口.(iOS重装包后恢复)
+2. 部分资源客户端不缓存  每次都由服务端下发  存在带宽浪费(kcdn资源被删除)
+3. task_event埋点 每次调用接口时：CHECK_LOCAL_WARMUP_FILES  调用资源时上报：FIND_WARMUP_RESOURCE  过滤不到
+
+测试未覆盖:
+1. iOS摇一摇模拟手机磁盘空间<100M(磁盘空间不足的下载)
+2. (查看日志类型)本地实时观察两个资源下载进入直播间安卓观察日志：WARMUP_RESOURCE_STATUS_SUCCESSios观察日志：[downloader] task succeed证明文件下载成功
+3. ZIP下载完成，解压过程中杀进程，解压失败，正式目录无对应预热资源，重新预热下载解压成功
+4. 预热文件没有.json、.png、.mp4、.svg. zip等格式后缀名.对应CASE的开关显示已下线.
+
+
+配置的对应预热图片&压缩包资源正常下载（webp、png):
+1. 安卓：/sdcard/Android/data/com.smile.gifmaker/files/.warmup
+2. iOS：Library/com.kuaishou.warmup.platform
+
+
+配置的对应视频预热资源正常下载（MP4):
+1. 安卓（root）：/data/data/com.smile.gifmaker/files/.hodor/media_v3_scope
+2. iOS：Library/com.kwai.video.hodor/.hodor/media_v3_scope
+

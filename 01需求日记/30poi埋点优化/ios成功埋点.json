@@ -1,0 +1,214 @@
+{
+    "client_timestamp": "1711607045510",
+    "client_increment_id": "165746",
+    "server_hostname": "",
+    "server_timestamp": "1711607045651",
+    "common_package": {
+        "identity_package": {
+            "device_id": "FE314352-35BC-457E-ACD6-215B8A548B8D",
+            "user_id": "2260817340",
+            "iu_id": "",
+            "s_user_id": "2260817340",
+            "user_flag": "",
+            "global_id": "DFPA8FD08B5D40335211D96606AE02E51BB6A55072AF8938477CF73AEA1668E4",
+            "random_device_id": "FE314352-35BC-457E-ACD6-215B8A548B8D",
+            "device_id_tag": "0",
+            "old_device_id": "FE314352-35BC-457E-ACD6-215B8A548B8D",
+            "p_user_id": "",
+            "is_login_user": 0,
+            "cloud_device_id_tag": "7",
+            "ab_mapping_device_id": "",
+            "ab_mapping_user_id": "0",
+            "ab_mapping_ids": "ClYKEnVpZF9kaWRfbWFwcGluZ192NBJAChhBTkRST0lEXzg1OWQzOTYxN2MwNzgzZTcSJEZFMzE0MzUyLTM1QkMtNDU3RS1BQ0Q2LTIxNUI4QTU0OEI4RA=="
+        },
+        "app_package": {
+            "product": "KUAISHOU",
+            "platform": "IPHONE",
+            "language": "simplified",
+            "channel": "BETA",
+            "version_name": "12.2.40.2103334",
+            "version_code": 2103334,
+            "package_name": "com.kwai.gifshow.beta1",
+            "hotfix_patch_version": "",
+            "build_type": "UNKNOWN3",
+            "container": "NATIVE",
+            "new_oc": "",
+            "abi": "UNKNOWN4",
+            "robust_info": "",
+            "android_os": "ANDROID_DEFAULT",
+            "original_platform": "UNKNOWN2"
+        },
+        "device_package": {
+            "os_version": "13.6.1",
+            "model": "iPhone10,2",
+            "ua": ""
+        },
+        "network_package": {
+            "type": "WIFI",
+            "isp": "中国电信",
+            "ip": "",
+            "dns_servers": "",
+            "ipv6": ""
+        },
+        "location_package": {
+            "unnormalized": "西二旗中路27号",
+            "country": "中国",
+            "province": "北京市",
+            "city": "北京市",
+            "county": "海淀区",
+            "street": "西二旗中路",
+            "latitude": 40.0482292282017,
+            "longitude": 116.31022642506441,
+            "vague": 0
+        },
+        "experiment": [
+
+        ],
+        "time_package": {
+            "sync_status": "SYNCHROIZED",
+            "client_time_diff": "0",
+            "time_zone": "Asia/Shanghai (GMT+8) offset 28800",
+            "client_time_difference": "199"
+        },
+        "additional_seq_id_package": {
+            "channel": "NORMAL",
+            "channel_seq_id": "163423",
+            "custom_type": "showEvent",
+            "custom_seq_id": "10286"
+        },
+        "style_type": "{\"darkMode\":false,\"bottom_tab_id\":[1,5,6,7],\"top_tab_id\":[12,2,3,4,55],\"children_mode\":false,\"launch_source\":1,\"browseType\":\"bottom\",\"grant_browse_type\":\"AUTHORIZED\"}",
+        "service_name": "",
+        "sub_biz": "",
+        "need_encrypt": false,
+        "global_attr": "{\"network_ip\":\"103.102.203.195\",\"entry_tag\":\"\"}",
+        "h5_extra_attr": "",
+        "common_stid": {
+            "stid_container": {
+                "st_reco_id": "1|2006981096510427281|photo:5253167613784655395|{\"pg\":\"bs\"}|{\"r\":4375,\"mix\":\"1_1_0_0_0\"}",
+                "st_ad_id": "",
+                "st_ks_order_id": "",
+                "st_ssid": "",
+                "st_push_id": "",
+                "st_dplink_id": "",
+                "st_reco_stgy_id": "1|2006981096510427281|photo:5253167613784655395|{\"pg\":\"bs\"}|{\"r\":4375,\"mix\":\"1_1_0_0_0\",\"f\":\"Cg4IARIDaWlkGN27p+7LAwoKCAESBmlzX3BpYwoNCAESCXN3dG5fcGF0aAoNCAESCXN3dG5faXRlbQoNCAESCXN3dG5fYmlndgoMCAMSAmJ6KgQxXzA0\"}"
+            },
+            "stid_merge": "",
+            "stid_container_json": "",
+            "st_ex_params": "",
+            "st_merge_array": [
+                "st_reco_stgy_id,st_reco_id"
+            ]
+        },
+        "api_app_status": 0,
+        "server_process_info": {
+
+        }
+    },
+    "event_package": {
+        "show_event": {
+            "action": "UNKNOWN1",
+            "url_package": {
+                "category": "UNKNOWN1",
+                "page": "UNKNOWN2",
+                "sub_pages": "ks://location",
+                "params": "task_id=3D0C555D-13EE-4ABD-8829-3E9048313502",
+                "identity": "55F509E6-BDCE-4A7A-9B83-47ABDF4DDB45",
+                "page_seq": 0,
+                "entry_page_id": "6966521A-1C44-4EC8-A32D-856B6FD34742",
+                "entry_page_source": "FEATURED_PAGE",
+                "exp_tag_list": {
+                    "exp_tag_trans": [
+                        {
+                            "server_exp_tag": "feed_photo|5253167613784655395|1029971337|1_a/2006981096510427281_bs105",
+                            "client_exp_tag": "0"
+                        }
+                    ]
+                },
+                "page_type": "NATIVE",
+                "page2": "POST_SELECT_LOCATION",
+                "top_page": "FEATURED_PAGE",
+                "user_route_trace": "[{\"page_code\":\"FEATURED_PAGE\",\"content_id\":\"5253167613784655395\",\"element_action\":\"VIDEO_REC\",\"urt_id\":\"240\",\"content_type\":\"PHOTO\"},{\"page_code\":\"RECORD_CAMERA\",\"element_action\":\"VIDEO_REC\",\"urt_id\":\"243\"},{\"page_code\":\"VIDEO_ATLAS_EDIT\",\"element_action\":\"RECORD_VIDEO_EDIT_OPERATION\",\"urt_id\":\"244\"}]",
+                "co_page": false
+            },
+            "refer_url_package": {
+                "category": "UNKNOWN1",
+                "page": "VIDEO_POST",
+                "sub_pages": "ks://share",
+                "params": "task_id=3D0C555D-13EE-4ABD-8829-3E9048313502&video_photo_type=normal&edit_visible=public&photo_type=5&is_reedit=0&is_reedit=false",
+                "identity": "9E54A0CE-A833-4431-87C7-AE34F04EF654",
+                "page_seq": 50,
+                "entry_page_id": "",
+                "entry_page_source": "",
+                "exp_tag_list": {
+                    "exp_tag_trans": [
+                        {
+                            "server_exp_tag": "feed_photo|5253167613784655395|1029971337|1_a/2006981096510427281_bs105",
+                            "client_exp_tag": "0"
+                        }
+                    ]
+                },
+                "page_type": "UNKNOWN_PAGE_TYPE",
+                "page2": "VIDEO_POST",
+                "top_page": "FEATURED_PAGE",
+                "user_route_trace": "",
+                "co_page": false
+            },
+            "type": "UNKNOWN2",
+            "status": "UNKNOWN3",
+            "time_cost": "0",
+            "stay_length": "0",
+            "content_package": {
+                "tag_package": {
+                    "identity": "6724909461696559843",
+                    "name": "北京市",
+                    "exp_tag": "",
+                    "index": "1",
+                    "llsid": "",
+                    "photo_count": "0",
+                    "type": "POI",
+                    "photo_package": [
+
+                    ],
+                    "secondary_type": "",
+                    "params": "{\"page\":1,\"task_id\":\"3D0C555D-13EE-4ABD-8829-3E9048313502\",\"request_id\":\"ELmAgICwgtGIChiEBCCtuuud6DEo0PL-mgs=\",\"address\":\"北京市东城区\"}"
+                }
+            },
+            "element_package": {
+                "type": "UNKNOWN1",
+                "index": 0,
+                "name": "",
+                "value": 0,
+                "status": "UNKNOWN2",
+                "action": "UNKNOWN2",
+                "params": "",
+                "action2": "RECO_LOCATION_TAG"
+            },
+            "refer_element_package": {
+                "type": "UNKNOWN1",
+                "index": 0,
+                "name": "share_search_location",
+                "value": 0,
+                "status": "UNKNOWN2",
+                "action": "ADD_LOCATION",
+                "params": "{\"show_type\":\"LOCALLIFE_SERVICE\"}",
+                "action2": ""
+            },
+            "show_type": "UNKNOWN4",
+            "sub_action": "UNKNOWN5",
+            "page_show_seq": 0,
+            "content_wrapper": "",
+            "area_package": {
+                "name": "",
+                "params": ""
+            },
+            "internal_stid_container_json": "",
+            "inter_st_ex_params": ""
+        }
+    },
+    "explore_locale": "",
+    "session_id": "E30B4F07-73DA-4F39-8093-F9ECDCE8A7D1",
+    "event_id": "0ea5955f-bf1a-4dfd-ab40-0ad7c64c6e72",
+    "front_session_id": "",
+    "process_name": "",
+    "relation_log_id": ""
+}

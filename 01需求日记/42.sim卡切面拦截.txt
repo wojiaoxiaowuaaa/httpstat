@@ -1,0 +1,34 @@
+摇一摇--架构--底部有 -- 有button点击有Toast提示
+
+https://team.corp.kuaishou.com/task/T5846518
+
+https://kswitch.corp.kuaishou.com/#/flag/targeting?project=kuaishou&environment=production&key=KsOptSimStateSwitch
+
+ID 63302
+
+
+未同意隐私协议(开关的默认值为true):
+未加开关 :  0
+加开关(KsOptSimStateSwitch的值mock为false)  :   1
+
+同意隐私协议:
+未加开关  --  1 
+加开关   ---  1 
+
+
+默认下发的开关:
+"KsOptSimStateSwitch": {
+			"value": true,
+			"policy": 2,
+			"vartag": "0:0",
+			"varver": "1.2.0"
+		},
+
+
+mock下发(加白的逻辑):
+"KsOptSimStateSwitch": {
+			"value": false,
+			"policy": 2,
+			"vartag": "1",
+			"varver": "1.2.0"
+		},

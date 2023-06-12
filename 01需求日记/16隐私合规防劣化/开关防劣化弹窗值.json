@@ -1,0 +1,76 @@
+{
+            "value": {
+                "turnOn": true,
+                "policies": [
+                    {
+                        "permission": "device",
+                        "mode": 3,
+                        "exitAfterAlert": false,
+                        "whiteList": []
+                    },
+                    {
+                        "permission": "appList",
+                        "mode": 3,
+                        "exitAfterAlert": false,
+                        "whiteList": []
+                    },
+                    {
+                        "permission": "clipboard",
+                        "mode": 3,
+                        "exitAfterAlert": false,
+                        "whiteList": []
+                    },
+                    {
+                        "permission": "location",
+                        "mode": 3,
+                        "exitAfterAlert": false,
+                        "whiteList": [
+                            "com.kwai.framework.location.KLocationManager",
+                            "c.t.m.g",
+                            "c.t.m.g.k5",
+                            "c.t.m.g.u5",
+                            "c.t.m.g.p6",
+                            "c.t.m.g.dy",
+                            "com.loc.et",
+                            "com.loc.h",
+                            "com.loc.ek",
+                            "com.loc.fb",
+                            "com.loc.e",
+                            "com.kuaishou.weapon.p0.cx",
+                            "com.kuaishou.weapon.p0",
+                            "com.kwai.framework.location.locationupload.CellUtils",
+                            "com.kwai.framework.location.locationupload.WifiUtils",
+                            "com.kwai.feature.platform.misc.wifistate.WifiStateInitModule",
+                            "com.mini.location.LocationManagerImpl",
+                            "com.mini.location.SysLocationManagerImpl",
+                            "com.yxcorp.utility.CellLocationUtilsCached"
+                        ]
+                    },
+                    {
+                        "permission": "photo",
+                        "mode": 1,
+                        "exitAfterAlert": false,
+                        "whiteList": [
+                            "com.yxcorp.gifshow.album.repo.MediaStoreLoadHelper",
+                            "com.yxcorp.gifshow.album.repo.MediaStoreLoadHelper$Companion",
+                            "com.yxcorp.gifshow.album.home.AlbumMediaChangeObserver",
+                            "com.yxcorp.gifshow.album.util.CameraUtils",
+                            "com.yxcorp.gifshow.album.repo.MediaUtil",
+                            "com.yxcorp.gifshow.media.util.VPBitmapUtil",
+                            "com.kuaishou.gifshow.smartalbum.utils.SAUtils",
+                            "com.yxcorp.gifshow.albumcontrol.AlbumControl",
+                            "com.kuaishou.dfp.a.j",
+                            "com.facebook.imagepipeline.producers.LocalExifThumbnailProducer",
+                            "com.kuaishou.weapon.p0.cb",
+                            "com.kwai.feature.platform.misc.music.LocalMusicCollector",
+                            "com.yxcorp.gifshow.albumcontrol.AlbumControl",
+                            "com.kuaishou.weapon.p0.bv.e",
+                            "org.wysaid.utils.CGEMediaPlayer.init"
+                        ]
+                    }
+                ]
+            },
+            "policy": 2,
+            "vartag": "1:1",
+            "varver": "51.12.0"
+        }

@@ -1,0 +1,29 @@
+https://team.corp.kuaishou.com/task/T4886883
+
+技术文档-包含日志等消息
+https://docs.corp.kuaishou.com/d/home/fcABF7QsSWpwasbbDnAL0ZoXW#section=h.t1qynuqfozqe
+
+
+路由库介绍:
+https://docs.corp.kuaishou.com/d/home/fcADhKJ5sMVJCgauq0ymSDxXL#section=h.muz04z7jl2sw
+
+
+https://kswitch.corp.kuaishou.com/#/flag/variations?project=kuaishou&environment=production&key=kwaiUriCheckMode
+
+开关值	模式	       行为
+0	   关闭校验	     不做任何的合法性校验
+1	   dry run	    进行校验，校验失败触发埋点上报，但不拦截(编码问题)快链的跳转
+2	   开启校验	     进行校验，校验失败触发埋点上报并拦截后续跳转
+
+ grep -ri  '快链校验模式: 2'
+
+https://keep.corp.kuaishou.com/dev-ops/workflow/detail?id=4f46ac22-c541-4460-a4ae-eca568798197&pid=1&taskId=239d9235-1b41-415b-a8bc-e3ff8a081564&workflowType=app
+
+adb shell am start -a "android.intent.action.VIEW" -d "kwai://settings//"
+
+
+原快链:
+kwai://tachikoma?bundleId=PoiPage&businessName=POI&poiId=6724909544112695881
+查询参数base64编码后:
+kwai://tachikoma?ImJ1bmRsZUlkIg===PoiPage&ImJ1c2luZXNzTmFtZT1QT0ki&InBvaUlkIg===NjcyNDkwOTU0NDExMjY5NTg4MQ
+

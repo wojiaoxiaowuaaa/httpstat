@@ -1,0 +1,87 @@
+AppList上报合规整改
+https://team.corp.kuaishou.com/task/T4752932
+
+性能优化(二次提测):
+https://team.corp.kuaishou.com/task/T5420563
+
+https://docs.corp.kuaishou.com/d/home/fcADQx0y8mbev8t9NV1_EEUg0
+
+https://docs.corp.kuaishou.com/d/home/fcACWaQJvPf9mjPYDWcEdupw0?time=1708504157500
+
+
+本次：采集一部分指定的app；（服务端指定list）
+新需求：采集设备安装的全部applist （新接口/更完备） 
+新上报文案文档: https://docs.corp.kuaishou.com/d/home/fcACLYcP0o5b8mdRql7XVMDyL#section=h.up8ymttnxwz2
+
+applist采集自采策略下发接口
+/frigate/col/loc/apq
+applist采集自采信息上传接口
+/frigate/col/loc/apu
+
+客户端总开关：
+https://kswitch.corp.kuaishou.com/#/flag/targeting?project=kuaishou&environment=production&key=enablePrivacyAppListQuery
+
+测试分支：
+platform/feature/fix_privacy_for_supervise_gaoyi03
+
+1. 一天最多采集5次
+2. klf=0的请求，需要间隔半小时
+3. klf!=0的请求，需要间隔1s
+
+# 配置下发接口返回 /apq
+{
+          "result":  1,
+          "kla":  "",   //需要上报的是否安装的app列表
+          "klt":  1800, //定时器 下次询问的时间
+          "klc":  false, // 是否采集applist
+          "klf":  0,  //下次请求所携带的偏移量 没有下一页返回-1
+          "klpi":  1,  //分页拉取的时间间隔
+          "kli":  "",  // 下发策略的version
+          "kly":  0,  // 控制采集方式，默认是getPackageInfo方式采集
+          "klo":  1000  //本次下发的数据条数
+}
+
+# 上报接口入参 /apu
+klf       请求偏移量
+klo       本次请求的数据条数
+appresp   appinfo列表
+
+
+kli:"1708886777591_1"
+
+TODO：
+1. 配置下发接口中klf字段值一般从1000开始递增最后一次为-1。（1000/2000/3000/4000/-1）
+1. 上报接口入参中包含多个apresp字段（字段名相同），值为0或非0数字。
+1. 上报接口偏移量0--4000递增（每轮上报都是这样.数据条数是固定值最后一次是791前面几次是1000。 每一页上报的app的数量为12--14之间.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+日志tag是 PrivacyUploadQueryHelper
+内容是upload success，xxxxx
+
+
+优化后子线程上报日志:
+./LaunchTime-2024.03.18.14.24.22-FileCreateTime-2024.03.18.14.24.22.172.V1.app.log:I|2024-03-18 14:24:40.693|29140 main-29140|M:push_sdk|T:KwaiPushSDK_MainProcess|D: token upload success channel: XIAOMI token: E65wqCGeKGTG*****VqBvL9o9ZkOA_undercoverLength:39 ignoreRestrict: false
+./LaunchTime-2024.03.18.14.27.26-FileCreateTime-2024.03.18.14.30.59.041.V1.app.log:I|2024-03-18 14:31:01.624|32101 ela_global-io-32133|M:ks.location.log|T:PrivacyUploadQueryHelper|D:upload success UploadResultInfo{result=1, errMsg='null'}
+./LaunchTime-2024.03.18.14.27.26-FileCreateTime-2024.03.18.14.27.26.461.V1.app.log:I|2024-03-18 14:27:31.360|32101 ela_global-io-32153|M:ks.location.log|T:PrivacyUploadQueryHelper|D:upload success UploadResultInfo{result=1, errMsg='null'}
+./LaunchTime-2024.03.18.14.25.42-FileCreateTime-2024.03.18.14.25.42.580.V1.app.log:I|2024-03-18 14:26:45.537|30567 ela_global-io-31340|M:ks.location.log|T:PrivacyUploadQueryHelper|D:upload success UploadResultInfo{result=1, errMsg='null'}
+./LaunchTime-2024.03.18.14.43.24-FileCreateTime-2024.03.18.14.43.24.910.V1.app.log:I|2024-03-18 14:43:29.930|4786 ela_global-io-4878|M:ks.location.log|T:PrivacyUploadQueryHelper|D:upload success UploadResultInfo{result=1, errMsg='null'}
+

@@ -1,0 +1,11 @@
+https://team.corp.kuaishou.com/task/T4879300
+
+
+涛哥 我这边哪按照team验收了下:
+1. 摇一摇里获取default   live开头的开关的值(模糊搜索后选中  取值)
+2. DID维度回捞日志,解压后日志内容展示正常
+3. 修改开关的hash值后mock下发,摇一摇里能够获取到hash变更后的开关的值(仍旧是模拟业务获取,UID或者DID维度的开关值都获取不到)
+
+
+kswitc生效维度测试方法及技术文档:
+https://team.corp.kuaishou.com/task/B1748424

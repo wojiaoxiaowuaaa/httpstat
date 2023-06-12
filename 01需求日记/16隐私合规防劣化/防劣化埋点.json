@@ -1,0 +1,99 @@
+{
+    "client_timestamp": "1705458191314",
+    "client_increment_id": "5411",
+    "server_hostname": "",
+    "server_timestamp": "1705458489264",
+    "common_package": {
+        "identity_package": {
+            "device_id": "ANDROID_522f38501c76ffdd",
+            "user_id": "0",
+            "iu_id": "",
+            "s_user_id": "",
+            "user_flag": "",
+            "global_id": "DFP7C616D29833D761AAD3392B4E451657E1975AE29DCF760B8B36F50633EA48",
+            "random_device_id": "ANDROID_e5d37a6bc60ba2f8",
+            "device_id_tag": "0",
+            "old_device_id": "",
+            "p_user_id": "qgYL2KMB99b_HS3tLzpaJsAlQrba6vIec80f4c206ae8e13",
+            "is_login_user": 0,
+            "cloud_device_id_tag": "7",
+            "ab_mapping_device_id": "",
+            "ab_mapping_user_id": "0",
+            "ab_mapping_ids": "Ci4KEnVpZF9kaWRfbWFwcGluZ192MhIYCgozMjE0Njg4NDIzEgozMjE0Njg4NDIz"
+        },
+        "app_package": {
+            "product": "KUAISHOU",
+            "platform": "ANDROID_PHONE",
+            "language": "zh",
+            "channel": "TEST",
+            "version_name": "11.11.21.99999",
+            "version_code": 99999,
+            "package_name": "com.smile.gifmaker",
+            "hotfix_patch_version": "",
+            "build_type": "DEBUG",
+            "container": "NATIVE",
+            "new_oc": "TEST",
+            "abi": "ARM64",
+            "robust_info": "{\"robust_id\":\"fake_robust_id\",\"robust_patch_id\":\"\",\"robust_patch_id2\":[]}",
+            "android_os": "ANDROID_DEFAULT"
+        },
+        "device_package": {
+            "os_version": "33",
+            "model": "Xiaomi(M2102J2SC)",
+            "ua": ""
+        },
+        "network_package": {
+            "type": "WIFI",
+            "isp": "",
+            "ip": "",
+            "dns_servers": "",
+            "ipv6": ""
+        },
+        "location_package": {
+            "unnormalized": "",
+            "country": "",
+            "province": "",
+            "city": "",
+            "county": "",
+            "street": "",
+            "latitude": 0,
+            "longitude": 0,
+            "vague": 0
+        },
+        "experiment": [],
+        "time_package": {
+            "sync_status": "SYNCHROIZED",
+            "client_time_diff": "0",
+            "time_zone": "GMT+08:00 Asia/Shanghai",
+            "client_time_difference": "-222"
+        },
+        "additional_seq_id_package": {
+            "channel": "NORMAL",
+            "channel_seq_id": "5396",
+            "custom_type": "customEvent",
+            "custom_seq_id": "146"
+        },
+        "style_type": "{\"browseType\":\"bottom\",\"darkMode\":false,\"children_mode\":false,\"grant_browse_type\":\"INITIALIZATION\",\"top_tab_id\":[12,2,3,4,0],\"bottom_tab_id\":[1,5,6,7],\"launch_source\":1,\"bottom_navigation\":false,\"is_app_prelaunch\":false,\"is_app_prelaunching\":true}",
+        "service_name": "PRIVACY_KIT",
+        "sub_biz": "",
+        "need_encrypt": false,
+        "global_attr": "{\"network_ip\":\"103.102.203.199\",\"is_background\":0}",
+        "h5_extra_attr": "",
+        "api_app_status": 0,
+        "server_process_info": {}
+    },
+    "event_package": {
+        "custom_event": {
+            "key": "KS_PK_API_INTERCEPT_KEY",
+            "value": "{\"apiName\":\"WifiInfo#getBSSID\",\"agreeLicense\":false,\"stack\":\"java.util.concurrent.Executors$RunnableAdapter/call\",\"showDialog\":true,\"intercept\":true,\"inWhiteList\":false,\"permission\":\"device\",\"redApi\":true}",
+            "biz": "ARCH_BASE",
+            "page": "FEATURED_PAGE"
+        }
+    },
+    "explore_locale": "",
+    "session_id": "33415f12-86ce-49ef-b815-96d161ffc6e7",
+    "event_id": "",
+    "front_session_id": "",
+    "process_name": "",
+    "relation_log_id": ""
+}

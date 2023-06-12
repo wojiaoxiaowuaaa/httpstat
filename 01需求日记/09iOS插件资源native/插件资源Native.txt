@@ -1,0 +1,18 @@
+测试文档:
+https://docs.corp.kuaishou.com/d/home/fcACTJ6j_5mo_zrqqMwsIY8Xb#section=h.f35rtnahmmkc
+
+CASE:
+https://kdev.corp.kuaishou.com/web/test-mgr/testdesign?GID=KHZT&caseShowModel=moduleTree&caseId=&moduleId=1540827&view=caseView&mindMode=&newMindShow=hide
+
+开关:
+https://kswitch.corp.kuaishou.com/#/flag/targeting?project=kuaishou&environment=production&key=enableHachiResourceHook
+https://kswitch.corp.kuaishou.com/#/flag/targeting?project=kuaishou&environment=production&key=enableHachiModifyResourceOptimize
+enableHachiResourceHook
+enableHachiModifyResourceOptimize
+
+插件名称:
+debug_split
+verison安装时是1  后续自动升级到2
+
+
+1. 10系统低端机(phoneSE)小程序页面加载不出,白屏.

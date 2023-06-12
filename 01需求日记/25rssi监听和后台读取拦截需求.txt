@@ -1,0 +1,16 @@
+https://team.corp.kuaishou.com/task/T5329377
+
+https://team.corp.kuaishou.com/task/T5249006
+
+https://docs.corp.kuaishou.com/d/home/fcAD5qcYeQ_z5KR5In_ozdZiT
+
+# 后台拦截开关
+https://kswitch.corp.kuaishou.com/#/flag/targeting?project=kuaishou&environment=production&key=KsDeviceBackgroundInterceptSwitch
+
+分支一：
+前台时上报的埋点中有"imei"字段且有值
+后台时埋点中无"imei"或者改字段的值为空
+
+enableDeviceBgIntercept   
+enableNetworkType0pt
+enableWifiRssiopt

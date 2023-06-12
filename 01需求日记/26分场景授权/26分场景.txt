@@ -1,0 +1,64 @@
+目标：用户可以分场景控制是否允许定位开关，
+● 开关打开时，所属场景定义范畴内的业务，均可以定位
+● 业务发起定位时，若所属场景开关关闭，不允许定位。若打开，则可以定位。
+https://team.corp.kuaishou.com/task/T4735462
+
+https://kswitch.corp.kuaishou.com/#/flag/targeting?project=kuaishou&environment=production&key=KSPKPrivacyGroupSwitch
+
+测试文档：
+https://docs.corp.kuaishou.com/d/home/fcAAW21lMr2fIZ0VgcZWrYtyF
+
+iOS:已添加摇一摇：平台 - 滑到最底 - 隐私合规 - 地理位置分场景授权入口开关
+
+
+作品浏览
+内容发布
+周边生活
+电商购物
+
+安卓日志过滤关键字：
+requestPermissionFromUser
+notifyStartLocation
+notifySuccessLocation
+notifyLocationError
+getLocation permission
+c
+
+iOS日志过滤：
+KSLocationKit
+ios查看端上生效的configVersion版本号日志：
+KSPrivacyKit
+
+配置接口下发的字段"lightMode": false, 控制分场景授权的开关生效多个。
+
+iOS缓存测试：
+GPS获取成功 定位成功是这个日志：
+standalone storage enabled  缓存是这个关键字，
+standalone storage enabled:1 是用新的缓存，
+standalone storage enabled:0 是老的公共缓存
+
+
+双端一致：
+1. iOS首次安装未授予定位权限，设置页展示了“位置授权”的入口，四个分类的位置权限全部为关闭状态。（Android必须授权定位后才展示该入口）
+
+2. iOS隐私设置关闭“作品浏览”位置使用开关，点击页面定位服务“去开启”button自动打开了隐私设置里“作品浏览”的允许使用位置开关。（无跳转无引导直接修更改开关状态）
+   android关闭状态下同城点击定位无法定位成功，只刷新页面，不改变隐私设置里“作品浏览的开关状态”。
+
+3. （双端表现一致 ）小店点击定位--点击弹窗确认--自动更改新增的隐私设置---电商购物---允许使用位置的开关状态 。不需要去系统设置里改什么。
+   （弹窗文案是否需要修改）
+
+4. mock修改/configs修改的返回的 "groupName": null,"bizList": [],"title": "内容发布"。
+   生产页面发布作品时可以正常展示弹窗进行定位返回经纬度信息。（日志）。（nvalid, old:7015, new:7014, fail）
+   
+5.隐私设置--内容发布，打开和关闭位置授权的开关。生产页触发业务接口/nearbyv4时，接口的公参lkvr都有加密后的值。无差异。
+  （线上测试）（与jihuang对其版本号问题）
+
+Android端：
+1. android清理缓存（防止使用缓存的地理位置），关闭隐私设置里“作品浏览”的位置开关，同城点击定位置刷新页面无提示无弹窗。
+  （iOS前端有入口可以直接点击打开隐私设置里作品浏览位置权限的开关）双端未对齐。
+2. 针对首次安装的场景（冷启未定位未申请过位置权限），
+   Android端不展示新增的“位置授权”的入口的。同城定位授予权限后，隐私设置里新增该入口展示。“作品浏览”开关状态为打开，其余三个业务为关闭。
+   iOS端展示了“位置授权”的入口。四个业务的位置权限默认状态均为关闭。
+
+iOS端：
+1. 稳定复现的CRASH  mock接口/configs的返回 数据及录屏见群聊

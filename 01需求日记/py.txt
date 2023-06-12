@@ -1,0 +1,26 @@
+➜bin  pwd                                                                          
+/usr/local/Cellar/python@3.10/3.10.8/Frameworks/Python.framework/Versions/3.10/bin
+
+➜  bin ll                                                                           
+total 152
+lrwxr-xr-x  1 mac  admin     9B Oct 11  2022 2to3 -> 2to3-3.10
+-rwxr-xr-x  1 mac  admin   170B Nov 19  2022 2to3-3.10
+lrwxr-xr-x  1 mac  admin     8B Oct 11  2022 idle3 -> idle3.10
+-rwxr-xr-x  1 mac  admin   168B Nov 19  2022 idle3.10
+-rwxr-xr-x  1 mac  admin   246B Nov 19  2022 pip3
+-rwxr-xr-x  1 mac  admin   246B Nov 19  2022 pip3.10
+lrwxr-xr-x  1 mac  admin     9B Oct 11  2022 pydoc3 -> pydoc3.10
+-rwxr-xr-x  1 mac  admin   153B Nov 19  2022 pydoc3.10
+lrwxr-xr-x  1 mac  admin    10B Oct 11  2022 python3 -> python3.10
+lrwxr-xr-x  1 mac  admin    17B Oct 11  2022 python3-config -> python3.10-config
+-rwxr-xr-x  1 mac  admin    49K Nov 19  2022 python3.10
+-rwxr-xr-x  1 mac  admin   2.1K Nov 19  2022 python3.10-config
+➜  bin 
+
+
+➜  bin which python3
+/usr/local/bin/python3       
+
+ll   /usr/local/bin/python3                                                                               
+lrwxr-xr-x  1 mac  admin    40B Nov 19  2022 /usr/local/bin/python3 -> ../Cellar/python@3.10/3.10.8/bin/python3            
+

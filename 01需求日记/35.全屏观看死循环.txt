@@ -1,0 +1,20 @@
+https://team.corp.kuaishou.com/task/T5558138
+
+https://kswitch.corp.kuaishou.com/#/flag/targeting?project=kuaishou&environment=production&key=disableRichLabelLineWidthFix
+
+
+https://kdev.corp.kuaishou.com/web/test-mgr/testdesign?GID=KHZT&caseShowModel=moduleTree&mindMode=&moduleId=2109881&newMindShow=hide&view=caseView
+
+
+特定视频，点击全屏观看,会出现长卡。
+之前也出现过相同的问题，之前的原因是调用intrinsicContentSize方法，其中RichLabel在生成截断行时，系统生成的line宽度大于传入的宽度，导致约束之后的大小反而比越来大了，就出现了反复横跳（死循环）的问题
+这个问题的原因：在计算textBoundingRect时，得到的width比传入的大，就出现了反复横跳的问题。
+解决方法：
+if (_onlyCalculateSize && !s_disableLineWidthFix) {
+
+ lineWidth = MIN(lineWidth, maxWidth - _firstGlyphPos);
+
+}
+其中，s_disableLineWidthFix 为功能开关，默认为false
+
+
